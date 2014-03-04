@@ -1,0 +1,203 @@
+/* Insert CSS overrides here */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Insert mobile CSS overrides here */
+}
+
+h1, h2, h3, h4, #heading, .LR-content {
+  font-family: 'freightsans_prosemibold';
+}
+
+body {margin:0;background: #f1f3f8}
+
+body a {text-decoration: none}
+body a:hover {text-decoration: underline}
+.clearfix {clear:both;}
+
+#heading {
+  font-size: 5.5em;
+  line-height: 1.1em;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: -380px;
+  margin-bottom: -169px;
+  text-shadow: 0 0 15px rgba(0, 0, 0, .3), 0 -1px 0 rgba(0, 0, 0, .3);
+}
+
+.payoff {
+  text-align:center;
+  line-height: 1em;
+  font-size: 3em;
+  letter-spacing: -1px;
+  margin: 0 100px;
+  color: #df5226;
+  text-shadow: 0 3px 4px #F1F3F8, 0 0 0 #000, 0 4px 0 #f1f3f8;
+}
+
+.payoffs { margin: 40px 0 60px 0;}
+
+#heading, .payoff {
+  letter-spacing: -2px;
+
+}
+
+p, input {
+  font-family: 'freightsans_promedium';
+  font-size: 1.5em;
+}
+
+.LR-box-wrapper {max-width: 900px}
+
+input[type="email"].LR-sign-up-input,
+input[type="text"].LR-sign-up-input,
+input[type="date"].LR-sign-up-input,
+input[type="tel"].LR-sign-up-input,
+input[type="number"].LR-sign-up-input {
+  font-size: 22px;
+  line-height: 24px;
+  height: 24px;
+}
+
+.hero-container {min-height: 200px;}
+.hero-container h3 {color:#51606b;letter-spacing: -1px;font-size:2em;text-align:center;}
+.hero-container p {color:#53616c;letter-spacing:-1px;}
+
+.hero-container .imgs img {
+  width: 300px;
+  height: 300px;
+  display:block;
+  float: left;
+  margin:0;
+}
+
+.LR-site-logo img {
+  height: 40px;
+}
+
+.LR-site-logo {
+  text-align:left;
+  margin-left: 40px;
+  position: static;
+}
+
+.LR-header {
+  height: 55px;
+  text-align: left;
+  width: 100%;
+  position:fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-name {display:inline-block;text-transform: uppercase;vertical-align: middle;margin-left:10px;font-size:1.5em;}
+.logo-name .lightgray {color:#e5e1d2}
+.logo-name .darkgray {color:#fff}
+
+input[type="submit"].LR-sign-up-submit {
+  background: #cc0000; /* Old browsers */
+  background: -moz-linear-gradient(top, #cc0000 28%, #910000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(28%,#cc0000), color-stop(100%,#910000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #cc0000 28%,#910000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #cc0000 28%,#910000 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #cc0000 28%,#910000 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #cc0000 28%,#910000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#910000',GradientType=0 ); /* IE6-9 */
+}
+
+.LR-pwd-lr {display:none}
+.LR-box-container {max-width: 900px;overflow: hidden}
+.LR-content .LR-box-wrapper {max-width: 900px;margin:30px auto 0 auto;background:#f1f3f8;}
+.careers-hero-container {width:100%;background: #000;margin-top:37px;overflow:hidden;border-bottom:1px solid #000;}
+.work-background {
+  width:1500px;height:500px;margin:0 auto;transition: background-image 1s ease-in-out;
+  background: url(http://instagr.am/p/jjvQyOSn9R/media?size=l), url(http://instagram.com/p/lAsl9PAonj/media?size=l), url(http://instagr.am/p/kKSwrYAoiv/media?size=l);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 500px 500px, 500px 500px, 500px 500px;
+  background-position: 0 0, 500px 0, 1000px 0;
+}
+/*.work-background img {float:left;display:block;width:500px;height:500px;}*/
+.LR-site-logo {display:inline-block;margin-top:7px;}
+.logo-name {display:inline-block;margin-top: -30px}
+
+.application {
+  background: #fff;
+  border-bottom: 1px solid #ced5e5;
+}
+
+.application .browse-positions span.img {font-family: 'icomoon';font-size:76px;line-height:90px;display:block;float:left;height: 100px;}
+.application .browse-positions {
+  display:block;margin: 0 auto; max-width: 300px;font-family: 'freightsans_promedium'; font-size: 2em;line-height:96px;
+  color: #51606b;text-decoration: none;
+}
+
+.application .browse-positions:hover {text-decoration: underline;}
+
+.hero-container a,
+.hero-container a:visited {color: #000;}
+
+.application .positions li a:hover {text-decoration: underline}
+.application .positions {max-width:900px;margin:0 auto;display: none}
+.application .positions li a {
+  color: #51606b;
+  font-size: 1.1em;
+  font-family: 'freightsans_promedium';
+}
+
+.application .positions li a.active {
+  color: #df5226;
+}
+
+.application .spec {letter-spacing: -1px; color: #51606b;}
+.application .spec h1,
+.application .spec h2,
+.application .spec h3,
+.application .spec h4 {margin: 0 0 10px 0;}
+.application .spec h2 {font-size: 2em}
+.application .spec h3 {font-size: 1.5em;color: #7d96ab;}
+.application .spec h4 {font-size: 1.2em;}
+.application .spec p, .application .spec ul li {font-family: 'freightsans_probook';font-size: 1.1em;letter-spacing: 0;line-height: 1.5em}
+.application .spec ul {color:#51606b;}
+
+.application .listings {width: 300px;}
+.application .job-spec {width: 530px;float:right;}
+
+form {
+  padding: 10px 20px;
+  background: #f1f3f8;
+  border: 1px solid #ced5e5;
+  width: 260px;
+  letter-spacing: -1px;
+}
+
+form h2 {margin: 0; padding: 0;}
+
+form label, form input {
+  display:block;
+  width: 100%;
+  font-size: 1.3em;
+}
+
+form input {border: 1px solid #ced5e5;}
+form input[type="file"] {border: 0;font-size:1em;}
+
+form button, a.go-for-it {
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+  background: #df5226;
+  border: 1px solid #b73218;
+  font-family: 'freightsans_prosemibold';
+  text-shadow: 0 0 15px rgba(0, 0, 0, .3), 0 -1px 0 rgba(0, 0, 0, .3);
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  display: block;
+  outline: none;
+}
+
+a.go-for-it:hover {text-decoration: none}
+
+form button:active {
+  background: #b73218;
+  border: 1px solid #852512;
+}
