@@ -55,7 +55,7 @@ input[type="number"].LR-sign-up-input {
 
 .hero-container {min-height: 200px;}
 .hero-container h3 {color:#51606b;letter-spacing: -1px;font-size:2em;text-align:center;}
-.hero-container p {color:#53616c;letter-spacing:-1px;}
+.hero-container p {color:#53616c;letter-spacing:-1px;text-align: justify;}
 
 .hero-container .imgs img {
   width: 300px;
