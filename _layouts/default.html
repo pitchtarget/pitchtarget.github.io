@@ -10,30 +10,29 @@
     <link rel="stylesheet" href="/css/syntax.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/assets/stylesheets/global.css">
+    <link rel="stylesheet" href="/assets/stylesheets/words.css">
   </head>
   <body>
-    <div class="site">
-      <div class="header">
-        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-      </div>
+    <div id="header">
+      <a href="/"><div id="logo">{{ site.name }}</div></a>
+    </div>
+    <div id="container">
 
-      {{ content }}
+      <div id="article">
+        {{ content }}
 
-      <div class="footer">
-        <div class="contact">
+        <div id="footer">
           <p>
             Pitchtarget<br />
             hello@pitchtarget.com
           </p>
-        </div>
-        <div class="contact">
           <p>
             <a href="https://github.com/pitchtarget">github.com/pitchtarget</a><br />
             <a href="https://twitter.com/pitchtarget">twitter.com/pitchtarget</a><br />
           </p>
         </div>
-      </div>
+      <div>
     </div>
   </body>
 </html>
