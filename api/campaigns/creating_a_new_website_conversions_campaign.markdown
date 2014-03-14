@@ -5,7 +5,7 @@ title: Campaigns API
 
 # Campaigns API
 
-## Creating a new PAGE_LIKES campaign
+## Creating a new WEBSITE_CONVERSIONS campaign
 
 ### POST /api/campaigns
 
@@ -25,7 +25,9 @@ Name | Description |
 `budget_amount`  | Budget amount |
 `start_time`  | Start time |
 `targets`  | Targets |
-`page_url`  | https://www.facebook.com/Google |
+`offsite_pixel_tag`  | Offsite pixel tag |
+`offsite_pixel_name`  | Offsite pixel name |
+`call_to_action_type`  | Call to action type |
 `creative_texts`  | Creative texts |
 `creative_images`  | Creative images |
 
@@ -46,19 +48,19 @@ Cookie:
 ##### `fb_account_id`
 
 {% highlight text %}
-747
+749
 {% endhighlight %}
 
 ##### `fb_ad_account_id`
 
 {% highlight text %}
-1268
+1272
 {% endhighlight %}
 
 ##### `objective`
 
 {% highlight text %}
-PAGE_LIKES
+WEBSITE_CONVERSIONS
 {% endhighlight %}
 
 ##### `name`
@@ -110,7 +112,7 @@ daily
 {% highlight json %}
 [
   {
-    "name": "FbTarget 5",
+    "name": "FbTarget 7",
     "specs": {
       "age_min": 18,
       "age_max": 25,
@@ -164,10 +166,22 @@ daily
 ]
 {% endhighlight %}
 
-##### `page_url`
+##### `offsite_pixel_tag`
 
 {% highlight text %}
-https://www.facebook.com/Google
+CHECKOUT
+{% endhighlight %}
+
+##### `offsite_pixel_name`
+
+{% highlight text %}
+foo_pixel
+{% endhighlight %}
+
+##### `call_to_action_type`
+
+{% highlight text %}
+foo
 {% endhighlight %}
 
 ##### `creative_texts`
@@ -188,9 +202,9 @@ https://www.facebook.com/Google
 curl "pitchtarget.com/api/campaigns" -X POST \
 	-H "Accept: application/json" \
 	-H "Authorization: OAuth cp8s7ehw620ncg14f2m5gr305vu6ubk" \
-	-F 'fb_account_id=747' \
-	-F 'fb_ad_account_id=1268' \
-	-F 'objective=PAGE_LIKES' \
+	-F 'fb_account_id=749' \
+	-F 'fb_ad_account_id=1272' \
+	-F 'objective=WEBSITE_CONVERSIONS' \
 	-F 'name=foo' \
 	-F 'bid_type=OCPM' \
 	-F 'bid_info={"foo":"bar"}' \
@@ -198,10 +212,12 @@ curl "pitchtarget.com/api/campaigns" -X POST \
 	-F 'budget_type=daily' \
 	-F 'budget_amount=100000' \
 	-F 'start_time=1394793024' \
-	-F 'targets=[{"name":"FbTarget 5","specs":{"age_min":18,"age_max":25,"genders":["2"],"geo_locations":{"countries":["IT","US"]},"interests":[{"id":"1","name":"playstation"},{"id":"2","name":"videogame"},{"id":"3","name":"xbox"}],"user_adclusters":[{"id":"1","name":"HTC"},{"id":"2","name":"Motorola"},{"id":"3","name":"Samsung"}],"languages":["EN"],"broad_age":false,"interested_in":["2"]},"favorite":false}]' \
-	-F 'page_url=https://www.facebook.com/Google' \
+	-F 'targets=[{"name":"FbTarget 7","specs":{"age_min":18,"age_max":25,"genders":["2"],"geo_locations":{"countries":["IT","US"]},"interests":[{"id":"1","name":"playstation"},{"id":"2","name":"videogame"},{"id":"3","name":"xbox"}],"user_adclusters":[{"id":"1","name":"HTC"},{"id":"2","name":"Motorola"},{"id":"3","name":"Samsung"}],"languages":["EN"],"broad_age":false,"interested_in":["2"]},"favorite":false}]' \
+	-F 'offsite_pixel_tag=CHECKOUT' \
+	-F 'offsite_pixel_name=foo_pixel' \
+	-F 'call_to_action_type=foo' \
 	-F 'creative_texts=[{"title":"foo","body":"bar"}]' \
-	-F 'creative_images[]=@1200x450.jpg;type=text/plain'
+	-F 'creative_images[]=@1200x864.jpg;type=text/plain'
 {% endhighlight %}
 
 ### Response
@@ -217,11 +233,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "5aca60146e90b02151b399f03449f714"
+ETag: "e24e60705c6e4a83ad26303acf9444a5"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: cf865020-6755-48ab-89fe-03153872df1f
-X-Runtime: 0.292928
-Content-Length: 999
+X-Request-Id: d804b11a-7f19-4012-8b89-2ec22f3201c2
+X-Runtime: 0.109061
+Content-Length: 1008
 {% endhighlight %}
 
 #### Body
@@ -229,29 +245,29 @@ Content-Length: 999
 {% highlight json %}
 {
   "campaign": {
-    "id": 246,
+    "id": 248,
     "budget_type": "daily",
     "budget_amount": 100000,
     "bid_type": "OCPM",
     "max_bid": 100,
     "start_time": "2014-03-14T10:30:24.000Z",
     "end_time": null,
-    "objective": "PAGE_LIKES",
+    "objective": "WEBSITE_CONVERSIONS",
     "status": null,
     "name": "foo",
     "fb_app_icon": null,
     "creatives": [
       {
-        "id": 190,
+        "id": 192,
         "creative_images": [
           {
-            "id": 117,
-            "image": "/uploads/ad_image/image/140/1200x450.jpg"
+            "id": 119,
+            "image": "/uploads/ad_image/image/142/1200x864.jpg"
           }
         ],
         "creative_texts": [
           {
-            "id": 117,
+            "id": 119,
             "title": "foo",
             "name": null,
             "body": "bar"
@@ -261,8 +277,8 @@ Content-Length: 999
     ],
     "fb_targets": [
       {
-        "id": 154,
-        "name": "FbTarget 5",
+        "id": 156,
+        "name": "FbTarget 7",
         "favorite": false,
         "geo_locations": {
           "countries": [
@@ -316,10 +332,10 @@ Content-Length: 999
       }
     ],
     "fb_ad_account": {
-      "id": 1268,
+      "id": 1272,
       "name": "AD Account Bar",
       "currency": "EUR",
-      "fbid": "10"
+      "fbid": "14"
     },
     "fb_ad_campaigns": [
 
