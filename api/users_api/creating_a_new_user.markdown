@@ -1,25 +1,22 @@
 ---
 layout: default
-title: Sign up API
+title: Users API API
 ---
 
-# Sign up API
+# Users API API
 
-## Create a new user
-In order to create a new user, you must ask username and password to your users. Usernames are unique in your client_id namespace, and Users API does not allow to register multiple users with the same username.
-
-An username can be any combination of letters, numbers and symbols, and they are used for authentication purposes only. You can ask users to register using a username, an email or both. Your client should enforce a registration pattern, including validation.
+## Creating a new user
 
 ### POST /sign-up
 
 
 ### Parameters
 
-Name | Required? | Description |
------|-----------|-------------|
-`username` | Yes | Username |
-`password` | Yes | Password |
-`client_id` | Yes | The ID that identifies your app. |
+Name | Description |
+-----|-------------|
+`username` (required) | Username |
+`password` (required) | Password |
+`client_id` (required) | Client app id |
 
 ### Request
 
@@ -28,7 +25,7 @@ POST /sign-up HTTP/1.1
 Accept: application/json
 Content-Type: application/json
 Host: example.org
-Cookie:
+Cookie: 
 
 {% endhighlight %}
 
@@ -38,7 +35,7 @@ Cookie:
 {
   "username": "username",
   "password": "password",
-  "client_id": "g7kj2axpf13umghr5m9xl6aiordknff"
+  "client_id": "odbgdd43gpklptffow5gnm848q8g4g8"
 }
 {% endhighlight %}
 
@@ -47,7 +44,7 @@ Cookie:
 {% highlight sh %}
 curl "pitchtarget.com/sign-up" -X POST \
 	-H "Accept: application/json" \
-	-H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"g7kj2axpf13umghr5m9xl6aiordknff"}'
+	-H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"odbgdd43gpklptffow5gnm848q8g4g8"}'
 {% endhighlight %}
 
 ### Response
@@ -63,11 +60,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "d9861ea6d4dcf291ebac090547f67da2"
+ETag: "d3479f40ae07035d293a8144a1b38f5a"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 1441cf93-39c1-4c41-b4ac-a24cc6bd2913
-X-Runtime: 0.114259
-Content-Length: 41
+X-Request-Id: 86ec3e2d-e35f-4420-8b8c-4e3e8f0baedf
+X-Runtime: 0.075360
+Content-Length: 90
 {% endhighlight %}
 
 #### Body
@@ -75,9 +72,10 @@ Content-Length: 41
 {% highlight json %}
 {
   "user": {
-    "id": 814,
+    "id": 902,
     "username": "username"
-  }
+  },
+  "access_token": "2mkuo8yqml0ygfaglghxvi48k4cu2s8"
 }
 {% endhighlight %}
 

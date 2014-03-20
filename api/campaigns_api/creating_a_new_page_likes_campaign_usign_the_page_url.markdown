@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Campaigns API
+title: Campaigns API API
 ---
 
-# Campaigns API
+# Campaigns API API
 
-## Creating a new WEBSITE_CLICKS campaign
+## Creating a new PAGE_LIKES campaign usign the Page URL
 
 ### POST /api/campaigns
 
@@ -24,10 +24,9 @@ Name | Description |
 `budget_type`  | Budget type |
 `budget_amount`  | Budget amount |
 `start_time`  | Start time |
+`end_time`  | End time |
 `targets`  | Targets |
-`object_url`  | Object URL |
-`object_id`  | Object id |
-`call_to_action_type`  | Call to action type |
+`page_url`  | Faceboook Page URL |
 `creative_texts`  | Creative texts |
 `creative_images`  | Creative images |
 
@@ -37,7 +36,7 @@ Name | Description |
 POST /api/campaigns HTTP/1.1
 Accept: application/json
 Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1
-Authorization: OAuth cp8s7ehw620ncg14f2m5gr305vu6ubk
+Authorization: OAuth 28l4093p63b85azll124m3qp4vqgrrv
 Host: example.org
 Cookie: 
 
@@ -48,19 +47,19 @@ Cookie:
 ##### `fb_account_id`
 
 {% highlight text %}
-745
+928
 {% endhighlight %}
 
 ##### `fb_ad_account_id`
 
 {% highlight text %}
-1264
+1531
 {% endhighlight %}
 
 ##### `objective`
 
 {% highlight text %}
-WEBSITE_CLICKS
+PAGE_LIKES
 {% endhighlight %}
 
 ##### `name`
@@ -104,7 +103,7 @@ daily
 ##### `start_time`
 
 {% highlight text %}
-1394793024
+1395328871
 {% endhighlight %}
 
 ##### `targets`
@@ -112,7 +111,7 @@ daily
 {% highlight json %}
 [
   {
-    "name": "FbTarget 3",
+    "name": "FbTarget 7",
     "specs": {
       "age_min": 18,
       "age_max": 25,
@@ -166,22 +165,10 @@ daily
 ]
 {% endhighlight %}
 
-##### `object_url`
+##### `page_url`
 
 {% highlight text %}
-http://www.example.com
-{% endhighlight %}
-
-##### `object_id`
-
-{% highlight text %}
-foo
-{% endhighlight %}
-
-##### `call_to_action_type`
-
-{% highlight text %}
-foo
+https://www.facebook.com/memecoworking
 {% endhighlight %}
 
 ##### `creative_texts`
@@ -201,23 +188,21 @@ foo
 {% highlight sh %}
 curl "pitchtarget.com/api/campaigns" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth cp8s7ehw620ncg14f2m5gr305vu6ubk" \
-	-F 'fb_account_id=745' \
-	-F 'fb_ad_account_id=1264' \
-	-F 'objective=WEBSITE_CLICKS' \
+	-H "Authorization: OAuth 28l4093p63b85azll124m3qp4vqgrrv" \
+	-F 'fb_account_id=928' \
+	-F 'fb_ad_account_id=1531' \
+	-F 'objective=PAGE_LIKES' \
 	-F 'name=foo' \
 	-F 'bid_type=OCPM' \
 	-F 'bid_info={"foo":"bar"}' \
 	-F 'max_bid=100' \
 	-F 'budget_type=daily' \
 	-F 'budget_amount=100000' \
-	-F 'start_time=1394793024' \
-	-F 'targets=[{"name":"FbTarget 3","specs":{"age_min":18,"age_max":25,"genders":["2"],"geo_locations":{"countries":["IT","US"]},"interests":[{"id":"1","name":"playstation"},{"id":"2","name":"videogame"},{"id":"3","name":"xbox"}],"user_adclusters":[{"id":"1","name":"HTC"},{"id":"2","name":"Motorola"},{"id":"3","name":"Samsung"}],"languages":["EN"],"broad_age":false,"interested_in":["2"]},"favorite":false}]' \
-	-F 'object_url=http://www.example.com' \
-	-F 'object_id=foo' \
-	-F 'call_to_action_type=foo' \
+	-F 'start_time=1395328871' \
+	-F 'targets=[{"name":"FbTarget 7","specs":{"age_min":18,"age_max":25,"genders":["2"],"geo_locations":{"countries":["IT","US"]},"interests":[{"id":"1","name":"playstation"},{"id":"2","name":"videogame"},{"id":"3","name":"xbox"}],"user_adclusters":[{"id":"1","name":"HTC"},{"id":"2","name":"Motorola"},{"id":"3","name":"Samsung"}],"languages":["EN"],"broad_age":false,"interested_in":["2"]},"favorite":false}]' \
+	-F 'page_url=https://www.facebook.com/memecoworking' \
 	-F 'creative_texts=[{"title":"foo","body":"bar"}]' \
-	-F 'creative_images[]=@1200x864.jpg;type=text/plain'
+	-F 'creative_images[]=@1200x450.jpg;type=text/plain'
 {% endhighlight %}
 
 ### Response
@@ -233,11 +218,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "33f39d0edd1da57f4096719b8e4a26e7"
+ETag: "8eb542c24141d25920fc3a60ba31117a"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: d5fe709f-08cc-40d6-b8d0-fdff275bfbaf
-X-Runtime: 0.049631
-Content-Length: 1002
+X-Request-Id: d3ea480d-1407-41b9-abcc-5b472656baee
+X-Runtime: 0.281227
+Content-Length: 1000
 {% endhighlight %}
 
 #### Body
@@ -245,29 +230,29 @@ Content-Length: 1002
 {% highlight json %}
 {
   "campaign": {
-    "id": 244,
+    "id": 291,
     "budget_type": "daily",
     "budget_amount": 100000,
     "bid_type": "OCPM",
     "max_bid": 100,
-    "start_time": "2014-03-14T10:30:24.000Z",
+    "start_time": "2014-03-20T15:21:11.000Z",
     "end_time": null,
-    "objective": "WEBSITE_CLICKS",
+    "objective": "PAGE_LIKES",
     "status": null,
     "name": "foo",
     "fb_app_icon": null,
     "creatives": [
       {
-        "id": 188,
+        "id": 223,
         "creative_images": [
           {
-            "id": 115,
-            "image": "/uploads/ad_image/image/138/1200x864.jpg"
+            "id": 105,
+            "image": "/uploads/ad_image/image/153/1200x450.jpg"
           }
         ],
         "creative_texts": [
           {
-            "id": 115,
+            "id": 105,
             "title": "foo",
             "name": null,
             "body": "bar"
@@ -277,8 +262,8 @@ Content-Length: 1002
     ],
     "fb_targets": [
       {
-        "id": 152,
-        "name": "FbTarget 3",
+        "id": 137,
+        "name": "FbTarget 7",
         "favorite": false,
         "geo_locations": {
           "countries": [
@@ -332,10 +317,10 @@ Content-Length: 1002
       }
     ],
     "fb_ad_account": {
-      "id": 1264,
+      "id": 1531,
       "name": "AD Account Bar",
       "currency": "EUR",
-      "fbid": "6"
+      "fb_id": "14"
     },
     "fb_ad_campaigns": [
 
