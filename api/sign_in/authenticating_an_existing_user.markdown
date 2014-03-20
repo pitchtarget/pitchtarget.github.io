@@ -3,21 +3,24 @@ layout: default
 title: Sign in API
 ---
 
-# Sign in API
+# Users API
 
-## Authenticating an existing user
+## Authenticate an existing user
+Users API authentication is compatible with the OAuth 2.0 draft 10 protocol. In order to authenticate an existing user, you will need username, password and your client_id.
+
+Upon successful authentication, Users API will return a user access_token that you will use for any subsequent requests towards any authenticated endpoint of Pitchtarget.
 
 ### POST /oauth/authorize
 
 
 ### Parameters
 
-Name | Description |
------|-------------|
-`username` (required) | Username |
-`password` (required) | Password |
-`grant_type` (required) | Grant type |
-`client_id` (required) | Client app id |
+Name | Required? | Description |
+-----|-----------|-------------|
+`username` | Yes | Username of this user. |
+`password` | Yes | Password for this user. |
+`grant_type` | Yes | Grant type. When you specify a password, use `password`. |
+`client_id` | Yes | The ID that identifies your app. |
 
 ### Request
 
@@ -26,7 +29,7 @@ POST /oauth/authorize HTTP/1.1
 Accept: application/json
 Content-Type: application/json
 Host: example.org
-Cookie: 
+Cookie:
 
 {% endhighlight %}
 

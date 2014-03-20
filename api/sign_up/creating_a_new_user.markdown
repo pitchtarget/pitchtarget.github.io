@@ -5,18 +5,21 @@ title: Sign up API
 
 # Sign up API
 
-## Creating a new user
+## Create a new user
+In order to create a new user, you must ask username and password to your users. Usernames are unique in your client_id namespace, and Users API does not allow to register multiple users with the same username.
+
+An username can be any combination of letters, numbers and symbols, and they are used for authentication purposes only. You can ask users to register using a username, an email or both. Your client should enforce a registration pattern, including validation.
 
 ### POST /sign-up
 
 
 ### Parameters
 
-Name | Description |
------|-------------|
-`username` (required) | Username |
-`password` (required) | Password |
-`client_id` (required) | Client app id |
+Name | Required? | Description |
+-----|-----------|-------------|
+`username` | Yes | Username |
+`password` | Yes | Password |
+`client_id` | Yes | The ID that identifies your app. |
 
 ### Request
 
@@ -25,7 +28,7 @@ POST /sign-up HTTP/1.1
 Accept: application/json
 Content-Type: application/json
 Host: example.org
-Cookie: 
+Cookie:
 
 {% endhighlight %}
 

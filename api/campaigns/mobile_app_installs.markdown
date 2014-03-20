@@ -5,34 +5,32 @@ title: Campaigns API
 
 # Campaigns API
 
-## Creating a new MOBILE_APP_INSTALLS campaign
+## Mobile App Installs
+Use these parameters when you need to drive installs towards a native Mobile App.
 
-### POST /api/campaigns
+Name | Required? | Description |
+-----|-----------|-------------|
+`fb_account_id` | Yes | Your Facebook Account ID |
+`fb_ad_account_id` | Yes | The Facebook Ad Account ID in which the campaign will be created |
+`objective` | Yes | The campaign objective, in this case, `MOBILE_APP_INSTALL` |
+`name` | Yes | The name that identifies this campaign among others in the same account. |
+`bid_type` | No | Bid type. Can be `CPC`, `CPM`, `OCPM`. |
+`bid_info`  |  Only when `bid_type` == `OCPM` | JSON object with key-value pairs that describes the value you place on the objective. See the `bid_info` section below for more details. |
+`max_bid`  | Only when `bid_type` is not `OCPM` | How much are you willing to pay for a clic on this ad (if your `bid_type` is `CPC`), or a thousand impressions (if `bid_type` is `CPM`). Specify this amount in cents. |
+`budget_amount`  | No | Your budget amount, in cents. |
+`budget_type`  | No |  Budget type. Specify `daily` if you want to spend `budget_amount` every day. Specify `lifetime` if you want to spend `budget_amount` from the start to end time. See the `budget_type` section below for more details. |
+`start_time`  | No | Start time (UNIX timestamp). Specifies when your campaign will start. |
+`end_time`  | No | End time (UNIX timestamp). Specifies when your campaign will end. |
+`targets`  | No | Targets. See the `targets` section below for more details. |
+`fb_app_id` | Yes | The ID of the Facebook App you are promoting. |
+`play_url`  | No | For Android Apps, the URL of the app in the Google Play Store. |
+`itunes_url`  | No | For iOS Apps, the URL of the app in the App Store. |
+`mobile_os`  | No | Display the ad to people that have the OS you specify. |
+`mobile_device`  | No | Display the ad to people that have the device you specify. |
+`mobile_wireless_carrier`  | No | Display the ad to people that are browsing from wi-fi or 3G connection. |
+`creative_texts`  | No | The body (text) of your creative. If you specify more than one body, Campaigns API will create different ads in your campaign. |
+`creative_images`  | No | The image of your creative. If you specify more than one creative, Campaigns API will create different ads in your campaign. |
 
-
-### Parameters
-
-Name | Description |
------|-------------|
-`fb_account_id` (required) | FbAccount id |
-`fb_ad_account_id` (required) | FbAdAccount id |
-`objective` (required) | Campaign objective |
-`name` (required) | Campaign name |
-`bid_type`  | Bid type |
-`bid_info`  | Bid info |
-`max_bid`  | Max bid |
-`budget_type`  | Budget type |
-`budget_amount`  | Budget amount |
-`start_time`  | Start time |
-`targets`  | Targets |
-`fb_app_id`  | Fb app id |
-`play_url`  | Play store URL |
-`itunes_url`  | iTunes URL |
-`mobile_os`  | Mobile OS |
-`mobile_device`  | Mobile device |
-`mobile_wireless_carrier`  | Mobile wireless carrier |
-`creative_texts`  | Creative texts |
-`creative_images`  | Creative images |
 
 ### Request
 
@@ -42,7 +40,7 @@ Accept: application/json
 Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1
 Authorization: OAuth cp8s7ehw620ncg14f2m5gr305vu6ubk
 Host: example.org
-Cookie: 
+Cookie:
 
 {% endhighlight %}
 
@@ -79,10 +77,25 @@ OCPM
 {% endhighlight %}
 
 ##### `bid_info`
+Use `bid_info` to establish the value of your objectives for OCPM. When you do so, you are optimising towards some goals. Facebook allows you to specify the value of these goals:
+
+| Goal name | Description |
+|-----------|-------------|
+| `CLICKS` | Optimise to receive more clicks |
+| `REACH` | Optimise to receive more impressions |
+| `SOCIAL` | Optimise to deliver the ad to friends of people that are already connected with what you are promoting |
+| `ACTIONS` | Optimise to receive more actions or conversions |
+
+For more details, refer to [Optimized CPM](https://developers.facebook.com/docs/reference/ads-api/optimizedcpm/) on Facebook Developers.
+
+In the following example, we will bid USD 5 towards actions. We suggest to bid strongly on `ACTIONS` when you are driving Installs or Engagement to Desktop App Installs.
 
 {% highlight json %}
 {
-  "foo": "bar"
+  "CLICKS": 0,
+  "REACH": 0,
+  "SOCIAL": 0,
+  "ACTIONS": 500
 }
 {% endhighlight %}
 
@@ -110,7 +123,14 @@ daily
 1394793024
 {% endhighlight %}
 
+##### `end_time`
+
+{% highlight text %}
+1394997030
+{% endhighlight %}
+
 ##### `targets`
+This fields accepts targeting options based on Facebook's Targeting Specs. For more details on the targeting options available, refer to [Ads API targeting](https://developers.facebook.com/docs/ads-api/targeting) on Facebook Developers.
 
 {% highlight json %}
 [
@@ -172,19 +192,19 @@ daily
 ##### `fb_app_id`
 
 {% highlight text %}
-foo
+177665754284193
 {% endhighlight %}
 
 ##### `play_url`
 
 {% highlight text %}
-http://www.example.com
+https://play.google.com/store/apps/details?id=com.example.myapp
 {% endhighlight %}
 
 ##### `itunes_url`
 
 {% highlight text %}
-http://ios.example.com
+https://itunes.apple.com/en/app/myapp/id293847292111
 {% endhighlight %}
 
 ##### `mobile_os`
@@ -213,13 +233,23 @@ http://ios.example.com
 ]
 {% endhighlight %}
 
-##### `creative_texts`
+##### `creative_texts` and `creative_images`
+Specify a JSON encoded array of objects. Each object will contain two properties.
+
+| Property | Description |
+|----------|-------------|
+| `title` | Title of the ad |
+| `body` | Body of the ad |
+
+When you specify more than one creative, Campaigns API will prepare different combinations of the ad. For instance, if you specify 3 creative texts and 2 images, Campaigns API will prepare 6 different ads.
+
+Please note that if your `budget_amount` is low, Facebook will give little or no delivery to some ads.
 
 {% highlight json %}
 [
   {
-    "title": "foo",
-    "body": "bar"
+    "title": "Behind Abbey Road",
+    "body": "Discover the little gems of the album that set a new standard for music."
   }
 ]
 {% endhighlight %}
@@ -236,19 +266,19 @@ curl "pitchtarget.com/api/campaigns" -X POST \
 	-F 'objective=MOBILE_APP_INSTALLS' \
 	-F 'name=foo' \
 	-F 'bid_type=OCPM' \
-	-F 'bid_info={"foo":"bar"}' \
+	-F 'bid_info={"ACTIONS":"5000"}' \
 	-F 'max_bid=100' \
 	-F 'budget_type=daily' \
 	-F 'budget_amount=100000' \
 	-F 'start_time=1394793024' \
 	-F 'targets=[{"name":"FbTarget 4","specs":{"age_min":18,"age_max":25,"genders":["2"],"geo_locations":{"countries":["IT","US"]},"interests":[{"id":"1","name":"playstation"},{"id":"2","name":"videogame"},{"id":"3","name":"xbox"}],"user_adclusters":[{"id":"1","name":"HTC"},{"id":"2","name":"Motorola"},{"id":"3","name":"Samsung"}],"languages":["EN"],"broad_age":false,"interested_in":["2"]},"favorite":false}]' \
-	-F 'fb_app_id=foo' \
-	-F 'play_url=http://www.example.com' \
-	-F 'itunes_url=http://ios.example.com' \
+	-F 'fb_app_id=177665754284193' \
+	-F 'play_url=https://play.google.com/store/apps/details?id=com.example.myapp' \
+	-F 'itunes_url=https://itunes.apple.com/en/app/myapp/id293847292111' \
 	-F 'mobile_os=["Android","iOS"]' \
 	-F 'mobile_device=["android_smartphone","iphone"]' \
 	-F 'mobile_wireless_carrier=["Wifi"]' \
-	-F 'creative_texts=[{"title":"foo","body":"bar"}]' \
+	-F 'creative_texts=[{"title": "Behind Abbey Road","body": "Discover the little gems of the album that set a new standard for music."}]' \
 	-F 'creative_images[]=@1200x627.png;type='
 {% endhighlight %}
 

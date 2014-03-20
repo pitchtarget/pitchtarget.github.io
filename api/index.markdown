@@ -1,25 +1,21 @@
 ---
 layout: default
-title: API Documentation
+title: Pitchtarget API Reference
 ---
 
 # API Documentation
 
-## Campaigns
+## Campaigns API
+Campaigns API allows you to create and manage new campaigns, including setting objectives and targeting.
 
-* [Creating a new CANVAS_APP_INSTALLS campaign](campaigns/creating_a_new_canvas_app_installs_campaign.html)
-* [Creating a new MOBILE_APP_ENGAGEMENT campaign](campaigns/creating_a_new_mobile_app_engagement_campaign.html)
-* [Creating a new MOBILE_APP_INSTALLS campaign](campaigns/creating_a_new_mobile_app_installs_campaign.html)
-* [Creating a new PAGE_LIKES campaign](campaigns/creating_a_new_page_likes_campaign.html)
-* [Creating a new POST_ENGAGEMENT campaign](campaigns/creating_a_new_post_engagement_campaign.html)
-* [Creating a new WEBSITE_CLICKS campaign](campaigns/creating_a_new_website_clicks_campaign.html)
-* [Creating a new WEBSITE_CONVERSIONS campaign](campaigns/creating_a_new_website_conversions_campaign.html)
+* [Desktop App Ad](campaigns/desktop_app_ad.html)
+* [Mobile App Ad Installs](campaigns/desktop_app_ad_installs.html)
+* [Mobile App Ad Enagagement](campaigns/desktop_app_ad_engagment.html)
+* [Objective-based campaign](campaigns/objective_campaign.html)
 
-## Sign in
+## Users API
+Users API allows you to create and manage users of your app.
 
-* [Authenticating an existing user](sign_in/authenticating_an_existing_user.html)
-
-## Sign up
-
-* [Creating a new user](sign_up/creating_a_new_user.html)
+* [Authenticate an existing user](sign_in/authenticating_an_existing_user.html)
+* [Create a new user](sign_up/creating_a_new_user.html)
 
