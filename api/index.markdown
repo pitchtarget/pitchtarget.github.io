@@ -9,8 +9,8 @@ title: Pitchtarget API Reference
 Campaigns API allows you to create and manage new campaigns, including setting objectives and targeting.
 
 * [Desktop App Ad](campaigns/desktop_app_ad.html)
-* [Mobile App Ad Installs](campaigns/desktop_app_ad_installs.html)
-* [Mobile App Ad Enagagement](campaigns/desktop_app_ad_engagment.html)
+* [Mobile App Ad Installs](campaigns/mobile_app_installs.html)
+* [Mobile App Ad Enagagement](campaigns/mobile_app_engagement.html)
 * [Objective-based campaign](campaigns/objective_campaign.html)
 
 ## Users API
