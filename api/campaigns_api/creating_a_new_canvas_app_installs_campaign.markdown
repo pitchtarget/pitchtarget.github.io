@@ -7,7 +7,7 @@ title: Campaigns API API
 
 ## Creating a new CANVAS_APP_INSTALLS campaign
 
-### POST /api/campaigns
+### POST /campaigns
 
 
 ### Parameters
@@ -35,10 +35,10 @@ Name | Description |
 ### Request
 
 {% highlight http %}
-POST /api/campaigns HTTP/1.1
+POST /campaigns HTTP/1.1
 Accept: application/json
 Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1
-Authorization: OAuth 28l4093p63b85azll124m3qp4vqgrrv
+Authorization: OAuth 94vdpx5uhcqtpyhsict4jtwthy668jg
 Host: example.org
 Cookie: 
 
@@ -49,13 +49,13 @@ Cookie:
 ##### `fb_account_id`
 
 {% highlight text %}
-929
+921
 {% endhighlight %}
 
 ##### `fb_ad_account_id`
 
 {% highlight text %}
-1533
+1510
 {% endhighlight %}
 
 ##### `objective`
@@ -105,7 +105,7 @@ daily
 ##### `start_time`
 
 {% highlight text %}
-1395328871
+1395337152
 {% endhighlight %}
 
 ##### `targets`
@@ -113,7 +113,7 @@ daily
 {% highlight json %}
 [
   {
-    "name": "FbTarget 8",
+    "name": "FbTarget 7",
     "specs": {
       "age_min": 18,
       "age_max": 25,
@@ -200,11 +200,11 @@ foo=bar&bar=foo
 #### cURL
 
 {% highlight sh %}
-curl "pitchtarget.com/api/campaigns" -X POST \
+curl "api.pitchtarget.com/campaigns" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth 28l4093p63b85azll124m3qp4vqgrrv" \
-	-F 'fb_account_id=929' \
-	-F 'fb_ad_account_id=1533' \
+	-H "Authorization: OAuth 94vdpx5uhcqtpyhsict4jtwthy668jg" \
+	-F 'fb_account_id=921' \
+	-F 'fb_ad_account_id=1510' \
 	-F 'objective=CANVAS_APP_INSTALLS' \
 	-F 'name=foo' \
 	-F 'bid_type=OCPM' \
@@ -212,8 +212,8 @@ curl "pitchtarget.com/api/campaigns" -X POST \
 	-F 'max_bid=100' \
 	-F 'budget_type=daily' \
 	-F 'budget_amount=100000' \
-	-F 'start_time=1395328871' \
-	-F 'targets=[{"name":"FbTarget 8","specs":{"age_min":18,"age_max":25,"genders":["2"],"geo_locations":{"countries":["IT","US"]},"interests":[{"id":"1","name":"playstation"},{"id":"2","name":"videogame"},{"id":"3","name":"xbox"}],"user_adclusters":[{"id":"1","name":"HTC"},{"id":"2","name":"Motorola"},{"id":"3","name":"Samsung"}],"languages":["EN"],"broad_age":false,"interested_in":["2"]},"favorite":false}]' \
+	-F 'start_time=1395337152' \
+	-F 'targets=[{"name":"FbTarget 7","specs":{"age_min":18,"age_max":25,"genders":["2"],"geo_locations":{"countries":["IT","US"]},"interests":[{"id":"1","name":"playstation"},{"id":"2","name":"videogame"},{"id":"3","name":"xbox"}],"user_adclusters":[{"id":"1","name":"HTC"},{"id":"2","name":"Motorola"},{"id":"3","name":"Samsung"}],"languages":["EN"],"broad_age":false,"interested_in":["2"]},"favorite":false}]' \
 	-F 'fb_app_id=foo' \
 	-F 'link_url=http://www.example.com' \
 	-F 'url_tags=foo=bar&bar=foo' \
@@ -234,11 +234,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "dc4f87824850e8d09d59b3b5133dbb86"
+ETag: "796782f7c977d270f5b3fc794d3412cf"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 21c1707b-9a3a-41db-97d1-c0954088502e
-X-Runtime: 0.042903
-Content-Length: 1009
+X-Request-Id: ae5b8a6f-ea29-4577-8eaf-93ed2609c775
+X-Runtime: 0.041765
+Content-Length: 1007
 {% endhighlight %}
 
 #### Body
@@ -246,12 +246,12 @@ Content-Length: 1009
 {% highlight json %}
 {
   "campaign": {
-    "id": 292,
+    "id": 271,
     "budget_type": "daily",
     "budget_amount": 100000,
     "bid_type": "OCPM",
     "max_bid": 100,
-    "start_time": "2014-03-20T15:21:11.000Z",
+    "start_time": "2014-03-20T17:39:12.000Z",
     "end_time": null,
     "objective": "CANVAS_APP_INSTALLS",
     "status": null,
@@ -259,16 +259,16 @@ Content-Length: 1009
     "fb_app_icon": null,
     "creatives": [
       {
-        "id": 224,
+        "id": 203,
         "creative_images": [
           {
-            "id": 106,
-            "image": "/uploads/ad_image/image/154/1200x627.jpg"
+            "id": 87,
+            "image": "/uploads/ad_image/image/135/1200x627.jpg"
           }
         ],
         "creative_texts": [
           {
-            "id": 106,
+            "id": 87,
             "title": "foo",
             "name": null,
             "body": "bar"
@@ -278,8 +278,8 @@ Content-Length: 1009
     ],
     "fb_targets": [
       {
-        "id": 138,
-        "name": "FbTarget 8",
+        "id": 117,
+        "name": "FbTarget 7",
         "favorite": false,
         "geo_locations": {
           "countries": [
@@ -333,10 +333,10 @@ Content-Length: 1009
       }
     ],
     "fb_ad_account": {
-      "id": 1533,
+      "id": 1510,
       "name": "AD Account Bar",
       "currency": "EUR",
-      "fb_id": "16"
+      "fb_id": "26"
     },
     "fb_ad_campaigns": [
 

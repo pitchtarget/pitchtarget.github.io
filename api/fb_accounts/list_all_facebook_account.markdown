@@ -7,16 +7,16 @@ title: Fb Accounts API
 
 ## List all Facebook account
 
-### GET /api/fb_accounts
+### GET /fb_accounts
 
 
 
 ### Request
 
 {% highlight http %}
-GET /api/fb_accounts HTTP/1.1
+GET /fb_accounts HTTP/1.1
 Accept: application/json
-Authorization: OAuth cx1k3nvq1deuzprg02me60btfn8gr5j
+Authorization: OAuth cljf2ervs3rf5iwb1c6x9jbiqmiaeno
 Host: example.org
 Cookie: 
 
@@ -26,9 +26,9 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "pitchtarget.com/api/fb_accounts" -X GET \
+curl "api.pitchtarget.com/fb_accounts" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth cx1k3nvq1deuzprg02me60btfn8gr5j"
+	-H "Authorization: OAuth cljf2ervs3rf5iwb1c6x9jbiqmiaeno"
 {% endhighlight %}
 
 ### Response
@@ -44,11 +44,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "4bfe70cd4b15c24534a2bcb4595e17be"
+ETag: "82fbdf4663441389a83fa52d415b2339"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: e9164a38-2d07-4662-9606-7f3160912df6
-X-Runtime: 0.013425
-Content-Length: 369
+X-Request-Id: 6614ecaa-1ae5-49fc-8849-64b917f10ac1
+X-Runtime: 0.012663
+Content-Length: 365
 {% endhighlight %}
 
 #### Body
@@ -57,38 +57,38 @@ Content-Length: 369
 {
   "fb_accounts": [
     {
-      "id": 932,
+      "id": 907,
       "token": "foo",
       "fb_ad_accounts": [
         {
-          "id": 1540,
+          "id": 1487,
           "name": "AD Account Bar",
           "currency": "EUR",
-          "fb_id": "22"
+          "fb_id": "2"
         },
         {
-          "id": 1538,
+          "id": 1485,
           "name": "AD Account Bar",
           "currency": "EUR",
-          "fb_id": "21"
+          "fb_id": "1"
         }
       ]
     },
     {
-      "id": 934,
+      "id": 909,
       "token": "foo",
       "fb_ad_accounts": [
         {
-          "id": 1543,
+          "id": 1490,
           "name": "AD Account Bar",
           "currency": "EUR",
-          "fb_id": "25"
+          "fb_id": "5"
         },
         {
-          "id": 1541,
+          "id": 1488,
           "name": "AD Account Bar",
           "currency": "EUR",
-          "fb_id": "24"
+          "fb_id": "4"
         }
       ]
     }

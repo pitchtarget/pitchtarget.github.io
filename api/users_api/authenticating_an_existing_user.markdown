@@ -37,16 +37,16 @@ Cookie:
   "username": "user_1",
   "password": "password",
   "grant_type": "password",
-  "client_id": "k7mkz8yg0iek0zoi7yl0nx0g49g5b93"
+  "client_id": "hytkzlrwf50sj4kmi8x8g7bxi5lesv3"
 }
 {% endhighlight %}
 
 #### cURL
 
 {% highlight sh %}
-curl "pitchtarget.com/oauth/authorize" -X POST \
+curl "api.pitchtarget.com/oauth/authorize" -X POST \
 	-H "Accept: application/json" \
-	-H "Content-Type: application/json" -d '{"username":"user_1","password":"password","grant_type":"password","client_id":"k7mkz8yg0iek0zoi7yl0nx0g49g5b93"}'
+	-H "Content-Type: application/json" -d '{"username":"user_1","password":"password","grant_type":"password","client_id":"hytkzlrwf50sj4kmi8x8g7bxi5lesv3"}'
 {% endhighlight %}
 
 ### Response
@@ -63,9 +63,9 @@ Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Cache-Control: no-store
 Content-Type: application/json
-ETag: "9f6ed3e69fdb2cf4d831e66128c3e0a7"
-X-Request-Id: 95cd6cc4-bb3d-4364-b255-ed4bb90ca009
-X-Runtime: 0.093894
+ETag: "f21b62652b8079e9c026f710ae131b04"
+X-Request-Id: 2ab91498-c5c4-4410-b846-290d79ca4564
+X-Runtime: 0.097446
 Content-Length: 50
 {% endhighlight %}
 
@@ -73,7 +73,7 @@ Content-Length: 50
 
 {% highlight json %}
 {
-  "access_token": "3g26e0grn641t8sttnd52x8i3w6wois"
+  "access_token": "2n58s4lg5mleqe8r3vy86zmvkmczobw"
 }
 {% endhighlight %}
 
