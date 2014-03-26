@@ -19,4 +19,4 @@ Users API allows you to create and manage users of your app.
 * [Authenticate an existing user](users/authenticate.html)
 * [Create a new user](users/create.html)
 * [Working with Users and Ad Accounts](users/working_with_adaccounts.html)
-
+* [Login Flow](users/login_flow.html)
