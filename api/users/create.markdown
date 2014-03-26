@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Sign up API
+title: Creating a new User - Users API
 ---
 
-# Sign up API
+# Users API
 
 ## Create a new user
 In order to create a new user, you must ask username and password to your users. Usernames are unique in your client_id namespace, and Users API does not allow to register multiple users with the same username.
@@ -18,7 +18,7 @@ An username can be any combination of letters, numbers and symbols, and they are
 Name | Required? | Description |
 -----|-----------|-------------|
 `username` | Yes | Username |
-`password` | Yes | Password |
+`password` | Yes | Password. Use a clear password (we will hash it for you). |
 `client_id` | Yes | The ID that identifies your app. |
 
 ### Request
@@ -45,7 +45,7 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "pitchtarget.com/sign-up" -X POST \
+curl "https://api.pitchtarget.com/sign-up" -X POST \
 	-H "Accept: application/json" \
 	-H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"g7kj2axpf13umghr5m9xl6aiordknff"}'
 {% endhighlight %}

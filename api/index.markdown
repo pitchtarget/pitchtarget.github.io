@@ -16,6 +16,7 @@ Campaigns API allows you to create and manage new campaigns, including setting o
 ## Users API
 Users API allows you to create and manage users of your app.
 
-* [Authenticate an existing user](sign_in/authenticating_an_existing_user.html)
-* [Create a new user](sign_up/creating_a_new_user.html)
+* [Authenticate an existing user](users/authenticate.html)
+* [Create a new user](users/create.html)
+* [Working with Users and Ad Accounts](users/working_with_adaccounts.html)
 

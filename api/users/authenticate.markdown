@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sign in API
+title: Authentication - Users API
 ---
 
 # Users API
@@ -10,6 +10,8 @@ Users API authentication is compatible with the OAuth 2.0 draft 10 protocol. In 
 
 Upon successful authentication, Users API will return a user access_token that you will use for any subsequent requests towards any authenticated endpoint of Pitchtarget.
 
+Please note that in order to fully use Pitchtarget, your user should authenticate with Facebook. For more details, follow the [Login Flow] documentation.
+
 ### POST /oauth/authorize
 
 
@@ -18,7 +20,7 @@ Upon successful authentication, Users API will return a user access_token that y
 Name | Required? | Description |
 -----|-----------|-------------|
 `username` | Yes | Username of this user. |
-`password` | Yes | Password for this user. |
+`password` | Yes | Password for this user (clear). |
 `grant_type` | Yes | Grant type. When you specify a password, use `password`. |
 `client_id` | Yes | The ID that identifies your app. |
 
@@ -47,7 +49,7 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "pitchtarget.com/oauth/authorize" -X POST \
+curl "https://api.pitchtarget.com/oauth/authorize" -X POST \
 	-H "Accept: application/json" \
 	-H "Content-Type: application/json" -d '{"username":"user_1","password":"password","grant_type":"password","client_id":"1bv9sh664cowghktxwn307wpeghj8e1"}'
 {% endhighlight %}
@@ -80,3 +82,4 @@ Content-Length: 50
 }
 {% endhighlight %}
 
+{% include links.md %}
