@@ -27,12 +27,12 @@
 .LR-header a.nav:hover {text-decoration: underline;}
 .LR-header a.nav:visited, .LR-header a.nav:active, .LR-header a.nav:hover {color: #e5e1d2}
 
-.LR-header a.nav.highlight {
+.LR-header a.nav.nav-highlight {
   color: #fff;
   background-color: #df5226;
 }
 
-.LR-header a.nav.highlight:visited, .LR-header a.nav.higlight:active, .LR-header a.nav.higlight:hover {color: #fff;}
+.LR-header a.nav.nav-highlight:visited, .LR-header a.nav.nav-highlight:active, .LR-header a.nav.nav-highlight:hover {color: #fff;}
 
 
 .LR-site-logo {
