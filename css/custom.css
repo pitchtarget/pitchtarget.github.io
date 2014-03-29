@@ -177,11 +177,6 @@ form button:active {
   /* Insert mobile CSS overrides here */
   body .application .job-spec {margin-top: 0 !important;width:100%;}
   body .application .job-spec .spec {margin: 20px;}
-  body .work-background {
-    background-size: 160px 160px, 160px 160px, 160px 160px;
-    background-position: 0 0, 160px 0, 320px 0;
-  }
-
   body #heading {
     top: -480px;
     margin-bottom: -408px;

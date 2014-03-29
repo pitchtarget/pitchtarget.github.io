@@ -129,11 +129,7 @@ form button:active {
   /* Insert mobile CSS overrides here */
   body .application .job-spec {margin-top: 0 !important;width:100%;}
   body .application .job-spec .spec {margin: 20px;}
-  body .work-background {
-    background-size: 160px 160px, 160px 160px, 160px 160px;
-    background-position: 0 0, 160px 0, 320px 0;
-  }
-
+  body .landing-hero-container {height: 180px;}
   body #heading {
     top: -480px;
     margin-bottom: -408px;
@@ -143,8 +139,8 @@ form button:active {
   body .logo-name {display:none;}
   body .LR-site-logo {text-align:center;margin-left: 0;}
   body .LR-header {text-align:center;}
-  body .hero-container .imgs {width: 300px;margin: 0 auto;}
-  body .hero-container .imgs img {width: 100px; height: 100px;}
+  body .hero-container {width: 100%;}
+  body .hero-container .icon {float:none;margin: 0 auto;min-height: 100%;text-align:center;}
   body .hero-container p {font-size: 1.3em;margin: 10px;text-align: justify;}
   body .hero-container h3 {font-size: 1.6em;}
   body form {margin: 0 auto;}

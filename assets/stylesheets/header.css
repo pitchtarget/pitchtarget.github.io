@@ -59,3 +59,10 @@ color: #e5e1d2;
 .logo-name .darkgray {
 color: #fff;
 }
+
+@media only screen and (min-width : 320px) and (max-device-width : 768px) {
+  body .logo-name {display:none;}
+  body .LR-site-logo {text-align:center;margin-left: 0;}
+  body .LR-header {text-align:center;}
+  body .LR-header a.nav {display:none;}
+}
