@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
-<link href='http://melonpielabs.com/fonts/freightsans.css' rel='stylesheet' type='text/css'>
-<link href='http://melonpielabs.com/fonts/glyphs.css' rel='stylesheet' type='text/css'>
+<link href='/assets/stylesheets/freightsans.css' rel='stylesheet' type='text/css'>
+<link href='/assets/stylesheets/glyphs.css' rel='stylesheet' type='text/css'>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="http://malsup.github.io/jquery.form.js"></script>
 <!-- REMOVE -->
@@ -39,7 +39,8 @@
 <meta name="msapplication-wide310x150logo" content="/imgs/icons/mstile-310x150.png">
   <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 
-  <link href="/custom.css" rel="stylesheet" />
+  <link href="/css/custom.css" rel="stylesheet" />
+  <link href="/assets/stylesheets/header.css" rel="stylesheet" />
 
   <!-- REMOVE -->
 
@@ -47,13 +48,7 @@
 <body>
   <img src="https://addictive-inventory.herokuapp.com/53047a3fca88ff051c0ac34b/event.gif?event_token=view_careers" width="1" height="1" />
   <div id="content" class="LR-content"><!-- LR-sharing-page LR-stats LR-lx -->
-  <div class="LR-header LR-header-bg-color-container" style="background-color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial;">
-        <a href="//launch.pitchtarget.com/">
-          <h1 class="LR-site-title" style="display: none;">Pitchtarget</h1>
-          <div class="LR-site-logo"><img src="https://launchrock-assets.s3.amazonaws.com/logo-files/EMPADCXZ_1393256639001.png?_=0"></div>
-          <div class="logo-name"><span class="lightgray">pitch</span><span class="darkgray">target</span></div>
-        </a>
-      </div>
+  {% include header.html %}
 <div class="careers-hero-container">
   <div class="work-background">
 <!--     <img src="http://instagr.am/p/jjvQyOSn9R/media?size=l" />

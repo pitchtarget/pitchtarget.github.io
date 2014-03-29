@@ -54,17 +54,6 @@ a:hover {
   left: 0.313em;
   top: 0.313em; }
 
-#logo {
-  font-family: "Montserrat";
-  font-size: 1.563em;
-  letter-spacing: -2;
-  color: #dddddd;
-  font-weight: 700;
-  display: inline;
-  padding: 0.188em 0.500em 0.188em 0.375em; }
-
-#logo:hover {
-  color: #333333; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   #logo {
