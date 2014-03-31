@@ -59,7 +59,7 @@ To track user signup, prepare a JSON object like this:
 Convert it into an URLencoded string or a Base64 string. We will use Base64.
 
 {% highlight html %}
-<img src="{{BASE_ENDPOINT_URL}}/52fb5565a7b23ec66fad3988/event.gif?event_token=signup&params=eyJtZXRob2QiOiJlbWFpbCIsInBhZ2UiOiJzaWdudXAuaHRtbCIsImVtYWlsIjoiam9obi5kb2VAZXhhbXBsZS5jb20ifQ==" />
+<img src="https://tracking-api.pitchtarget.com/52fb5565a7b23ec66fad3988/event.gif?event_token=signup&params=eyJtZXRob2QiOiJlbWFpbCIsInBhZ2UiOiJzaWdudXAuaHRtbCIsImVtYWlsIjoiam9obi5kb2VAZXhhbXBsZS5jb20ifQ==" />
 {% endhighlight %}
 
 This will automatically assign the email `john.doe@example.com` to the user that is currently visiting your page. You can add more parameters later on, and we will add them to the ones you alredy sent.
