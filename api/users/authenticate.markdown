@@ -21,8 +21,10 @@ Name | Required? | Description |
 -----|-----------|-------------|
 `username` | Yes | Username of this user. |
 `password` | Yes | Password for this user (clear). |
-`grant_type` | Yes | Grant type. When you specify a password, use `password`. |
+`grant_type` | Yes | Grant type. The only allowed value is `password`. |
 `client_id` | Yes | The ID that identifies your app. |
+
+Note that only admin users can manage regular users. In order to log in as admin users, you should provide your Client ID as username and your Client Secret as password. You will still need to provide `grant_type` and `client_id`.
 
 ### Request
 
