@@ -1,11 +1,11 @@
 ---
-layout: default
-title: Campaigns API
+layout: default_with_nav
+title: Mobile App Install Ads
+section: Campaigns API
+nav: campaigns_api_links.md
 ---
 
-# Campaigns API
-
-## Mobile App Installs
+## Mobile App Install Ads
 Use these parameters when you need to drive installs towards a native Mobile App.
 
 Name | Required? | Description |

@@ -1,11 +1,11 @@
 ---
-layout: default
-title: Using the Mobile SDK - Tracking API
+layout: default_with_nav
+title: Using the Mobile SDK
+section: Tracking API
+nav: tracking_api_links.md
 ---
 
-# Tracking API
-
-### Using the Mobile SDK
+## Using the Mobile SDK
 Use a Mobile Tracking SDK when you need to keep track of conversion events that happen inside your native mobile app. Pitchtarget has native SDKs for iOS and Android.
 
 The SDKs are open sourced and they are forked from the Adjust.io project. If you are already familiar with Adjust.io, you will be happy to know that Pitchtarget will be a mere drop-in replacement. You will only need to obtain an App ID from us.

@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Campaigns API
+layout: default_with_nav
+title: Desktop App Ads
+section: Campaigns API
+nav: campaigns_api_links.md
 ---
-
-# Campaigns API
 
 ### Desktop App Ad
 Use these parameters when you need to drive installs and usage of your Desktop App on Facebook.

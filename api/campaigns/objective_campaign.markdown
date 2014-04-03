@@ -1,11 +1,13 @@
 ---
-layout: default
-title: Campaigns API
+layout: default_with_nav
+title: Objective-based Campaigns
+section: Campaigns API
+nav: campaigns_api_links.md
 ---
 
-# Campaigns API
+## Objective-based Campaigns
 
-## Create a new obective-based Campaign
+### Create a new obective-based Campaign
 When you create an objective-based Campaign, you need to specify the objective you want to achieve. An objective is a conversion goal, such as checkouts, registrations, or website clicks.
 
 You may need to format your request with different paramters depending on your request. In the following paragraphs we will cover all the objectives, and we will also provide sample requests and responses for a typical usage.

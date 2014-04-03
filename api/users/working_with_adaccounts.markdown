@@ -1,14 +1,12 @@
 ---
-layout: default
-title: Working with your app users - Users API
+layout: default_with_nav
+title: Working with your App Users
+section: Users API
+nav: users_api_links.md
 ---
 
-# Users API
-
 ## Working with your app users
-In Pitchtarget, each user can be connected to one or more Facebook Accounts. A Facebook Account is a separate Facebook identity that can identify one or more users. In other words, a Pitchtarget user may contain one or more Facebook Users.
-
-Facebook Accounts are, in turn, connected to one or more Facebook Advertising Accounts, which are the same Ad Accounts that the Facebook Account can access.
+In Pitchtarget, each user is direcly mapped to a Facebook user. Such users are connected to one or more Facebook Ad Accounts.
 
 An Ad Account contains all the objects related to creating and managing a marketing campaign, including the account's billing currency and time zone. Ad Accounts can belong to one or more users and each user may have one or more Advertising Accounts.
 

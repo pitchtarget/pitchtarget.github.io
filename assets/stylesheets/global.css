@@ -32,6 +32,16 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+body.with-nav #container {
+  width: 1000px;
+}
+
+body.with-nav #article {
+  width: 800px;
+  margin-left: 200px;
+}
+
+
 h2 {
   margin-left: auto;
   margin-right: auto;
@@ -54,8 +64,31 @@ a:hover {
   left: 0.313em;
   top: 0.313em; }
 
+.pt-nav {
+  position:fixed;
+  font-size: 0.8em;
+  width: 150px;
+  margin-top: -10px;
+}
+
+.pt-nav strong {font-family: "ProximaNova-Bold";font-size:1.2em;display:block;margin:5px 0 0;}
+
+.pt-nav ul {
+  list-style-type: none;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-left: 1px solid #eee;
+}
+
+.pt-nav ul li {margin-bottom: 10px;}
+.pt-nav ul li:last-child {margin-bottom: 0}
+
+.pt-nav a, .pt-nav a:visited, .pt-nav a:hover, .pt-nav a:active {color: #e33;}
+.pt-nav a:hover {text-decoration: underline;}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .pt-nav {display:none;}
+
   #logo {
     font-size: 60; }
 

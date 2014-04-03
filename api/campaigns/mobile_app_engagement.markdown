@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Campaigns API
+layout: default_with_nav
+title: Mobile App Engagement Ads
+section: Campaigns API
+nav: campaigns_api_links.md
 ---
-
-# Campaigns API
 
 ## Mobile App Engagement Ad
 Use these parameters when you need to generate engagement towards a native mobile app. You should create this campaign when you need to reactivate stale users, or when you want to drive existing active users to a specific section of your native mobile app.

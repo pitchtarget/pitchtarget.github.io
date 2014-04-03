@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Creating a new User - Users API
+layout: default_with_nav
+title: Create a new user
+section: Users API
+nav: users_api_links.md
 ---
-
-# Users API
 
 ## Create a new user
 In order to create a new user, you must ask username and password to your users. Usernames are unique in your client_id namespace, and Users API does not allow to register multiple users with the same username.

@@ -1,14 +1,14 @@
 ---
-layout: default
-title: Using the Web Tracking Pixel - Tracking API
+layout: default_with_nav
+title: Using the Web Tracking Pixel
+section: Tracking API
+nav: tracking_api_links.md
 ---
 
-# Tracking API
-
-### Using the Web Tracking Pixel
+## Using the Web Tracking Pixel
 Use the Web Tracking Pixel in order to track user generated events in your website. This will allow you to keep track of conversion events such as registrations, purchases and signups.
 
-## How to use the pixel
+### How to use the pixel
 
 As with other tracking pixels, you can include it as an `<img>` in the `<body>` of your HTML page. We recommend to include it as the first element of the page to make sure that every event is properly tracked before any other resource is served.
 
@@ -16,7 +16,7 @@ To ensure that the pixel will not break your layout, the image will render as a 
 
 Make sure you obtained an app token before including the pixel.
 
-## Including the pixel in your page
+### Including the pixel in your page
 Prepare an `<img>` tag just like this:
 
 {% highlight html %}
@@ -50,8 +50,8 @@ If you want to track user profiles along with events, use the one or more of the
 |`access_token`|A valid Facebook access token. We will resolve it to a valid user. It will also automatically generate a Facebook Third party Custom Audience user.|
 
 
-## Examples
-### Track user signup
+### Examples
+#### Track user signup
 To track user signup, prepare a JSON object like this:
 {% highlight json %}
 {"method": "email", "page": "signup.html", "email": "john.doe@example.com"}
@@ -64,7 +64,7 @@ Convert it into an URLencoded string or a Base64 string. We will use Base64.
 
 This will automatically assign the email `john.doe@example.com` to the user that is currently visiting your page. You can add more parameters later on, and we will add them to the ones you alredy sent.
 
-### Track revenue events
+#### Track revenue events
 
 In this example we will track a purchase event of USD 25.00 made by `john.doe@example.com`. You do not need to send John's email again because you already tracked him on signup.
 

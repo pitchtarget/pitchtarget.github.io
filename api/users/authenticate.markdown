@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Authentication - Users API
+layout: default_with_nav
+title: Authentication
+section: Users API
+nav: users_api_links.md
 ---
-
-# Users API
 
 ## Authenticate an existing user
 Users API authentication is compatible with the OAuth 2.0 draft 10 protocol. In order to authenticate an existing user, you will need username, password and your client_id.
