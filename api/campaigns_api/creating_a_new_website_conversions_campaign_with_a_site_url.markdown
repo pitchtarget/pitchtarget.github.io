@@ -5,7 +5,7 @@ title: Campaigns API API
 
 # Campaigns API API
 
-## Creating a new PAGE_LIKES campaign usign the Page ID
+## Creating a new WEBSITE_CONVERSIONS campaign with a site URL
 
 ### POST /campaigns
 
@@ -25,7 +25,11 @@ Name | Description |
 `start_time`  | Start time |
 `end_time`  | End time |
 `targets`  | Targets |
-`object_id`  | Facebook Page ID |
+`object_url`  | Object URL |
+`object_id`  | Object id |
+`offsite_pixel_tag`  | Offsite pixel tag |
+`offsite_pixel_name`  | Offsite pixel name |
+`call_to_action_type`  | Call to action type |
 `creative_texts`  | Creative texts |
 `creative_images`  | Creative images |
 
@@ -46,13 +50,13 @@ Cookie:
 ##### `fb_ad_account_id`
 
 {% highlight text %}
-16
+20
 {% endhighlight %}
 
 ##### `objective`
 
 {% highlight text %}
-PAGE_LIKES
+WEBSITE_CONVERSIONS
 {% endhighlight %}
 
 ##### `name`
@@ -96,7 +100,7 @@ daily
 ##### `start_time`
 
 {% highlight text %}
-1396522217
+1396522218
 {% endhighlight %}
 
 ##### `targets`
@@ -132,10 +136,28 @@ daily
 ]
 {% endhighlight %}
 
+##### `object_url`
+
+{% highlight text %}
+http://www.example.com
+{% endhighlight %}
+
 ##### `object_id`
 
 {% highlight text %}
 205530782989409
+{% endhighlight %}
+
+##### `offsite_pixel_tag`
+
+{% highlight text %}
+CHECKOUT
+{% endhighlight %}
+
+##### `offsite_pixel_name`
+
+{% highlight text %}
+my_pixel
 {% endhighlight %}
 
 ##### `creative_texts`
@@ -156,19 +178,22 @@ daily
 curl "api.pitchtarget.com/campaigns" -X POST \
 	-H "Accept: application/json" \
 	-H "Authorization: OAuth 9r9ea3mc9wemcc52tvzcd8eymir5unq" \
-	-F 'fb_ad_account_id=16' \
-	-F 'objective=PAGE_LIKES' \
+	-F 'fb_ad_account_id=20' \
+	-F 'objective=WEBSITE_CONVERSIONS' \
 	-F 'name=foo' \
 	-F 'bid_type=ABSOLUTE_OCPM' \
 	-F 'bid_info={"ACTIONS":100}' \
 	-F 'max_bid=100' \
 	-F 'budget_type=daily' \
 	-F 'budget_amount=100000' \
-	-F 'start_time=1396522217' \
+	-F 'start_time=1396522218' \
 	-F 'targets=[{"name":"Mobile Games fans","specs":{"age_min":18,"age_max":35,"geo_locations":{"countries":["US"]},"interests":[{"name":"Video games","id":6003940339466},{"name":"Browser games","id":6003434373937},{"name":"Casual game","id":6003102728434}]}}]' \
+	-F 'object_url=http://www.example.com' \
 	-F 'object_id=205530782989409' \
+	-F 'offsite_pixel_tag=CHECKOUT' \
+	-F 'offsite_pixel_name=my_pixel' \
 	-F 'creative_texts=[{"title":"Awesome Game!","body":"Have fun with our awesome game! Challenge your friends and beat them all!"}]' \
-	-F 'creative_images[]=@1200x450.jpg;type=text/plain'
+	-F 'creative_images[]=@1200x864.jpg;type=text/plain'
 {% endhighlight %}
 
 ### Response
@@ -184,11 +209,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "cb7d9d24ea005c5150cc0f4717e4691d"
+ETag: "4e70dd16376f4110c0f849044c4b4f90"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 24729115-6187-460f-8560-b7f34e48b59e
-X-Runtime: 0.137121
-Content-Length: 1047
+X-Request-Id: ff153eac-12f9-4c95-b7b5-640944b0cbe2
+X-Runtime: 0.045458
+Content-Length: 1056
 {% endhighlight %}
 
 #### Body
@@ -196,29 +221,29 @@ Content-Length: 1047
 {% highlight json %}
 {
   "campaign": {
-    "id": 330,
+    "id": 334,
     "budget_type": "daily",
     "budget_amount": 100000,
     "bid_type": "ABSOLUTE_OCPM",
     "max_bid": 100,
-    "start_time": "2014-04-03T10:50:17.000Z",
+    "start_time": "2014-04-03T10:50:18.000Z",
     "end_time": null,
-    "objective": "PAGE_LIKES",
+    "objective": "WEBSITE_CONVERSIONS",
     "status": null,
     "name": "foo",
     "fb_app_icon": null,
     "creatives": [
       {
-        "id": 218,
+        "id": 222,
         "creative_images": [
           {
-            "id": 90,
-            "image": "/uploads/ad_image/image/142/1200x450.jpg"
+            "id": 94,
+            "image": "/uploads/ad_image/image/146/1200x864.jpg"
           }
         ],
         "creative_texts": [
           {
-            "id": 90,
+            "id": 94,
             "title": "Awesome Game!",
             "name": null,
             "body": "Have fun with our awesome game! Challenge your friends and beat them all!"
@@ -228,7 +253,7 @@ Content-Length: 1047
     ],
     "fb_targets": [
       {
-        "id": 129,
+        "id": 133,
         "name": "Mobile Games fans",
         "favorite": false,
         "geo_locations": {
@@ -263,10 +288,10 @@ Content-Length: 1047
       }
     ],
     "fb_ad_account": {
-      "id": 1336,
+      "id": 1340,
       "name": "AD Account Bar",
       "currency": "EUR",
-      "fb_id": "16"
+      "fb_id": "20"
     },
     "fb_ad_campaigns": [
 

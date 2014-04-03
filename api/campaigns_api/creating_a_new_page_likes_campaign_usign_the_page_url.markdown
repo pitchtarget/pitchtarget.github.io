@@ -14,7 +14,6 @@ title: Campaigns API API
 
 Name | Description |
 -----|-------------|
-`fb_account_id` (required) | FbAccount id |
 `fb_ad_account_id` (required) | FbAdAccount id |
 `objective` (required) | Campaign objective |
 `name` (required) | Campaign name |
@@ -36,7 +35,7 @@ Name | Description |
 POST /campaigns HTTP/1.1
 Accept: application/json
 Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1
-Authorization: OAuth 94vdpx5uhcqtpyhsict4jtwthy668jg
+Authorization: OAuth 9r9ea3mc9wemcc52tvzcd8eymir5unq
 Host: example.org
 Cookie: 
 
@@ -44,16 +43,10 @@ Cookie:
 
 #### Body
 
-##### `fb_account_id`
-
-{% highlight text %}
-920
-{% endhighlight %}
-
 ##### `fb_ad_account_id`
 
 {% highlight text %}
-1508
+25
 {% endhighlight %}
 
 ##### `objective`
@@ -71,14 +64,14 @@ foo
 ##### `bid_type`
 
 {% highlight text %}
-OCPM
+ABSOLUTE_OCPM
 {% endhighlight %}
 
 ##### `bid_info`
 
 {% highlight json %}
 {
-  "foo": "bar"
+  "ACTIONS": 100
 }
 {% endhighlight %}
 
@@ -103,7 +96,7 @@ daily
 ##### `start_time`
 
 {% highlight text %}
-1395337152
+1396522218
 {% endhighlight %}
 
 ##### `targets`
@@ -111,56 +104,30 @@ daily
 {% highlight json %}
 [
   {
-    "name": "FbTarget 6",
+    "name": "Mobile Games fans",
     "specs": {
       "age_min": 18,
-      "age_max": 25,
-      "genders": [
-        "2"
-      ],
+      "age_max": 35,
       "geo_locations": {
         "countries": [
-          "IT",
           "US"
         ]
       },
       "interests": [
         {
-          "id": "1",
-          "name": "playstation"
+          "name": "Video games",
+          "id": 6003940339466
         },
         {
-          "id": "2",
-          "name": "videogame"
+          "name": "Browser games",
+          "id": 6003434373937
         },
         {
-          "id": "3",
-          "name": "xbox"
+          "name": "Casual game",
+          "id": 6003102728434
         }
-      ],
-      "user_adclusters": [
-        {
-          "id": "1",
-          "name": "HTC"
-        },
-        {
-          "id": "2",
-          "name": "Motorola"
-        },
-        {
-          "id": "3",
-          "name": "Samsung"
-        }
-      ],
-      "languages": [
-        "EN"
-      ],
-      "broad_age": false,
-      "interested_in": [
-        "2"
       ]
-    },
-    "favorite": false
+    }
   }
 ]
 {% endhighlight %}
@@ -176,8 +143,8 @@ https://www.facebook.com/memecoworking
 {% highlight json %}
 [
   {
-    "title": "foo",
-    "body": "bar"
+    "title": "Awesome Game!",
+    "body": "Have fun with our awesome game! Challenge your friends and beat them all!"
   }
 ]
 {% endhighlight %}
@@ -188,20 +155,19 @@ https://www.facebook.com/memecoworking
 {% highlight sh %}
 curl "api.pitchtarget.com/campaigns" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth 94vdpx5uhcqtpyhsict4jtwthy668jg" \
-	-F 'fb_account_id=920' \
-	-F 'fb_ad_account_id=1508' \
+	-H "Authorization: OAuth 9r9ea3mc9wemcc52tvzcd8eymir5unq" \
+	-F 'fb_ad_account_id=25' \
 	-F 'objective=PAGE_LIKES' \
 	-F 'name=foo' \
-	-F 'bid_type=OCPM' \
-	-F 'bid_info={"foo":"bar"}' \
+	-F 'bid_type=ABSOLUTE_OCPM' \
+	-F 'bid_info={"ACTIONS":100}' \
 	-F 'max_bid=100' \
 	-F 'budget_type=daily' \
 	-F 'budget_amount=100000' \
-	-F 'start_time=1395337152' \
-	-F 'targets=[{"name":"FbTarget 6","specs":{"age_min":18,"age_max":25,"genders":["2"],"geo_locations":{"countries":["IT","US"]},"interests":[{"id":"1","name":"playstation"},{"id":"2","name":"videogame"},{"id":"3","name":"xbox"}],"user_adclusters":[{"id":"1","name":"HTC"},{"id":"2","name":"Motorola"},{"id":"3","name":"Samsung"}],"languages":["EN"],"broad_age":false,"interested_in":["2"]},"favorite":false}]' \
+	-F 'start_time=1396522218' \
+	-F 'targets=[{"name":"Mobile Games fans","specs":{"age_min":18,"age_max":35,"geo_locations":{"countries":["US"]},"interests":[{"name":"Video games","id":6003940339466},{"name":"Browser games","id":6003434373937},{"name":"Casual game","id":6003102728434}]}}]' \
 	-F 'page_url=https://www.facebook.com/memecoworking' \
-	-F 'creative_texts=[{"title":"foo","body":"bar"}]' \
+	-F 'creative_texts=[{"title":"Awesome Game!","body":"Have fun with our awesome game! Challenge your friends and beat them all!"}]' \
 	-F 'creative_images[]=@1200x450.jpg;type=text/plain'
 {% endhighlight %}
 
@@ -218,11 +184,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "1be714c514ab99b0a6af6fc42edee24b"
+ETag: "62e3da80b5e527e968624a6e27a74c58"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 4e8a7d9a-7015-4c34-bdff-1def8b7af7f4
-X-Runtime: 0.282367
-Content-Length: 998
+X-Request-Id: d168047c-17ca-488f-959f-9ab7a64c2ff2
+X-Runtime: 0.341528
+Content-Length: 1047
 {% endhighlight %}
 
 #### Body
@@ -230,12 +196,12 @@ Content-Length: 998
 {% highlight json %}
 {
   "campaign": {
-    "id": 270,
+    "id": 339,
     "budget_type": "daily",
     "budget_amount": 100000,
-    "bid_type": "OCPM",
+    "bid_type": "ABSOLUTE_OCPM",
     "max_bid": 100,
-    "start_time": "2014-03-20T17:39:12.000Z",
+    "start_time": "2014-04-03T10:50:18.000Z",
     "end_time": null,
     "objective": "PAGE_LIKES",
     "status": null,
@@ -243,84 +209,64 @@ Content-Length: 998
     "fb_app_icon": null,
     "creatives": [
       {
-        "id": 202,
+        "id": 227,
         "creative_images": [
           {
-            "id": 86,
-            "image": "/uploads/ad_image/image/134/1200x450.jpg"
+            "id": 96,
+            "image": "/uploads/ad_image/image/148/1200x450.jpg"
           }
         ],
         "creative_texts": [
           {
-            "id": 86,
-            "title": "foo",
+            "id": 96,
+            "title": "Awesome Game!",
             "name": null,
-            "body": "bar"
+            "body": "Have fun with our awesome game! Challenge your friends and beat them all!"
           }
         ]
       }
     ],
     "fb_targets": [
       {
-        "id": 116,
-        "name": "FbTarget 6",
+        "id": 138,
+        "name": "Mobile Games fans",
         "favorite": false,
         "geo_locations": {
           "countries": [
-            "IT",
             "US"
           ]
         },
         "excluded_geo_locations": null,
-        "genders": [
-          "2"
-        ],
+        "genders": null,
         "age_min": 18,
-        "age_max": 25,
-        "languages": [
-          "EN"
-        ],
-        "interested_in": [
-          "2"
-        ],
-        "broad_age": false,
+        "age_max": 35,
+        "languages": null,
+        "interested_in": null,
+        "broad_age": null,
         "interests": [
           {
-            "id": "1",
-            "name": "playstation"
+            "name": "Video games",
+            "id": 6003940339466
           },
           {
-            "id": "2",
-            "name": "videogame"
+            "name": "Browser games",
+            "id": 6003434373937
           },
           {
-            "id": "3",
-            "name": "xbox"
+            "name": "Casual game",
+            "id": 6003102728434
           }
         ],
-        "user_adclusters": [
-          {
-            "id": "1",
-            "name": "HTC"
-          },
-          {
-            "id": "2",
-            "name": "Motorola"
-          },
-          {
-            "id": "3",
-            "name": "Samsung"
-          }
-        ],
+        "user_adclusters": null,
         "excluded_user_adclusters": null,
         "parent_fb_target": null
       }
     ],
     "fb_ad_account": {
-      "id": 1508,
+      "id": 1345,
       "name": "AD Account Bar",
       "currency": "EUR",
-      "fb_id": "24"
+      "fb_id": "25"
     },
     "fb_ad_campaigns": [
 

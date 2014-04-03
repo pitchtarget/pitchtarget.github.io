@@ -1,29 +1,23 @@
 ---
 layout: default
-title: Users API API
+title: Audience API API
 ---
 
-# Users API API
+# Audience API API
 
-## Creating a new user
+## Delete a custom audience
 
-### POST /sign-up
+### DELETE /custom_audiences/:id
 
 
-### Parameters
-
-Name | Description |
------|-------------|
-`username` (required) | Username |
-`password` (required) | Password |
-`client_id` (required) | Client app id |
 
 ### Request
 
 {% highlight http %}
-POST /sign-up HTTP/1.1
+DELETE /custom_audiences/57 HTTP/1.1
 Accept: application/json
 Content-Type: application/json
+Authorization: OAuth 4w8yyeszjwt5vvnvodjaamabfcx0ybp
 Host: example.org
 Cookie: 
 
@@ -33,18 +27,16 @@ Cookie:
 
 {% highlight json %}
 {
-  "username": "username",
-  "password": "password",
-  "client_id": "197mut6ia5yl5o70klg1016cc4sjnw8"
 }
 {% endhighlight %}
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/sign-up" -X POST \
+curl "api.pitchtarget.com/custom_audiences/57" -X DELETE \
 	-H "Accept: application/json" \
-	-H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"197mut6ia5yl5o70klg1016cc4sjnw8"}'
+	-H "Content-Type: application/json" \
+	-H "Authorization: OAuth 4w8yyeszjwt5vvnvodjaamabfcx0ybp" -d '{}'
 {% endhighlight %}
 
 ### Response
@@ -60,26 +52,25 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "700953e5f4e62c77a8640637911db0bb"
+ETag: "b8b6374bc1168d28442978423860761b"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c07b2d4b-650c-496f-9865-f45202a63a5c
-X-Runtime: 0.087163
-Content-Length: 123
+X-Request-Id: ebeb1112-0460-4027-aedd-b68f5e916adc
+X-Runtime: 0.330627
+Content-Length: 160
 {% endhighlight %}
 
 #### Body
 
 {% highlight json %}
 {
-  "user": {
-    "id": 500,
-    "username": "username",
-    "fb_id": null,
-    "fb_ad_accounts": [
-
-    ]
-  },
-  "access_token": "1jei8baux1oo0e2cqmis3qlfmqkjgog"
+  "fb_custom_audience": {
+    "id": 57,
+    "name": "Spending users",
+    "description": null,
+    "opt_out_link": "http://www.myshop.com/opt_out",
+    "user_type": "email_hash",
+    "fb_id": null
+  }
 }
 {% endhighlight %}
 

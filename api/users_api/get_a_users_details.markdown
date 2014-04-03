@@ -5,46 +5,30 @@ title: Users API API
 
 # Users API API
 
-## Creating a new user
+## Get a user&#39;s details
 
-### POST /sign-up
+### GET /users/:id
 
 
-### Parameters
-
-Name | Description |
------|-------------|
-`username` (required) | Username |
-`password` (required) | Password |
-`client_id` (required) | Client app id |
 
 ### Request
 
 {% highlight http %}
-POST /sign-up HTTP/1.1
+GET /users/492 HTTP/1.1
 Accept: application/json
-Content-Type: application/json
+Authorization: OAuth 6kj89cqk0snfzm39t9nscig0vbsuq81
 Host: example.org
 Cookie: 
 
 {% endhighlight %}
 
-#### Body
-
-{% highlight json %}
-{
-  "username": "username",
-  "password": "password",
-  "client_id": "197mut6ia5yl5o70klg1016cc4sjnw8"
-}
-{% endhighlight %}
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/sign-up" -X POST \
+curl "api.pitchtarget.com/users/492" -X GET \
 	-H "Accept: application/json" \
-	-H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"197mut6ia5yl5o70klg1016cc4sjnw8"}'
+	-H "Authorization: OAuth 6kj89cqk0snfzm39t9nscig0vbsuq81"
 {% endhighlight %}
 
 ### Response
@@ -60,11 +44,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "700953e5f4e62c77a8640637911db0bb"
+ETag: "cc9aa83fe2ba49607559061569952f0e"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c07b2d4b-650c-496f-9865-f45202a63a5c
-X-Runtime: 0.087163
-Content-Length: 123
+X-Request-Id: 7d709d2f-45eb-4299-93bd-749ee4eebf9c
+X-Runtime: 0.083073
+Content-Length: 135
 {% endhighlight %}
 
 #### Body
@@ -72,14 +56,18 @@ Content-Length: 123
 {% highlight json %}
 {
   "user": {
-    "id": 500,
-    "username": "username",
-    "fb_id": null,
+    "id": 492,
+    "username": "user_2",
+    "fb_id": "2",
     "fb_ad_accounts": [
-
+      {
+        "id": 1322,
+        "name": "AD Account Bar",
+        "currency": "EUR",
+        "fb_id": "2"
+      }
     ]
-  },
-  "access_token": "1jei8baux1oo0e2cqmis3qlfmqkjgog"
+  }
 }
 {% endhighlight %}
 
