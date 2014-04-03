@@ -1,41 +1,34 @@
 ---
 layout: default
-title: Campaigns API API
+title: Users API API
 ---
 
-# Campaigns API API
+# Users API API
 
-## Search for &#39;ita&#39; in countries
+## List all the user&#39;s Facebook Ad Accounts
 
-### GET /search
+### GET /fb_ad_accounts
 
 
-### Parameters
-
-Name | Description |
------|-------------|
-`q`  | The query |
-`type`  | The Facebook object type |
 
 ### Request
 
 {% highlight http %}
-GET /search?q=ita&amp;type=adcountry HTTP/1.1
+GET /fb_ad_accounts HTTP/1.1
 Accept: application/json
-Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3
+Authorization: OAuth qz515kidmcjcm2xcrz2wxbb5okua0pb
 Host: example.org
 Cookie: 
-q: ita
-type: adcountry
+
 {% endhighlight %}
 
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/search?q=ita&type=adcountry" -X GET \
+curl "api.pitchtarget.com/fb_ad_accounts" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3"
+	-H "Authorization: OAuth qz515kidmcjcm2xcrz2wxbb5okua0pb"
 {% endhighlight %}
 
 ### Response
@@ -51,23 +44,31 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "ceb6ce5a01598672c46c36f643618ec4"
+ETag: "237934affd731319d031c0c0404539aa"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: be9245a8-e079-49f7-bea7-e9a283ef8c9a
-X-Runtime: 0.008635
-Content-Length: 87
+X-Request-Id: 191168bf-a7b5-40e9-81b2-706ee916d883
+X-Runtime: 0.006514
+Content-Length: 150
 {% endhighlight %}
 
 #### Body
 
 {% highlight json %}
-[
-  {
-    "country_code": "IT",
-    "name": "Italy",
-    "supports_region": "false",
-    "supports_city": "true"
-  }
-]
+{
+  "fb_ad_accounts": [
+    {
+      "id": 1308,
+      "name": "AD Account Bar",
+      "currency": "EUR",
+      "fb_id": "6"
+    },
+    {
+      "id": 1310,
+      "name": "AD Account Bar",
+      "currency": "EUR",
+      "fb_id": "7"
+    }
+  ]
+}
 {% endhighlight %}
 

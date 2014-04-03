@@ -28,7 +28,7 @@ Name | Description |
 {% highlight http %}
 POST /unpublished_page_posts HTTP/1.1
 Accept: application/json
-Authorization: OAuth eucivw4wab46ggunec0dzgi7vx0aloa
+Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -46,7 +46,7 @@ page_id=205530782989409&link=http%3A%2F%2Fexample.com
 {% highlight sh %}
 curl "api.pitchtarget.com/unpublished_page_posts" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth eucivw4wab46ggunec0dzgi7vx0aloa" \
+	-H "Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3" \
 	-H "Content-Type: application/x-www-form-urlencoded" -d 'page_id=205530782989409&link=http%3A%2F%2Fexample.com'
 {% endhighlight %}
 
@@ -65,8 +65,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "cf4e429e413e41aedaf9a1a34bd61c1e"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 2f29d059-1299-403f-a665-5980920e1b9c
-X-Runtime: 0.007976
+X-Request-Id: 4424ba7f-7d8c-4c19-9d4c-21a3119b50d4
+X-Runtime: 0.006004
 Content-Length: 42
 {% endhighlight %}
 

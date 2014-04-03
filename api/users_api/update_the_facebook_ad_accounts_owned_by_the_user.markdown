@@ -1,42 +1,36 @@
 ---
 layout: default
-title: Audience API API
+title: Users API API
 ---
 
-# Audience API API
+# Users API API
 
-## Delete a custom audience
+## Update the Facebook Ad Accounts owned by the user
 
-### DELETE /custom_audiences/:id
+### PUT /fb_ad_accounts
 
 
 
 ### Request
 
 {% highlight http %}
-DELETE /custom_audiences/56 HTTP/1.1
+PUT /fb_ad_accounts HTTP/1.1
 Accept: application/json
-Content-Type: application/json
-Authorization: OAuth cpo7v1e0zbzdic90pc6txbj1cypb8yl
+Authorization: OAuth qz515kidmcjcm2xcrz2wxbb5okua0pb
 Host: example.org
+Content-Type: application/x-www-form-urlencoded
 Cookie: 
 
 {% endhighlight %}
 
-#### Body
-
-{% highlight json %}
-{
-}
-{% endhighlight %}
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/custom_audiences/56" -X DELETE \
+curl "api.pitchtarget.com/fb_ad_accounts" -X PUT \
 	-H "Accept: application/json" \
-	-H "Content-Type: application/json" \
-	-H "Authorization: OAuth cpo7v1e0zbzdic90pc6txbj1cypb8yl" -d '{}'
+	-H "Authorization: OAuth qz515kidmcjcm2xcrz2wxbb5okua0pb" \
+	-H "Content-Type: application/x-www-form-urlencoded" -d ''
 {% endhighlight %}
 
 ### Response
@@ -52,25 +46,31 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "5a0c3d8bde2f6e98f767d0ade0db9f84"
+ETag: "0d9e4357b0e3dd80491ef66c10c5a8f9"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8f45721e-3131-4747-b340-815076b5fd9a
-X-Runtime: 0.409982
-Content-Length: 160
+X-Request-Id: 24f465a3-33a8-46e9-b205-d12de5cdc3f2
+X-Runtime: 0.014114
+Content-Length: 161
 {% endhighlight %}
 
 #### Body
 
 {% highlight json %}
 {
-  "fb_custom_audience": {
-    "id": 56,
-    "name": "Spending users",
-    "description": null,
-    "opt_out_link": "http://www.myshop.com/opt_out",
-    "user_type": "email_hash",
-    "fb_id": null
-  }
+  "fb_ad_accounts": [
+    {
+      "id": 1308,
+      "name": "AD Account Bar",
+      "currency": "EUR",
+      "fb_id": "6"
+    },
+    {
+      "id": 1309,
+      "name": "My new account",
+      "currency": "EUR",
+      "fb_id": "638109674309"
+    }
+  ]
 }
 {% endhighlight %}
 

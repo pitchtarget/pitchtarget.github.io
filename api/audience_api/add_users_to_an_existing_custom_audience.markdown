@@ -19,10 +19,10 @@ Name | Description |
 ### Request
 
 {% highlight http %}
-PUT /custom_audiences/58 HTTP/1.1
+PUT /custom_audiences/55 HTTP/1.1
 Accept: application/json
 Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1
-Authorization: OAuth 4w8yyeszjwt5vvnvodjaamabfcx0ybp
+Authorization: OAuth cpo7v1e0zbzdic90pc6txbj1cypb8yl
 Host: example.org
 Cookie: 
 
@@ -34,9 +34,9 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/custom_audiences/58" -X PUT \
+curl "api.pitchtarget.com/custom_audiences/55" -X PUT \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth 4w8yyeszjwt5vvnvodjaamabfcx0ybp" \
+	-H "Authorization: OAuth cpo7v1e0zbzdic90pc6txbj1cypb8yl" \
 	-F 'file=@spending_users.csv;type=text/plain'
 {% endhighlight %}
 
@@ -53,10 +53,10 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "e285cb79e196285632316771c821e8c1"
+ETag: "d583d6c70b3f8456fdd581af88353687"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: b9863feb-254b-4923-ace6-08c051bc76df
-X-Runtime: 0.019534
+X-Request-Id: ebf7ad91-f21b-42a6-854c-8c7550768169
+X-Runtime: 0.019410
 Content-Length: 160
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ Content-Length: 160
 {% highlight json %}
 {
   "fb_custom_audience": {
-    "id": 58,
+    "id": 55,
     "name": "Spending users",
     "description": null,
     "opt_out_link": "http://www.myshop.com/opt_out",

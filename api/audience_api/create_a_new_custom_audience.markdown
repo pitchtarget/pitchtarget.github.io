@@ -27,7 +27,7 @@ Name | Description |
 POST /custom_audiences HTTP/1.1
 Accept: application/json
 Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1
-Authorization: OAuth 4w8yyeszjwt5vvnvodjaamabfcx0ybp
+Authorization: OAuth cpo7v1e0zbzdic90pc6txbj1cypb8yl
 Host: example.org
 Cookie: 
 
@@ -38,7 +38,7 @@ Cookie:
 ##### `fb_ad_account_id`
 
 {% highlight text %}
-32
+2
 {% endhighlight %}
 
 ##### `name`
@@ -71,8 +71,8 @@ email_hash
 {% highlight sh %}
 curl "api.pitchtarget.com/custom_audiences" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth 4w8yyeszjwt5vvnvodjaamabfcx0ybp" \
-	-F 'fb_ad_account_id=32' \
+	-H "Authorization: OAuth cpo7v1e0zbzdic90pc6txbj1cypb8yl" \
+	-F 'fb_ad_account_id=2' \
 	-F 'name=Spending users' \
 	-F 'description=Users who bought something on my site' \
 	-F 'opt_out_link=http://www.myshop.com/opt_out' \
@@ -93,10 +93,10 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "40ea7a921b89be5a63d546efad3f5a3f"
+ETag: "6d07c4c9ec294d765cb6c802bfa00eec"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 31efe7c3-653f-4260-9072-39564da6ed6b
-X-Runtime: 0.097111
+X-Request-Id: f643fa7b-a9e8-4181-820e-ab3c7252c41b
+X-Runtime: 0.145395
 Content-Length: 160
 {% endhighlight %}
 
@@ -105,7 +105,7 @@ Content-Length: 160
 {% highlight json %}
 {
   "fb_custom_audience": {
-    "id": 59,
+    "id": 54,
     "name": "Spending users",
     "description": null,
     "opt_out_link": "http://www.myshop.com/opt_out",

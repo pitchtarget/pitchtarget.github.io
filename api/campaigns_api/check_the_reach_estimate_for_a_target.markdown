@@ -20,12 +20,12 @@ Name | Description |
 ### Request
 
 {% highlight http %}
-GET /reachestimate?fb_ad_account_id=7&amp;targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D HTTP/1.1
+GET /reachestimate?fb_ad_account_id=11&amp;targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D HTTP/1.1
 Accept: application/json
-Authorization: OAuth eucivw4wab46ggunec0dzgi7vx0aloa
+Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3
 Host: example.org
 Cookie: 
-fb_ad_account_id: 7
+fb_ad_account_id: 11
 targeting_spec: {"geo_locations":{"countries":["IT"]}}
 {% endhighlight %}
 
@@ -33,9 +33,9 @@ targeting_spec: {"geo_locations":{"countries":["IT"]}}
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/reachestimate?fb_ad_account_id=7&targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D" -X GET \
+curl "api.pitchtarget.com/reachestimate?fb_ad_account_id=11&targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth eucivw4wab46ggunec0dzgi7vx0aloa"
+	-H "Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3"
 {% endhighlight %}
 
 ### Response
@@ -53,8 +53,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "a2d9c607c08c8286ecb2752857ef3409"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: b158d036-e777-46be-8303-402cf2d1c9bb
-X-Runtime: 0.007951
+X-Request-Id: c8e44331-4d63-4a71-877e-7630a2b1621f
+X-Runtime: 0.009682
 Content-Length: 486
 {% endhighlight %}
 

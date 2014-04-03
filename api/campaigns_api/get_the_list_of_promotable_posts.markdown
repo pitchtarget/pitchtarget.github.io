@@ -21,7 +21,7 @@ Name | Description |
 {% highlight http %}
 GET /promotable_posts?page_id=205530782989409 HTTP/1.1
 Accept: application/json
-Authorization: OAuth eucivw4wab46ggunec0dzgi7vx0aloa
+Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3
 Host: example.org
 Cookie: 
 page_id: 205530782989409
@@ -33,7 +33,7 @@ page_id: 205530782989409
 {% highlight sh %}
 curl "api.pitchtarget.com/promotable_posts?page_id=205530782989409" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth eucivw4wab46ggunec0dzgi7vx0aloa"
+	-H "Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3"
 {% endhighlight %}
 
 ### Response
@@ -51,8 +51,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "a9030c9dea89f0cb67930867f2a46c74"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 3dbcee00-9c68-4046-bc33-5b0480f09b20
-X-Runtime: 0.011534
+X-Request-Id: 46c99dcc-717e-4a29-a73c-a4e4a58b3c49
+X-Runtime: 0.014448
 Content-Length: 3036
 {% endhighlight %}
 

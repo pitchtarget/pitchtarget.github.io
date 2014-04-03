@@ -5,46 +5,35 @@ title: Users API API
 
 # Users API API
 
-## Creating a new user
+## Get a list of users
 
-### POST /sign-up
+### GET /users
 
 
 ### Parameters
 
 Name | Description |
 -----|-------------|
-`username` (required) | Username |
-`password` (required) | Password |
-`client_id` (required) | Client app id |
+`page`  | Page number (each page contains 10 users) |
 
 ### Request
 
 {% highlight http %}
-POST /sign-up HTTP/1.1
+GET /users HTTP/1.1
 Accept: application/json
-Content-Type: application/json
+Authorization: OAuth 3999612w9pzdy25kh7ant1u9bwd5sau
 Host: example.org
 Cookie: 
-
+%7B%7D: 
 {% endhighlight %}
 
-#### Body
-
-{% highlight json %}
-{
-  "username": "username",
-  "password": "password",
-  "client_id": "3pz4qcmf3qclaxk3nrrc591ic2iltc3"
-}
-{% endhighlight %}
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/sign-up" -X POST \
+curl "api.pitchtarget.com/users" -X GET \
 	-H "Accept: application/json" \
-	-H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"3pz4qcmf3qclaxk3nrrc591ic2iltc3"}'
+	-H "Authorization: OAuth 3999612w9pzdy25kh7ant1u9bwd5sau"
 {% endhighlight %}
 
 ### Response
@@ -60,26 +49,36 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "f965a400e9790a3d4d7b717cfb5c6af6"
+ETag: "3405a4b9b8648678e4eb3f2f7301cbed"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 06e214ff-11a4-48fc-8093-4035527c6c77
-X-Runtime: 0.083406
-Content-Length: 123
+X-Request-Id: e0ba5442-0408-4a5d-b43a-b41dc96ba919
+X-Runtime: 0.013922
+Content-Length: 169
 {% endhighlight %}
 
 #### Body
 
 {% highlight json %}
 {
-  "user": {
-    "id": 498,
-    "username": "username",
-    "fb_id": null,
-    "fb_ad_accounts": [
-
-    ]
-  },
-  "access_token": "dtk0qo1f1oaq7rsg6psz3c12pfwvhcj"
+  "users": [
+    {
+      "id": 506,
+      "username": "user_10",
+      "fb_id": "10",
+      "fb_ad_accounts": [
+        {
+          "id": 1338,
+          "name": "AD Account Bar",
+          "currency": "EUR",
+          "fb_id": "35"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "total": 1
+  }
 }
 {% endhighlight %}
 

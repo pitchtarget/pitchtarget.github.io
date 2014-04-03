@@ -44,6 +44,9 @@ title: API Documentation
 
 * [Authenticating an existing user](users_api/authenticating_an_existing_user.html)
 * [Creating a new user](users_api/creating_a_new_user.html)
+* [Get a list of users](users_api/get_a_list_of_users.html)
 * [Get a user&#39;s details](users_api/get_a_users_details.html)
+* [List all the user&#39;s Facebook Ad Accounts](users_api/list_all_the_users_facebook_ad_accounts.html)
 * [Show to one of you users the dialog to connect with the PitchTarget Facebook App](users_api/show_to_one_of_you_users_the_dialog_to_connect_with_the_pitchtarget_facebook_app.html)
+* [Update the Facebook Ad Accounts owned by the user](users_api/update_the_facebook_ad_accounts_owned_by_the_user.html)
 
