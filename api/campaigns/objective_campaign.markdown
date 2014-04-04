@@ -2,10 +2,10 @@
 layout: default_with_nav
 title: Objective-based Campaigns
 section: Campaigns API
-nav: campaigns_api_links.md
+nav: nav_campaigns_api.md
 ---
 
-## Objective-based Campaigns
+## {{page.title}}
 
 ### Create a new obective-based Campaign
 When you create an objective-based Campaign, you need to specify the objective you want to achieve. An objective is a conversion goal, such as checkouts, registrations, or website clicks.
@@ -293,7 +293,7 @@ Purchase completed
 #### cURL
 
 {% highlight sh %}
-curl "pitchtarget.com/api/campaigns" -X POST \
+curl "{{site.base_url}}/api/campaigns" -X POST \
 	-H "Accept: application/json" \
 	-H "Authorization: OAuth cp8s7ehw620ncg14f2m5gr305vu6ubk" \
 	-F 'fb_account_id=749' \

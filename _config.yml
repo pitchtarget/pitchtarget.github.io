@@ -1,2 +1,3 @@
 name: Pitchtarget
 pygments: true
+base_url: https://api.pitchtarget.com
