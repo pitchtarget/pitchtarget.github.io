@@ -2,7 +2,7 @@
 layout: default_with_nav
 title: Create a new user
 section: Users API
-nav: users_api_links.md
+nav: nav_users_api.md
 ---
 
 ## Create a new user
@@ -45,7 +45,7 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "https://api.pitchtarget.com/sign-up" -X POST \
+curl "{{site.base_url}}/sign-up" -X POST \
 	-H "Accept: application/json" \
 	-H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"g7kj2axpf13umghr5m9xl6aiordknff"}'
 {% endhighlight %}

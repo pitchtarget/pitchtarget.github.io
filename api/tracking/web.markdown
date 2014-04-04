@@ -2,7 +2,7 @@
 layout: default_with_nav
 title: Using the Web Tracking Pixel
 section: Tracking API
-nav: tracking_api_links.md
+nav: nav_tracking_api.md
 ---
 
 ## Using the Web Tracking Pixel

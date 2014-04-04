@@ -2,10 +2,10 @@
 layout: default_with_nav
 title: Mobile App Engagement Ads
 section: Campaigns API
-nav: campaigns_api_links.md
+nav: nav_campaigns_api.md
 ---
 
-## Mobile App Engagement Ad
+## {{page.title}}
 Use these parameters when you need to generate engagement towards a native mobile app. You should create this campaign when you need to reactivate stale users, or when you want to drive existing active users to a specific section of your native mobile app.
 
 ### Parameters
@@ -287,7 +287,7 @@ Please note that if your `budget_amount` is low, Facebook will give little or no
 #### cURL
 
 {% highlight sh %}
-curl "pitchtarget.com/api/campaigns" -X POST \
+curl "{{site.base_url}}/api/campaigns" -X POST \
 	-H "Accept: application/json" \
 	-H "Authorization: OAuth cp8s7ehw620ncg14f2m5gr305vu6ubk" \
 	-F 'fb_account_id=743' \

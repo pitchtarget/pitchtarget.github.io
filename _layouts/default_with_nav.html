@@ -37,11 +37,13 @@
     <meta name="msapplication-square310x310logo" content="/imgs/icons/mstile-310x310.png">
     <meta name="msapplication-wide310x150logo" content="/imgs/icons/mstile-310x150.png">
     <link href="/assets/stylesheets/header.css" rel="stylesheet" />
+    <script src="/js/jquery-2.1.0.min.js"></script>
+    <script src="/js/scrollspy.min.js"></script>
   </head>
   <body class="with-nav">
   {% include header.html %}
       <div id="container">
-      <div class="pt-nav">
+      <div id="pt-nav" class="pt-nav">
         <strong><a href="/api">← API Docs</a></strong>
         <strong>{{page.section}}</strong>
       {% capture nav %}{% include {{page.nav}} %}{% endcapture %}
@@ -56,5 +58,58 @@
         </div>
       <div>
     </div>
+    <script>
+      $(function() {
+        $('#pt-nav a').each(function() {
+          if ($(this).attr('href') == location.pathname) {
+            $(this).addClass('active');
+            return false;
+          }
+        });
+
+        $('#pt-nav a.active').after($('<ul id="pt-page-nav"></ul>'));
+
+        $('h3').each(function() {
+          if (!$(this).attr('id')) {
+            return true;
+          }
+
+          var $a = $('<a></a>');
+          $a.attr('href', '#' + $(this).attr('id'))
+            .text($(this).text());
+
+          var $anchor = $('<a class="pt-nav-anchor"></a>').attr('name', $(this).attr('id'));
+          $(this).before($anchor);
+
+          $('#pt-page-nav').append(
+            $('<li></li>').append($a)
+          );
+        });
+
+        if (location.hash) {
+          $('#pt-page-nav a[href="'+location.hash+'"]').addClass('active');
+          setTimeout(function() {
+            $('body').scrollTop($('a[name="'+location.hash.replace('#', '')+'"]').offset().top - 50);
+          }, 100);
+        } else {
+          $('#pt-page-nav a:first').addClass('active');
+        }
+
+        $('#pt-page-nav a').on('click', function() {
+          $('#pt-page-nav a.active').removeClass('active');
+          $(this).addClass('active');
+          location.hash = $(this).attr('href');
+          $('body').scrollTop($('a[name="'+$(this).attr('href').replace('#', '')+'"]').offset().top - 50);
+          return false;
+        });
+
+        $('.pt-nav-anchor').on('scrollSpy:enter', function() {
+          $('#pt-page-nav a.active').removeClass('active');
+          $('#pt-page-nav a[href="#' + $(this).attr('name') + '"]').addClass('active');
+        });
+
+        $('.pt-nav-anchor').scrollSpy();
+      });
+    </script>
   </body>
 </html>

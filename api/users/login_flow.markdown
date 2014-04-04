@@ -2,7 +2,7 @@
 layout: default_with_nav
 title: Login Flow
 section: Users API
-nav: users_api_links.md
+nav: nav_users_api.md
 ---
 
 ## Login Flow
@@ -25,7 +25,7 @@ While the login flow will always be handled between your app and Pitchtarget, yo
 When your user signs up using your app, you will use Users API to create a new user.
 
 {% highlight sh %}
-curl "https://api.pitchtarget.com/sign-up" -X POST \
+curl "{{site.base_url}}/sign-up" -X POST \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"g7kj2axpf13umghr5m9xl6aiordknff"}'
 {% endhighlight %}
@@ -45,7 +45,7 @@ If the user does not exist, Users API will return a successful response:
 The next time that the users logs into you app, you will issue a call towards the `/oauth/authorize` endpoint.
 
 {% highlight sh %}
-curl "https://api.pitchtarget.com/oauth/authorize" -X POST \
+curl "{{site.base_url}}/oauth/authorize" -X POST \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" -d '{"username":"user_1","password":"password","grant_type":"password","client_id":"1bv9sh664cowghktxwn307wpeghj8e1"}'
 {% endhighlight %}
@@ -65,7 +65,7 @@ In order to manage the user's Facebook Ad Accounts and Pages, you will need the 
 In order to authenticate the user with Facebook, you need to invoke the OAuth dialog by pointing the user to the following URL:
 
 {% highlight html %}
-https://api.pitchtarget.com/facebook/oauth_dialog?oauth_token=PITCHTARGET_USER_TOKEN&redirect_uri=YOUR_REDIRECT_URI
+{{site.base_url}}/facebook/oauth_dialog?oauth_token=PITCHTARGET_USER_TOKEN&redirect_uri=YOUR_REDIRECT_URI
 {% endhighlight %}
 
 Replace `PITCHTARGET_USER_TOKEN` with the `access_token` you obtained from Step 2.

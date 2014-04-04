@@ -2,10 +2,10 @@
 layout: default_with_nav
 title: Desktop App Ads
 section: Campaigns API
-nav: campaigns_api_links.md
+nav: nav_campaigns_api.md
 ---
 
-### Desktop App Ad
+## {{page.title}}
 Use these parameters when you need to drive installs and usage of your Desktop App on Facebook.
 
 Name | Required? | Description |
@@ -234,7 +234,7 @@ Please note that if your `budget_amount` is low, Facebook will give little or no
 #### cURL
 
 {% highlight sh %}
-curl "pitchtarget.com/api/campaigns" -X POST \
+curl "{{site.base_url}}/campaigns" -X POST \
   -H "Accept: application/json" \
   -H "Authorization: OAuth cp8s7ehw620ncg14f2m5gr305vu6ubk" \
   -F 'fb_account_id=748' \

@@ -85,6 +85,7 @@ a:hover {
 
 .pt-nav a, .pt-nav a:visited, .pt-nav a:hover, .pt-nav a:active {color: #e33;}
 .pt-nav a:hover {text-decoration: underline;}
+.pt-nav a.active {font-family:"ProximaNova-Bold";color: #000;}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .pt-nav {display:none;}

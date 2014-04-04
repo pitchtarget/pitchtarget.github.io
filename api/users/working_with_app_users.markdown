@@ -2,7 +2,7 @@
 layout: default_with_nav
 title: Working with your App Users
 section: Users API
-nav: users_api_links.md
+nav: nav_users_api.md
 ---
 
 ## Working with your app users
@@ -10,15 +10,15 @@ In Pitchtarget, each user is direcly mapped to a Facebook user. Such users are c
 
 An Ad Account contains all the objects related to creating and managing a marketing campaign, including the account's billing currency and time zone. Ad Accounts can belong to one or more users and each user may have one or more Advertising Accounts.
 
-## List Facebook Accounts for the current user
+### List Facebook Accounts for the current user
 
-### GET /fb_accounts
-Returns the Facebook Accounts
+#### `GET /fb_accounts`
+Returns the Facebook Accounts.
 
-### Parameters
+#### Parameters
 This request does not accept parameters.
 
-### Request
+#### Request
 
 {% highlight http %}
 GET /fb_accounts HTTP/1.1
@@ -33,12 +33,12 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/fb_accounts" -X GET \
+curl "{{site.base_url}}/fb_accounts" -X GET \
   -H "Accept: application/json" \
   -H "Authorization: OAuth cljf2ervs3rf5iwb1c6x9jbiqmiaeno"
 {% endhighlight %}
 
-### Response
+#### Response
 
 {% highlight http %}
 HTTP/1.1 200 OK
@@ -103,15 +103,15 @@ Content-Length: 365
 }
 {% endhighlight %}
 
-## Obtain details for a single Account
+### Obtain details for a single User
 
-### GET /fb_accounts/:id/ad_accounts
+#### `GET /fb_accounts/:id/ad_accounts`
 Returns every Advertising Account that the current user can access.
 
-### Parameters
+#### Parameters
 This request does not accept parameters.
 
-### Request
+#### Request
 
 {% highlight http %}
 GET /fb_accounts/913/ad_accounts HTTP/1.1
@@ -126,12 +126,12 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/fb_accounts/913/ad_accounts" -X GET \
+curl "{{site.base_url}}/fb_accounts/913/ad_accounts" -X GET \
   -H "Accept: application/json" \
   -H "Authorization: OAuth cljf2ervs3rf5iwb1c6x9jbiqmiaeno"
 {% endhighlight %}
 
-### Response
+#### Response
 
 {% highlight http %}
 HTTP/1.1 200 OK
