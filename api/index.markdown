@@ -18,7 +18,7 @@ Campaigns API allows you to create and manage new campaigns, including setting o
 ## Tracking API
 Use Tracking API to keep track of events such as purchases or signups. You can use these events to create event-generated audiences that will help you deliver you marketing campaigns more efficiently.
 
-Tracking API comes with a set of SDKs for iOS and Android, and with an web tracking pixel.
+Tracking API comes with a set of SDKs for iOS and Android, and with a web tracking pixel.
 
 {% include nav_tracking_api.md %}
 
