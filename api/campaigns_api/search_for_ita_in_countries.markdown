@@ -22,7 +22,7 @@ Name | Description |
 {% highlight http %}
 GET /search?q=ita&amp;type=adcountry HTTP/1.1
 Accept: application/json
-Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3
+Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd
 Host: example.org
 Cookie: 
 q: ita
@@ -35,7 +35,7 @@ type: adcountry
 {% highlight sh %}
 curl "api.pitchtarget.com/search?q=ita&type=adcountry" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3"
+	-H "Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd"
 {% endhighlight %}
 
 ### Response
@@ -53,8 +53,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "ceb6ce5a01598672c46c36f643618ec4"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: be9245a8-e079-49f7-bea7-e9a283ef8c9a
-X-Runtime: 0.008635
+X-Request-Id: b4896d62-4880-49c7-870e-6c7f3f2eb7d4
+X-Runtime: 0.012435
 Content-Length: 87
 {% endhighlight %}
 

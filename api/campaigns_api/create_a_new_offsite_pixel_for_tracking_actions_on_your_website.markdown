@@ -23,7 +23,7 @@ Name | Description |
 {% highlight http %}
 POST /offsitepixels HTTP/1.1
 Accept: application/json
-Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3
+Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -33,7 +33,7 @@ Cookie:
 #### Body
 
 {% highlight text %}
-fb_ad_account_id=13&name=Shoes+purchase&tag=CHECKOUT
+fb_ad_account_id=5&name=Shoes+purchase&tag=CHECKOUT
 {% endhighlight %}
 
 #### cURL
@@ -41,8 +41,8 @@ fb_ad_account_id=13&name=Shoes+purchase&tag=CHECKOUT
 {% highlight sh %}
 curl "api.pitchtarget.com/offsitepixels" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3" \
-	-H "Content-Type: application/x-www-form-urlencoded" -d 'fb_ad_account_id=13&name=Shoes+purchase&tag=CHECKOUT'
+	-H "Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd" \
+	-H "Content-Type: application/x-www-form-urlencoded" -d 'fb_ad_account_id=5&name=Shoes+purchase&tag=CHECKOUT'
 {% endhighlight %}
 
 ### Response
@@ -58,18 +58,20 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "ebe882d7e6beb78bc9308c5f53c5842c"
+ETag: "4a6f58b6c7b13fc4413ac76a7451b604"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8bd30fa2-9df9-4866-9dbb-c6de3a21a5ea
-X-Runtime: 0.009266
-Content-Length: 22
+X-Request-Id: 12a2e3e4-7e60-4693-bf5d-4b022f58af82
+X-Runtime: 0.024221
+Content-Length: 29
 {% endhighlight %}
 
 #### Body
 
 {% highlight json %}
 {
-  "id": "6014360342904"
+  "id": {
+    "id": "6014360342904"
+  }
 }
 {% endhighlight %}
 

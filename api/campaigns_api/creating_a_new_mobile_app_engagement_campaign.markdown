@@ -14,7 +14,7 @@ title: Campaigns API API
 
 Name | Description |
 -----|-------------|
-`fb_ad_account_id` (required) | FbAdAccount id |
+`fb_ad_account_id` (required) | Facebook ID of the Ad Account for the current user |
 `objective` (required) | Campaign objective |
 `name` (required) | Campaign name |
 `bid_type`  | Bid type |
@@ -44,7 +44,7 @@ Name | Description |
 POST /campaigns HTTP/1.1
 Accept: application/json
 Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1
-Authorization: OAuth jwn6yukeig4ukaywj4zeaweodwxf7no
+Authorization: OAuth frgch1m76n8oljfwbxjz7p65ahvikgb
 Host: example.org
 Cookie: 
 
@@ -55,7 +55,7 @@ Cookie:
 ##### `fb_ad_account_id`
 
 {% highlight text %}
-22
+21
 {% endhighlight %}
 
 ##### `objective`
@@ -105,7 +105,7 @@ daily
 ##### `start_time`
 
 {% highlight text %}
-1396544285
+1396962851
 {% endhighlight %}
 
 ##### `targets`
@@ -226,8 +226,8 @@ http://ios.example.com
 {% highlight sh %}
 curl "api.pitchtarget.com/campaigns" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth jwn6yukeig4ukaywj4zeaweodwxf7no" \
-	-F 'fb_ad_account_id=22' \
+	-H "Authorization: OAuth frgch1m76n8oljfwbxjz7p65ahvikgb" \
+	-F 'fb_ad_account_id=21' \
 	-F 'objective=MOBILE_APP_ENGAGEMENT' \
 	-F 'name=foo' \
 	-F 'bid_type=ABSOLUTE_OCPM' \
@@ -235,7 +235,7 @@ curl "api.pitchtarget.com/campaigns" -X POST \
 	-F 'max_bid=100' \
 	-F 'budget_type=daily' \
 	-F 'budget_amount=100000' \
-	-F 'start_time=1396544285' \
+	-F 'start_time=1396962851' \
 	-F 'targets=[{"name":"Mobile Games fans","specs":{"age_min":18,"age_max":35,"geo_locations":{"countries":["US"]},"interests":[{"name":"Video games","id":6003940339466},{"name":"Browser games","id":6003434373937},{"name":"Casual game","id":6003102728434}]}}]' \
 	-F 'fb_app_id=197838773569384' \
 	-F 'object_story_id=238193529614918_465257143575221' \
@@ -264,10 +264,10 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "5a096926c6e65e08c4ea0b6dec444dc4"
+ETag: "b2c966bfe15c1c84223047aaca39b254"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8f41bd30-9630-424d-9a6f-835e8899b792
-X-Runtime: 0.154308
+X-Request-Id: 453388f7-65d1-45bd-a8e9-67338a4d1941
+X-Runtime: 0.067079
 Content-Length: 1058
 {% endhighlight %}
 
@@ -276,12 +276,12 @@ Content-Length: 1058
 {% highlight json %}
 {
   "campaign": {
-    "id": 315,
+    "id": 339,
     "budget_type": "daily",
     "budget_amount": 100000,
     "bid_type": "ABSOLUTE_OCPM",
     "max_bid": 100,
-    "start_time": "2014-04-03T16:58:05.000Z",
+    "start_time": "2014-04-08T13:14:11.000Z",
     "end_time": null,
     "objective": "MOBILE_APP_ENGAGEMENT",
     "status": null,
@@ -289,16 +289,16 @@ Content-Length: 1058
     "fb_app_icon": null,
     "creatives": [
       {
-        "id": 203,
+        "id": 223,
         "creative_images": [
           {
-            "id": 81,
-            "image": "/uploads/ad_image/image/133/1200x627.png"
+            "id": 92,
+            "image": "/uploads/ad_image/image/144/1200x627.png"
           }
         ],
         "creative_texts": [
           {
-            "id": 81,
+            "id": 92,
             "title": "Awesome Game!",
             "name": null,
             "body": "Have fun with our awesome game! Challenge your friends and beat them all!"
@@ -308,7 +308,7 @@ Content-Length: 1058
     ],
     "fb_targets": [
       {
-        "id": 114,
+        "id": 134,
         "name": "Mobile Games fans",
         "favorite": false,
         "geo_locations": {
@@ -343,10 +343,10 @@ Content-Length: 1058
       }
     ],
     "fb_ad_account": {
-      "id": 1325,
+      "id": 1372,
       "name": "AD Account Bar",
       "currency": "EUR",
-      "fb_id": "22"
+      "fb_id": "21"
     },
     "fb_ad_campaigns": [
 

@@ -14,10 +14,10 @@ title: Audience API API
 ### Request
 
 {% highlight http %}
-DELETE /custom_audiences/56 HTTP/1.1
+DELETE /custom_audiences/57 HTTP/1.1
 Accept: application/json
 Content-Type: application/json
-Authorization: OAuth cpo7v1e0zbzdic90pc6txbj1cypb8yl
+Authorization: OAuth bn2epyrwp2fmbqztdcdx61i6jd4hfoq
 Host: example.org
 Cookie: 
 
@@ -33,10 +33,10 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/custom_audiences/56" -X DELETE \
+curl "api.pitchtarget.com/custom_audiences/57" -X DELETE \
 	-H "Accept: application/json" \
 	-H "Content-Type: application/json" \
-	-H "Authorization: OAuth cpo7v1e0zbzdic90pc6txbj1cypb8yl" -d '{}'
+	-H "Authorization: OAuth bn2epyrwp2fmbqztdcdx61i6jd4hfoq" -d '{}'
 {% endhighlight %}
 
 ### Response
@@ -52,10 +52,10 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "5a0c3d8bde2f6e98f767d0ade0db9f84"
+ETag: "b8b6374bc1168d28442978423860761b"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8f45721e-3131-4747-b340-815076b5fd9a
-X-Runtime: 0.409982
+X-Request-Id: 573fc7d7-467f-4c9f-b717-84ca1a83af9f
+X-Runtime: 0.350595
 Content-Length: 160
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ Content-Length: 160
 {% highlight json %}
 {
   "fb_custom_audience": {
-    "id": 56,
+    "id": 57,
     "name": "Spending users",
     "description": null,
     "opt_out_link": "http://www.myshop.com/opt_out",

@@ -7,16 +7,16 @@ title: Campaigns API API
 
 ## Get data for custom audience 6013451248234
 
-### GET /customaudiences/:fb_id
+### GET /custom_audiences/:fb_id
 
 
 
 ### Request
 
 {% highlight http %}
-GET /customaudiences/6013451248234 HTTP/1.1
+GET /custom_audiences/6013451248234 HTTP/1.1
 Accept: application/json
-Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3
+Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd
 Host: example.org
 Cookie: 
 
@@ -26,9 +26,9 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/customaudiences/6013451248234" -X GET \
+curl "api.pitchtarget.com/custom_audiences/6013451248234" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3"
+	-H "Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd"
 {% endhighlight %}
 
 ### Response
@@ -46,8 +46,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "ef30351b9d61d03d948e4a70fddf07a9"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7d384a77-6059-469f-b753-a05d6f0bd04c
-X-Runtime: 0.007039
+X-Request-Id: 419bfe63-bf19-4d25-af3c-58fb8f5f18d2
+X-Runtime: 0.012269
 Content-Length: 662
 {% endhighlight %}
 

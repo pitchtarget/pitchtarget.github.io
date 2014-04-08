@@ -31,6 +31,7 @@ title: API Documentation
 * [Creating a new WEBSITE_CLICKS campaign using a page post story ID](campaigns_api/creating_a_new_website_clicks_campaign_using_a_page_post_story_id.html)
 * [Creating a new WEBSITE_CLICKS campaign using a site URL](campaigns_api/creating_a_new_website_clicks_campaign_using_a_site_url.html)
 * [Creating a new WEBSITE_CONVERSIONS campaign with a page post URL](campaigns_api/creating_a_new_website_conversions_campaign_with_a_page_post_url.html)
+* [Creating a new WEBSITE_CONVERSIONS campaign with a page post URL and an offsite pixel id](campaigns_api/creating_a_new_website_conversions_campaign_with_a_page_post_url_and_an_offsite_pixel_id.html)
 * [Creating a new WEBSITE_CONVERSIONS campaign with a page post story ID](campaigns_api/creating_a_new_website_conversions_campaign_with_a_page_post_story_id.html)
 * [Creating a new WEBSITE_CONVERSIONS campaign with a site URL](campaigns_api/creating_a_new_website_conversions_campaign_with_a_site_url.html)
 * [Get data for custom audience 6013451248234](campaigns_api/get_data_for_custom_audience_.html)
@@ -47,6 +48,8 @@ title: API Documentation
 * [Get a list of users](users_api/get_a_list_of_users.html)
 * [Get a user&#39;s details](users_api/get_a_users_details.html)
 * [List all the user&#39;s Facebook Ad Accounts](users_api/list_all_the_users_facebook_ad_accounts.html)
+* [List all the user&#39;s Facebook connection objects](users_api/list_all_the_users_facebook_connection_objects.html)
 * [Show to one of you users the dialog to connect with the PitchTarget Facebook App](users_api/show_to_one_of_you_users_the_dialog_to_connect_with_the_pitchtarget_facebook_app.html)
 * [Update the Facebook Ad Accounts owned by the user](users_api/update_the_facebook_ad_accounts_owned_by_the_user.html)
+* [Update the Facebook connection objects owned by the user](users_api/update_the_facebook_connection_objects_owned_by_the_user.html)
 

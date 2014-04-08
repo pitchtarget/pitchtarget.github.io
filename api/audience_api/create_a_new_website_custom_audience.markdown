@@ -24,7 +24,7 @@ Name | Description |
 {% highlight http %}
 POST /websitecustomaudiences HTTP/1.1
 Accept: application/json
-Authorization: OAuth iyc4n5wppznup3g45uud7zp5vwbdw75
+Authorization: OAuth s5fxtmipsar1yoklfq03eagrtczo096
 Content-Type: application/json
 Host: example.org
 Cookie: 
@@ -35,7 +35,7 @@ Cookie:
 
 {% highlight json %}
 {
-  "fb_ad_account_id": "19",
+  "fb_ad_account_id": "10",
   "name": "Users that put items in the car",
   "retention_days": 15,
   "rule": "{\"url\":{\"i_contains\":\"cart\"}}"
@@ -47,8 +47,8 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/websitecustomaudiences" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth iyc4n5wppznup3g45uud7zp5vwbdw75" \
-	-H "Content-Type: application/json" -d '{"fb_ad_account_id":"19","name":"Users that put items in the car","retention_days":15,"rule":"{\"url\":{\"i_contains\":\"cart\"}}"}'
+	-H "Authorization: OAuth s5fxtmipsar1yoklfq03eagrtczo096" \
+	-H "Content-Type: application/json" -d '{"fb_ad_account_id":"10","name":"Users that put items in the car","retention_days":15,"rule":"{\"url\":{\"i_contains\":\"cart\"}}"}'
 {% endhighlight %}
 
 ### Response
@@ -66,8 +66,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "60669f217459b9091f02a9c0f24942a7"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 5a4e29c4-1b6c-43ee-82ad-d011d57d508e
-X-Runtime: 0.008023
+X-Request-Id: 3a774c4c-719c-43f3-b0c9-cbfa6da9a07e
+X-Runtime: 0.021372
 Content-Length: 22
 {% endhighlight %}
 

@@ -25,7 +25,7 @@ Name | Description |
 POST /lookalikeaudiences HTTP/1.1
 Accept: application/json
 Content-Type: application/json
-Authorization: OAuth 5ypdgw3c8al96x2nwbkta9kxv80dy1k
+Authorization: OAuth oped2eq75ispw94u5tpdpu36vji0xz4
 Host: example.org
 Cookie: 
 
@@ -35,7 +35,7 @@ Cookie:
 
 {% highlight json %}
 {
-  "fb_ad_account_id": "15",
+  "fb_ad_account_id": "13",
   "name": "Boys Apparel_lookalike_US_Similarity",
   "origin_audience_id": 6006164557194,
   "lookalike_spec": {
@@ -51,7 +51,7 @@ Cookie:
 curl "api.pitchtarget.com/lookalikeaudiences" -X POST \
 	-H "Accept: application/json" \
 	-H "Content-Type: application/json" \
-	-H "Authorization: OAuth 5ypdgw3c8al96x2nwbkta9kxv80dy1k" -d '{"fb_ad_account_id":"15","name":"Boys Apparel_lookalike_US_Similarity","origin_audience_id":6006164557194,"lookalike_spec":{"type":"similarity","country":"US"}}'
+	-H "Authorization: OAuth oped2eq75ispw94u5tpdpu36vji0xz4" -d '{"fb_ad_account_id":"13","name":"Boys Apparel_lookalike_US_Similarity","origin_audience_id":6006164557194,"lookalike_spec":{"type":"similarity","country":"US"}}'
 {% endhighlight %}
 
 ### Response
@@ -69,8 +69,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "60669f217459b9091f02a9c0f24942a7"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8482e5f6-52c7-4332-9a48-854a1a43cec6
-X-Runtime: 0.007917
+X-Request-Id: c3a5c56f-a0d6-4a79-9da1-179963f0122e
+X-Runtime: 0.019291
 Content-Length: 22
 {% endhighlight %}
 

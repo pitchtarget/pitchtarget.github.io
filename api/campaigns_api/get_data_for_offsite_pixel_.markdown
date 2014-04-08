@@ -16,7 +16,7 @@ title: Campaigns API API
 {% highlight http %}
 GET /offsitepixels/6014360342904 HTTP/1.1
 Accept: application/json
-Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3
+Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd
 Host: example.org
 Cookie: 
 
@@ -28,7 +28,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/offsitepixels/6014360342904" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth nqvcm96f8svtbyyq8wctfu4bw29uqk3"
+	-H "Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd"
 {% endhighlight %}
 
 ### Response
@@ -46,8 +46,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "3ea192cf93bb7893c29fd0a97aa9fa81"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a70533e1-372a-43db-94a2-d79e1e8c26dd
-X-Runtime: 0.023104
+X-Request-Id: 460ed7d0-9e7c-4dd5-8278-1b9a9d472094
+X-Runtime: 0.065819
 Content-Length: 850
 {% endhighlight %}
 
