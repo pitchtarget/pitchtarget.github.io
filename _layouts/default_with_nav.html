@@ -39,22 +39,21 @@
     <link href="/assets/stylesheets/header.css" rel="stylesheet" />
     <script src="/js/jquery-2.1.0.min.js"></script>
     <script src="/js/scrollspy.min.js"></script>
+    <script src="/js/header.js"></script>
   </head>
   <body class="with-nav">
   {% include header.html %}
       <div id="container">
       <div id="pt-nav" class="pt-nav">
-        <strong><a href="/api">← API Docs</a></strong>
+        <strong><a href="/api">API Reference</a></strong>
         <strong>{{page.section}}</strong>
       {% capture nav %}{% include {{page.nav}} %}{% endcapture %}
 {{ nav | markdownify }}</div>
       <div id="article">
         {{ content }}
 
-        <div id="footer">
-          <p>
-            &copy; Pitchtarget
-          </p>
+        <div id="footer" class="footer">
+          {% include footer.html %}
         </div>
       <div>
     </div>
@@ -109,6 +108,15 @@
         });
 
         $('.pt-nav-anchor').scrollSpy();
+
+        if ($(window).width() <= 568 && $(window).width() >= 320) {
+          $('table').each(function() {
+            var el = $(this).clone();
+            var div = $('<div class="mobile-table-wrapper"></div>');
+            div.append(el);
+            $(this).replaceWith(div);
+          });
+        }
       });
     </script>
   </body>

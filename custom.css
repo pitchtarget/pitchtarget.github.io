@@ -197,7 +197,6 @@ form button:active {
   border: 1px solid #852512;
 }
 
-
 /* Insert CSS overrides here */
 @media only screen and (min-width : 320px) and (max-device-width : 768px) {
   /* Insert mobile CSS overrides here */
