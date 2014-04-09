@@ -82,4 +82,4 @@ curl "{{site.base_url}}/remarketingpixel?fb_ad_account_id=12" -X GET \
 
 ### Privacy, opt-out and Terms of Services
 
-As for other Custom Audiences products, your users must make sure to accept the Facebook's Custom Audiences Terms of Services and they should also have a valid end user Privacy Policy that allows user retargeting. For more details, refer to [Custom Audiences](/api/campaigns/custom_audiences.html).
+As for other Custom Audiences products, your users must make sure to accept the Facebook's Custom Audiences Terms of Services and they should also have a valid end user Privacy Policy that allows user retargeting. For more details, refer to [Custom Audiences](/api/audiences/custom_audiences.html).
