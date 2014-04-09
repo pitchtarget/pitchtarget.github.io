@@ -25,6 +25,7 @@ body {
   font-size: 100%;
   width: 100%;
   margin: 0;
+  padding: 0;
   overflow-x: hidden; }
 
 #container {
@@ -128,7 +129,13 @@ ul { }
 
 #footer {
   margin-top: 3.125em;
-  margin: 3.125em auto 6.250em auto; }
+  font-size: 0.8em;
+  text-align: center;
+  color: #888;
+}
+
+#footer a {color: #888;}
+#footer a:hover {text-decoration: underline}
 
 #more-words {
   font-size: 1.563em;
@@ -203,19 +210,24 @@ blockquote p {
   body {
     font-size: 100% !important;
     font-family: Helvetica, Arial, Verdana, sans-serif;
-    padding: 5px; }
+ }
 
-  div {
+/*  div {
     clear: both !important;
     display: block !important;
     width: 100% !important;
     float: none !important;
     margin: 0 !important;
     padding: 0 !important; }
-
+*/
   .codehilite {
     padding-top: 1.25em !important;
     padding-bottom: 1.25em !important; }
+
+  .mobile-table-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+  }
 
   pre {
     overflow: auto; }
@@ -223,8 +235,18 @@ blockquote p {
   blockquote p {
     overflow: auto; }
 
+  #container {width: 100% !important;}
+
+  body.with-nav #article {width: 100% !important; margin: 0 !important;}
+
   #header {
     position: absolute; }
+
+  #article {
+    margin: 10px;
+  }
+
+  h2 {width: auto;}
 
   @font-face {
     font-family: "ProximaNova-Bold";
