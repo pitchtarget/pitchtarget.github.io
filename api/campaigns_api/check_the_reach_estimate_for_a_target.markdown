@@ -20,12 +20,12 @@ Name | Description |
 ### Request
 
 {% highlight http %}
-GET /reachestimate?fb_ad_account_id=6&amp;targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D HTTP/1.1
+GET /reachestimate?fb_ad_account_id=35&amp;targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D HTTP/1.1
 Accept: application/json
-Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd
+Authorization: OAuth jtwkyg0t43jbrrnj4lfdxnvmq4sbx6v
 Host: example.org
 Cookie: 
-fb_ad_account_id: 6
+fb_ad_account_id: 35
 targeting_spec: {"geo_locations":{"countries":["IT"]}}
 {% endhighlight %}
 
@@ -33,9 +33,9 @@ targeting_spec: {"geo_locations":{"countries":["IT"]}}
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/reachestimate?fb_ad_account_id=6&targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D" -X GET \
+curl "api.pitchtarget.com/reachestimate?fb_ad_account_id=35&targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd"
+	-H "Authorization: OAuth jtwkyg0t43jbrrnj4lfdxnvmq4sbx6v"
 {% endhighlight %}
 
 ### Response
@@ -45,7 +45,6 @@ HTTP/1.1 200 OK
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-UA-Compatible: chrome=1
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
@@ -53,8 +52,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "a2d9c607c08c8286ecb2752857ef3409"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 9b0b9322-214e-4356-94b8-996aadcd2e2e
-X-Runtime: 0.022436
+X-Request-Id: e535cf11-34c0-4bcc-9709-3f3a8f368ce3
+X-Runtime: 0.012792
 Content-Length: 486
 {% endhighlight %}
 

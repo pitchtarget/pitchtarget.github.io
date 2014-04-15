@@ -1,41 +1,34 @@
 ---
 layout: default
-title: Campaigns API API
+title: Clients API (INTERNAL USE ONLY) API
 ---
 
-# Campaigns API API
+# Clients API (INTERNAL USE ONLY) API
 
-## Search for &#39;ita&#39; in countries
+## Get details of one of your client applications
 
-### GET /search
+### GET /clients/:id
 
 
-### Parameters
-
-Name | Description |
------|-------------|
-`q`  | The query |
-`type`  | The Facebook object type |
 
 ### Request
 
 {% highlight http %}
-GET /search?q=ita&amp;type=adcountry HTTP/1.1
+GET /clients/4954 HTTP/1.1
 Accept: application/json
-Authorization: OAuth il9oqqzyd1zvy7f8xfjgpax86if9a2x
+Authorization: OAuth qov6dkppqrcwde9j5r955tc3idrputp
 Host: example.org
 Cookie: 
-q: ita
-type: adcountry
+
 {% endhighlight %}
 
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/search?q=ita&type=adcountry" -X GET \
+curl "api.pitchtarget.com/clients/4954" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth il9oqqzyd1zvy7f8xfjgpax86if9a2x"
+	-H "Authorization: OAuth qov6dkppqrcwde9j5r955tc3idrputp"
 {% endhighlight %}
 
 ### Response
@@ -50,23 +43,24 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "ceb6ce5a01598672c46c36f643618ec4"
+ETag: "836adb757a4f927b79e15a97dd3c2081"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 2154c7e7-8b8f-47fd-ad8c-81a86a88ba65
-X-Runtime: 0.006281
-Content-Length: 87
+X-Request-Id: 150aba04-b9cb-404e-a02c-aa55dfb60314
+X-Runtime: 0.005092
+Content-Length: 147
 {% endhighlight %}
 
 #### Body
 
 {% highlight json %}
-[
-  {
-    "country_code": "IT",
-    "name": "Italy",
-    "supports_region": "false",
-    "supports_city": "true"
+{
+  "client": {
+    "id": 4954,
+    "name": "first",
+    "redirect_uri": "http://btask.cloudapp.net",
+    "client_id": "e8x3x25eabj8m3slo3cto824hpgtxi9",
+    "client_secret": null
   }
-]
+}
 {% endhighlight %}
 

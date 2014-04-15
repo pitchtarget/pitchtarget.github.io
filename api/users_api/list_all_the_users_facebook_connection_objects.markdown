@@ -22,7 +22,7 @@ Name | Description |
 {% highlight http %}
 GET /fb_connection_objects HTTP/1.1
 Accept: application/json
-Authorization: OAuth 2pd565tfodhbukvosnelj6we9zfkkap
+Authorization: OAuth nzxawc9q3m7m3ip22zveiic5um1n79a
 Host: example.org
 Cookie: 
 
@@ -34,7 +34,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/fb_connection_objects" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth 2pd565tfodhbukvosnelj6we9zfkkap"
+	-H "Authorization: OAuth nzxawc9q3m7m3ip22zveiic5um1n79a"
 {% endhighlight %}
 
 ### Response
@@ -44,7 +44,6 @@ HTTP/1.1 200 OK
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-UA-Compatible: chrome=1
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
@@ -52,8 +51,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "285f93777e90f54f5362b169f4974fef"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 6dce8af6-c9f4-41b2-9465-4bd759fbad03
-X-Runtime: 0.033663
+X-Request-Id: f2affbae-419c-40ba-8f30-002e57dcf7fe
+X-Runtime: 0.033552
 Content-Length: 56
 {% endhighlight %}
 

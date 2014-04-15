@@ -35,7 +35,7 @@ Cookie:
 {
   "username": "username",
   "password": "password",
-  "client_id": "7e4xaop9we89aiw96vjdekogyaw0pux"
+  "client_id": "hy1923nflzvka8io4sjbt9k5jpjfp84"
 }
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/sign-up" -X POST \
 	-H "Accept: application/json" \
-	-H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"7e4xaop9we89aiw96vjdekogyaw0pux"}'
+	-H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"hy1923nflzvka8io4sjbt9k5jpjfp84"}'
 {% endhighlight %}
 
 ### Response
@@ -54,17 +54,16 @@ HTTP/1.1 200 OK
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-UA-Compatible: chrome=1
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "36537a65873a3adc6ff1617d4112a631"
+ETag: "30e0b4dc280dd1df48e6232e6fab77c6"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 74049523-e47b-419f-bf35-423b4dc7826e
-X-Runtime: 0.133840
-Content-Length: 123
+X-Request-Id: 64eea224-5f1e-43ec-bf17-9ac4a4e71d16
+X-Runtime: 0.136865
+Content-Length: 125
 {% endhighlight %}
 
 #### Body
@@ -72,14 +71,14 @@ Content-Length: 123
 {% highlight json %}
 {
   "user": {
-    "id": 530,
+    "id": 18749,
     "username": "username",
     "fb_id": null,
     "fb_ad_accounts": [
 
     ]
   },
-  "access_token": "nrk8t1auceo2hve2fa4e4grr7ef19u7"
+  "access_token": "i4wpzegswwad4efgcz4v9lfydxzksc0"
 }
 {% endhighlight %}
 

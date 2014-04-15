@@ -1,22 +1,22 @@
 ---
 layout: default
-title: Users API API
+title: Clients API (INTERNAL USE ONLY) API
 ---
 
-# Users API API
+# Clients API (INTERNAL USE ONLY) API
 
-## Update the Facebook Ad Accounts owned by the user
+## Regenerate your PitchTarget client application secret
 
-### PUT /fb_ad_accounts
+### PUT /clients/:id/reset_secret
 
 
 
 ### Request
 
 {% highlight http %}
-PUT /fb_ad_accounts HTTP/1.1
+PUT /clients/4957/reset_secret HTTP/1.1
 Accept: application/json
-Authorization: OAuth cwyk8su3pvudh9m4za8uwjxes1f61kf
+Authorization: OAuth t1izbx0mipdhwc7z7rvvoiop9dee2oj
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -27,9 +27,9 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/fb_ad_accounts" -X PUT \
+curl "api.pitchtarget.com/clients/4957/reset_secret" -X PUT \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth cwyk8su3pvudh9m4za8uwjxes1f61kf" \
+	-H "Authorization: OAuth t1izbx0mipdhwc7z7rvvoiop9dee2oj" \
 	-H "Content-Type: application/x-www-form-urlencoded" -d ''
 {% endhighlight %}
 
@@ -45,31 +45,24 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "be02c8f43ba34a694c92b4967b6804b8"
+ETag: "3a23321dd791421e172a353cb70f7aad"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 4135464c-61cf-4d5a-ae78-9764c73af68d
-X-Runtime: 0.016459
-Content-Length: 164
+X-Request-Id: 785e3903-a42b-418f-9b49-70063fab4879
+X-Runtime: 0.135713
+Content-Length: 175
 {% endhighlight %}
 
 #### Body
 
 {% highlight json %}
 {
-  "fb_ad_accounts": [
-    {
-      "id": 29605,
-      "name": "AD Account Bar",
-      "currency": "EUR",
-      "fb_id": "71"
-    },
-    {
-      "id": 29606,
-      "name": "My new account",
-      "currency": "EUR",
-      "fb_id": "638109674309"
-    }
-  ]
+  "client": {
+    "id": 4957,
+    "name": "first",
+    "redirect_uri": "http://btask.cloudapp.net",
+    "client_id": "7ebx9qz64ybzqjqhgvnfs4lx92s3clh",
+    "client_secret": "58lluqtcircv2mfveyleg20xln2o9e"
+  }
 }
 {% endhighlight %}
 

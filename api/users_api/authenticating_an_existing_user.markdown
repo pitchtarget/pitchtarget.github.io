@@ -34,10 +34,10 @@ Cookie:
 
 {% highlight json %}
 {
-  "username": "user_7",
+  "username": "user_37",
   "password": "password",
   "grant_type": "password",
-  "client_id": "3d0rhizeusacd3nconbo6os6r2hv1i1"
+  "client_id": "86in02mzugcc1d3up3gb4bryttqk3j4"
 }
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/oauth/authorize" -X POST \
 	-H "Accept: application/json" \
-	-H "Content-Type: application/json" -d '{"username":"user_7","password":"password","grant_type":"password","client_id":"3d0rhizeusacd3nconbo6os6r2hv1i1"}'
+	-H "Content-Type: application/json" -d '{"username":"user_37","password":"password","grant_type":"password","client_id":"86in02mzugcc1d3up3gb4bryttqk3j4"}'
 {% endhighlight %}
 
 ### Response
@@ -56,16 +56,15 @@ HTTP/1.1 200 OK
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-UA-Compatible: chrome=1
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Cache-Control: no-store
 Content-Type: application/json
-ETag: "c099bb7c7fa479cba25e0863a59a8bac"
-X-Request-Id: 7ef0d9e9-726c-4974-9d0e-755068577f0b
-X-Runtime: 0.132385
+ETag: "d7233d1d654f267460de64f90a9bec53"
+X-Request-Id: b2fd2be7-d9fc-4065-9524-9fa294b0d852
+X-Runtime: 0.088874
 Content-Length: 50
 {% endhighlight %}
 
@@ -73,7 +72,7 @@ Content-Length: 50
 
 {% highlight json %}
 {
-  "access_token": "sj56uxll27syir0vup4xi4r0op8pk1q"
+  "access_token": "qikn4vepmog9qjtdl5sx176p6kcspx0"
 }
 {% endhighlight %}
 

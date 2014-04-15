@@ -14,9 +14,9 @@ title: Users API API
 ### Request
 
 {% highlight http %}
-GET /users/523 HTTP/1.1
+GET /users/18753 HTTP/1.1
 Accept: application/json
-Authorization: OAuth cthfqzhvymz9m7q11a3bsa2p0mnxyaz
+Authorization: OAuth q5rb51zoxzz3t7c7mn7es4yvh3v5mhu
 Host: example.org
 Cookie: 
 
@@ -26,9 +26,9 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/users/523" -X GET \
+curl "api.pitchtarget.com/users/18753" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth cthfqzhvymz9m7q11a3bsa2p0mnxyaz"
+	-H "Authorization: OAuth q5rb51zoxzz3t7c7mn7es4yvh3v5mhu"
 {% endhighlight %}
 
 ### Response
@@ -38,17 +38,16 @@ HTTP/1.1 200 OK
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-UA-Compatible: chrome=1
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "8738ab2d615517f92e2ff9996b29d8cd"
+ETag: "6eda3eb8254d9af59e5a63f6c8a5904a"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a126e18f-91a5-487a-97b9-e1ccde9acb0b
-X-Runtime: 0.009564
-Content-Length: 135
+X-Request-Id: 79f50b23-3197-4a38-b176-5f59a567ee9a
+X-Runtime: 0.008111
+Content-Length: 141
 {% endhighlight %}
 
 #### Body
@@ -56,15 +55,15 @@ Content-Length: 135
 {% highlight json %}
 {
   "user": {
-    "id": 523,
-    "username": "user_2",
-    "fb_id": "2",
+    "id": 18753,
+    "username": "user_42",
+    "fb_id": "43",
     "fb_ad_accounts": [
       {
-        "id": 1393,
+        "id": 29598,
         "name": "AD Account Bar",
         "currency": "EUR",
-        "fb_id": "2"
+        "fb_id": "64"
       }
     ]
   }

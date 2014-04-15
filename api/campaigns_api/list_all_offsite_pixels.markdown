@@ -19,21 +19,21 @@ Name | Description |
 ### Request
 
 {% highlight http %}
-GET /offsitepixels?fb_ad_account_id=8 HTTP/1.1
+GET /offsitepixels?fb_ad_account_id=44 HTTP/1.1
 Accept: application/json
-Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd
+Authorization: OAuth hxmmiric6d7i19pphevl8p9xs0n0ckz
 Host: example.org
 Cookie: 
-fb_ad_account_id: 8
+fb_ad_account_id: 44
 {% endhighlight %}
 
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/offsitepixels?fb_ad_account_id=8" -X GET \
+curl "api.pitchtarget.com/offsitepixels?fb_ad_account_id=44" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd"
+	-H "Authorization: OAuth hxmmiric6d7i19pphevl8p9xs0n0ckz"
 {% endhighlight %}
 
 ### Response
@@ -43,16 +43,15 @@ HTTP/1.1 200 OK
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-UA-Compatible: chrome=1
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "5b5c6d08a075901a72ee320c8c66c183"
+ETag: "bca1653f9b813db024e8a62e0d2e7684"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: d4560512-6fb7-4d9b-b311-8a060856b701
-X-Runtime: 0.020030
+X-Request-Id: dd8da8e4-fd02-40da-b4bd-11590c196f58
+X-Runtime: 0.010920
 Content-Length: 852
 {% endhighlight %}
 

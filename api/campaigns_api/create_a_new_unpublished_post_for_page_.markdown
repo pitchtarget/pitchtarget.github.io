@@ -28,7 +28,7 @@ Name | Description |
 {% highlight http %}
 POST /unpublished_page_posts HTTP/1.1
 Accept: application/json
-Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd
+Authorization: OAuth ic7s9ny9qcsxj87eydc82oeqpbdoic2
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -46,7 +46,7 @@ page_id=205530782989409&link=http%3A%2F%2Fexample.com
 {% highlight sh %}
 curl "api.pitchtarget.com/unpublished_page_posts" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd" \
+	-H "Authorization: OAuth ic7s9ny9qcsxj87eydc82oeqpbdoic2" \
 	-H "Content-Type: application/x-www-form-urlencoded" -d 'page_id=205530782989409&link=http%3A%2F%2Fexample.com'
 {% endhighlight %}
 
@@ -57,7 +57,6 @@ HTTP/1.1 200 OK
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-UA-Compatible: chrome=1
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
@@ -65,8 +64,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "cf4e429e413e41aedaf9a1a34bd61c1e"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 20c727c2-8b88-49d6-97ab-71e9db90f655
-X-Runtime: 0.008245
+X-Request-Id: 2cdc12d6-92ec-461b-879b-625f63eb5472
+X-Runtime: 0.005701
 Content-Length: 42
 {% endhighlight %}
 

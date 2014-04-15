@@ -16,7 +16,7 @@ title: Campaigns API API
 {% highlight http %}
 GET /offsitepixels/6014360342904 HTTP/1.1
 Accept: application/json
-Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd
+Authorization: OAuth d9eexfox0bdnfeis3gi92fnawidcjl9
 Host: example.org
 Cookie: 
 
@@ -28,7 +28,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/offsitepixels/6014360342904" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth bi8pskhwqqjr9owpb6k7xnxj7s9n2kd"
+	-H "Authorization: OAuth d9eexfox0bdnfeis3gi92fnawidcjl9"
 {% endhighlight %}
 
 ### Response
@@ -38,16 +38,15 @@ HTTP/1.1 200 OK
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-UA-Compatible: chrome=1
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "3ea192cf93bb7893c29fd0a97aa9fa81"
+ETag: "1ef1835c4c015c285b0e37468a73a8ba"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 460ed7d0-9e7c-4dd5-8278-1b9a9d472094
-X-Runtime: 0.065819
+X-Request-Id: 2529c93c-a1ab-405e-9277-8f124e1eea5e
+X-Runtime: 0.005879
 Content-Length: 850
 {% endhighlight %}
 

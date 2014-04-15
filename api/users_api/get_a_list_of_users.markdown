@@ -21,7 +21,7 @@ Name | Description |
 {% highlight http %}
 GET /users HTTP/1.1
 Accept: application/json
-Authorization: OAuth cthfqzhvymz9m7q11a3bsa2p0mnxyaz
+Authorization: OAuth cy80i6j8dk0uqsdczhqdq43l7n045hx
 Host: example.org
 Cookie: 
 %7B%7D: 
@@ -33,7 +33,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/users" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth cthfqzhvymz9m7q11a3bsa2p0mnxyaz"
+	-H "Authorization: OAuth cy80i6j8dk0uqsdczhqdq43l7n045hx"
 {% endhighlight %}
 
 ### Response
@@ -43,17 +43,16 @@ HTTP/1.1 200 OK
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-UA-Compatible: chrome=1
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "95bc2b6dc53ab4a78058448912e8678d"
+ETag: "6e063c17ca21426066ed68de39c38b16"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 5c1e7676-f243-488e-a777-a5189786f7bb
-X-Runtime: 0.052007
-Content-Length: 166
+X-Request-Id: 1b22bc92-2584-4cb5-87ab-08d1a44ef76c
+X-Runtime: 0.013381
+Content-Length: 172
 {% endhighlight %}
 
 #### Body
@@ -62,15 +61,15 @@ Content-Length: 166
 {
   "users": [
     {
-      "id": 522,
-      "username": "user_1",
-      "fb_id": "1",
+      "id": 18751,
+      "username": "user_40",
+      "fb_id": "41",
       "fb_ad_accounts": [
         {
-          "id": 1392,
+          "id": 29596,
           "name": "AD Account Bar",
           "currency": "EUR",
-          "fb_id": "1"
+          "fb_id": "62"
         }
       ]
     }

@@ -7,11 +7,8 @@ title: API Documentation
 
 ## Audience API
 
-* [Add users to an existing custom audience](audience_api/add_users_to_an_existing_custom_audience.html)
-* [Create a new custom audience](audience_api/create_a_new_custom_audience.html)
 * [Create a new lookalike audience](audience_api/create_a_new_lookalike_audience.html)
 * [Create a new website custom audience](audience_api/create_a_new_website_custom_audience.html)
-* [Delete a custom audience](audience_api/delete_a_custom_audience.html)
 * [Get the remarketing pixel code](audience_api/get_the_remarketing_pixel_code.html)
 
 ## Campaigns API
@@ -34,12 +31,18 @@ title: API Documentation
 * [Creating a new WEBSITE_CONVERSIONS campaign with a page post URL and an offsite pixel id](campaigns_api/creating_a_new_website_conversions_campaign_with_a_page_post_url_and_an_offsite_pixel_id.html)
 * [Creating a new WEBSITE_CONVERSIONS campaign with a page post story ID](campaigns_api/creating_a_new_website_conversions_campaign_with_a_page_post_story_id.html)
 * [Creating a new WEBSITE_CONVERSIONS campaign with a site URL](campaigns_api/creating_a_new_website_conversions_campaign_with_a_site_url.html)
-* [Get data for custom audience 6013451248234](campaigns_api/get_data_for_custom_audience_.html)
 * [Get data for offsite pixel 6014360342904](campaigns_api/get_data_for_offsite_pixel_.html)
 * [Get the list of promotable posts](campaigns_api/get_the_list_of_promotable_posts.html)
-* [List all custom audiences](campaigns_api/list_all_custom_audiences.html)
 * [List all offsite pixels](campaigns_api/list_all_offsite_pixels.html)
 * [Search for &#39;ita&#39; in countries](campaigns_api/search_for_ita_in_countries.html)
+
+## Clients API (INTERNAL USE ONLY)
+
+* [Create a new PitchTarget client application](clients_api_internal_use_only_/create_a_new_pitchtarget_client_application.html)
+* [Get details of one of your client applications](clients_api_internal_use_only_/get_details_of_one_of_your_client_applications.html)
+* [List all your PitchTarget client applications](clients_api_internal_use_only_/list_all_your_pitchtarget_client_applications.html)
+* [Regenerate your PitchTarget client application secret](clients_api_internal_use_only_/regenerate_your_pitchtarget_client_application_secret.html)
+* [Update one of yours PitchTarget client applications](clients_api_internal_use_only_/update_one_of_yours_pitchtarget_client_applications.html)
 
 ## Users API
 
