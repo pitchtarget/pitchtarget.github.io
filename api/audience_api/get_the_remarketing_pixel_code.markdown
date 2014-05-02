@@ -7,7 +7,7 @@ title: Audience API API
 
 ## Get the remarketing pixel code
 
-### GET /remarketingpixel
+### GET /custom_audiences/remarketing_pixel
 
 
 ### Parameters
@@ -19,21 +19,21 @@ Name | Description |
 ### Request
 
 {% highlight http %}
-GET /remarketingpixel?fb_ad_account_id=68 HTTP/1.1
+GET /custom_audiences/remarketing_pixel?fb_ad_account_id=57 HTTP/1.1
 Accept: application/json
-Authorization: OAuth ccwg118l6rlr4oq4nnhrbycdzd2xycx
+Authorization: OAuth pd8m1zkmbmgpl3ufka778gzhrk8zno0
 Host: example.org
 Cookie: 
-fb_ad_account_id: 68
+fb_ad_account_id: 57
 {% endhighlight %}
 
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/remarketingpixel?fb_ad_account_id=68" -X GET \
+curl "api.pitchtarget.com/custom_audiences/remarketing_pixel?fb_ad_account_id=57" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth ccwg118l6rlr4oq4nnhrbycdzd2xycx"
+	-H "Authorization: OAuth pd8m1zkmbmgpl3ufka778gzhrk8zno0"
 {% endhighlight %}
 
 ### Response
@@ -50,8 +50,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "c5ae20609ad1b7865899799896dd1de3"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 4d541ff6-675b-4679-a5f9-f05db44a9164
-X-Runtime: 0.010636
+X-Request-Id: 9311883c-7d06-4533-bf49-295bb0831b00
+X-Runtime: 0.011044
 Content-Length: 36
 {% endhighlight %}
 

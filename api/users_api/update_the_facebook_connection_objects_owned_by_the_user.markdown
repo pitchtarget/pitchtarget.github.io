@@ -21,7 +21,7 @@ Name | Description |
 {% highlight http %}
 PUT /fb_connection_objects HTTP/1.1
 Accept: application/json
-Authorization: OAuth 4zo9uba2hwh86gh4b8leplbl1ovq436
+Authorization: OAuth qchqu52e50za33h7ii0idtzhamvkrde
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -39,7 +39,7 @@ fb_ad_account_id=3
 {% highlight sh %}
 curl "api.pitchtarget.com/fb_connection_objects" -X PUT \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth 4zo9uba2hwh86gh4b8leplbl1ovq436" \
+	-H "Authorization: OAuth qchqu52e50za33h7ii0idtzhamvkrde" \
 	-H "Content-Type: application/x-www-form-urlencoded" -d 'fb_ad_account_id=3'
 {% endhighlight %}
 
@@ -55,8 +55,8 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Cache-Control: no-cache
-X-Request-Id: a20d430d-38b1-4f78-9374-ae73ef099202
-X-Runtime: 0.033422
+X-Request-Id: 0063751d-e193-413d-a71b-1df25437c825
+X-Runtime: 0.119935
 {% endhighlight %}
 
 

@@ -7,7 +7,7 @@ title: Campaigns API API
 
 ## Check the reach estimate for a target
 
-### GET /reachestimate
+### GET /reach_estimate
 
 
 ### Parameters
@@ -20,12 +20,12 @@ Name | Description |
 ### Request
 
 {% highlight http %}
-GET /reachestimate?fb_ad_account_id=35&amp;targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D HTTP/1.1
+GET /reach_estimate?fb_ad_account_id=31&amp;targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D HTTP/1.1
 Accept: application/json
-Authorization: OAuth jtwkyg0t43jbrrnj4lfdxnvmq4sbx6v
+Authorization: OAuth 126bwibn13ax88xhuyajmkq37u8g0b2
 Host: example.org
 Cookie: 
-fb_ad_account_id: 35
+fb_ad_account_id: 31
 targeting_spec: {"geo_locations":{"countries":["IT"]}}
 {% endhighlight %}
 
@@ -33,9 +33,9 @@ targeting_spec: {"geo_locations":{"countries":["IT"]}}
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/reachestimate?fb_ad_account_id=35&targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D" -X GET \
+curl "api.pitchtarget.com/reach_estimate?fb_ad_account_id=31&targeting_spec=%7B%22geo_locations%22%3A%7B%22countries%22%3A%5B%22IT%22%5D%7D%7D" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth jtwkyg0t43jbrrnj4lfdxnvmq4sbx6v"
+	-H "Authorization: OAuth 126bwibn13ax88xhuyajmkq37u8g0b2"
 {% endhighlight %}
 
 ### Response
@@ -52,8 +52,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "a2d9c607c08c8286ecb2752857ef3409"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: e535cf11-34c0-4bcc-9709-3f3a8f368ce3
-X-Runtime: 0.012792
+X-Request-Id: e1dd3de3-150a-4059-add3-675dde4ac6fb
+X-Runtime: 0.011350
 Content-Length: 486
 {% endhighlight %}
 

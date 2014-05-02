@@ -20,19 +20,19 @@ Name | Description |
 ### Request
 
 {% highlight http %}
-GET /facebook/oauth_dialog?redirect_uri=http%3A%2F%2Fbtask.cloudapp.net&amp;oauth_token=p0gy36qhwucd8gx5fkp3lch94r80m3z HTTP/1.1
+GET /facebook/oauth_dialog?redirect_uri=http%3A%2F%2Fbtask.cloudapp.net&amp;oauth_token=clfyhqtxf7jfywl2urknr9pm79svwox HTTP/1.1
 Accept: application/json
 Host: example.org
 Cookie: 
 redirect_uri: http://btask.cloudapp.net
-oauth_token: p0gy36qhwucd8gx5fkp3lch94r80m3z
+oauth_token: clfyhqtxf7jfywl2urknr9pm79svwox
 {% endhighlight %}
 
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/facebook/oauth_dialog?redirect_uri=http%3A%2F%2Fbtask.cloudapp.net&oauth_token=p0gy36qhwucd8gx5fkp3lch94r80m3z" -X GET \
+curl "api.pitchtarget.com/facebook/oauth_dialog?redirect_uri=http%3A%2F%2Fbtask.cloudapp.net&oauth_token=clfyhqtxf7jfywl2urknr9pm79svwox" -X GET \
 	-H "Accept: application/json"
 {% endhighlight %}
 
@@ -47,17 +47,17 @@ Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
-Location: https://www.facebook.com/dialog/oauth?client_id=668664849828937&redirect_uri=http%3A%2F%2Fexample.org%2Ffacebook%2Foauth_code%3Fintegrator_uri%3Dhttp%253A%252F%252Fbtask.cloudapp.net%26oauth_token%3Dp0gy36qhwucd8gx5fkp3lch94r80m3z&scope=publish_stream%2Cads_management%2Cmanage_pages
+Location: https://www.facebook.com/dialog/oauth?client_id=668664849828937&redirect_uri=http%3A%2F%2Fexample.org%2Ffacebook%2Foauth_code%3Fintegrator_uri%3Dhttp%253A%252F%252Fbtask.cloudapp.net%26oauth_token%3Dclfyhqtxf7jfywl2urknr9pm79svwox&scope=publish_stream%2Cads_management%2Cmanage_pages
 Content-Type: text/html; charset=utf-8
 Cache-Control: no-cache
-X-Request-Id: 2265cf78-d7ce-4ee6-bba4-5aca83fcaefa
-X-Runtime: 0.007786
+X-Request-Id: 78f3c57f-1f14-47a6-826c-9703eb211e62
+X-Runtime: 0.009761
 Content-Length: 357
 {% endhighlight %}
 
 #### Body
 
 {% highlight text %}
-<html><body>You are being <a href="https://www.facebook.com/dialog/oauth?client_id=668664849828937&amp;redirect_uri=http%3A%2F%2Fexample.org%2Ffacebook%2Foauth_code%3Fintegrator_uri%3Dhttp%253A%252F%252Fbtask.cloudapp.net%26oauth_token%3Dp0gy36qhwucd8gx5fkp3lch94r80m3z&amp;scope=publish_stream%2Cads_management%2Cmanage_pages">redirected</a>.</body></html>
+<html><body>You are being <a href="https://www.facebook.com/dialog/oauth?client_id=668664849828937&amp;redirect_uri=http%3A%2F%2Fexample.org%2Ffacebook%2Foauth_code%3Fintegrator_uri%3Dhttp%253A%252F%252Fbtask.cloudapp.net%26oauth_token%3Dclfyhqtxf7jfywl2urknr9pm79svwox&amp;scope=publish_stream%2Cads_management%2Cmanage_pages">redirected</a>.</body></html>
 {% endhighlight %}
 

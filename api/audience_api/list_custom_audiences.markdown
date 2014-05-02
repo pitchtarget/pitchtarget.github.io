@@ -1,34 +1,39 @@
 ---
 layout: default
-title: Users API API
+title: Audience API API
 ---
 
-# Users API API
+# Audience API API
 
-## List all the user&#39;s Facebook Ad Accounts
+## List custom audiences
 
-### GET /fb_ad_accounts
+### GET /custom_audiences
 
 
+### Parameters
+
+Name | Description |
+-----|-------------|
+`fb_ad_account_id` (required) | Facebook ID of the Ad Account for the current user |
 
 ### Request
 
 {% highlight http %}
-GET /fb_ad_accounts HTTP/1.1
+GET /custom_audiences?fb_ad_account_id=47 HTTP/1.1
 Accept: application/json
-Authorization: OAuth qvzjt907kn7ajc7tthbi8240yaissxr
+Authorization: OAuth 44ef970ga6px5ztagc0d1c23lo4tfqz
 Host: example.org
 Cookie: 
-
+fb_ad_account_id: 47
 {% endhighlight %}
 
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/fb_ad_accounts" -X GET \
+curl "api.pitchtarget.com/custom_audiences?fb_ad_account_id=47" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth qvzjt907kn7ajc7tthbi8240yaissxr"
+	-H "Authorization: OAuth 44ef970ga6px5ztagc0d1c23lo4tfqz"
 {% endhighlight %}
 
 ### Response
@@ -43,31 +48,24 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "e3902e56f4290fab75e8155fce23a080"
+ETag: "39c8989b54013bda8e22d8cbe62440d9"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: bba1d81c-a829-4444-bdb4-4ca77f63e280
-X-Runtime: 0.081257
-Content-Length: 154
+X-Request-Id: 1f1a9f3f-5ded-40fe-a032-594c223109d5
+X-Runtime: 0.010183
+Content-Length: 51
 {% endhighlight %}
 
 #### Body
 
 {% highlight json %}
 {
-  "fb_ad_accounts": [
-    {
-      "id": 45342,
-      "name": "AD Account Bar",
-      "currency": "EUR",
-      "fb_id": "14"
-    },
-    {
-      "id": 45343,
-      "name": "AD Account Bar",
-      "currency": "EUR",
-      "fb_id": "15"
-    }
-  ]
+  "custom_audiences": [
+
+  ],
+  "meta": {
+    "page": 1,
+    "total": 0
+  }
 }
 {% endhighlight %}
 

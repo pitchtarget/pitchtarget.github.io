@@ -14,7 +14,7 @@ title: Audience API API
 
 Name | Description |
 -----|-------------|
-`type` (required) | Custom audience type |
+`subtype` (required) | The subtype for the custom audience |
 `fb_ad_account_id` (required) | Facebook ID of the Ad Account to use |
 `name` (required) | The name for the lookalike audience |
 `origin_audience_id` (required) | The ID of origin custom audience |
@@ -25,8 +25,8 @@ Name | Description |
 {% highlight http %}
 POST /custom_audiences HTTP/1.1
 Accept: application/json
+Authorization: OAuth oqf75nj2y881a50t5j9uczzyk73kfk6
 Content-Type: application/json
-Authorization: OAuth jvm9ily5v0khkuf6ptxl0c6qyusalzt
 Host: example.org
 Cookie: 
 
@@ -36,8 +36,8 @@ Cookie:
 
 {% highlight json %}
 {
-  "type": "lookalike",
-  "fb_ad_account_id": "61",
+  "subtype": "LOOKALIKE",
+  "fb_ad_account_id": "55",
   "name": "Boys Apparel_lookalike_US_Similarity",
   "origin_audience_id": 6006164557194,
   "lookalike_spec": {
@@ -52,8 +52,8 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/custom_audiences" -X POST \
 	-H "Accept: application/json" \
-	-H "Content-Type: application/json" \
-	-H "Authorization: OAuth jvm9ily5v0khkuf6ptxl0c6qyusalzt" -d '{"type":"lookalike","fb_ad_account_id":"61","name":"Boys Apparel_lookalike_US_Similarity","origin_audience_id":6006164557194,"lookalike_spec":{"type":"similarity","country":"US"}}'
+	-H "Authorization: OAuth oqf75nj2y881a50t5j9uczzyk73kfk6" \
+	-H "Content-Type: application/json" -d '{"subtype":"LOOKALIKE","fb_ad_account_id":"55","name":"Boys Apparel_lookalike_US_Similarity","origin_audience_id":6006164557194,"lookalike_spec":{"type":"similarity","country":"US"}}'
 {% endhighlight %}
 
 ### Response
@@ -68,18 +68,28 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "60669f217459b9091f02a9c0f24942a7"
+ETag: "4504fa784afa8e0d8a38b96312023e95"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7eaee2fa-e11d-4410-8f18-33d9839f9ccb
-X-Runtime: 0.012544
-Content-Length: 22
+X-Request-Id: 0cdd7641-3a82-4821-91ca-63838ea059ec
+X-Runtime: 0.081115
+Content-Length: 215
 {% endhighlight %}
 
 #### Body
 
 {% highlight json %}
 {
-  "id": "6006183285954"
+  "fb_custom_audience": {
+    "id": 1243,
+    "name": "Boys Apparel_lookalike_US_Similarity",
+    "fb_id": "6006183285954",
+    "subtype": "LOOKALIKE",
+    "origin_audience_id": 6006164557194,
+    "lookalike_spec": {
+      "type": "similarity",
+      "country": "US"
+    }
+  }
 }
 {% endhighlight %}
 

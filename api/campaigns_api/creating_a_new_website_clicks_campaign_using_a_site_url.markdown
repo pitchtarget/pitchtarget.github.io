@@ -37,7 +37,7 @@ Name | Description |
 POST /campaigns HTTP/1.1
 Accept: application/json
 Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1
-Authorization: OAuth 84m8uwf857nj1j6j9jrgb1oucio9f19
+Authorization: OAuth aqmx0y4akr913x2ksi4wgcj2h62xviu
 Host: example.org
 Cookie: 
 
@@ -48,7 +48,7 @@ Cookie:
 ##### `fb_ad_account_id`
 
 {% highlight text %}
-29
+71
 {% endhighlight %}
 
 ##### `objective`
@@ -98,7 +98,7 @@ daily
 ##### `start_time`
 
 {% highlight text %}
-1397549600
+1399020652
 {% endhighlight %}
 
 ##### `targets`
@@ -137,13 +137,13 @@ daily
 ##### `object_url`
 
 {% highlight text %}
-http://www.example.com
+http://www.pitchtarget.com
 {% endhighlight %}
 
 ##### `object_id`
 
 {% highlight text %}
-205530782989409
+265912280253259
 {% endhighlight %}
 
 ##### `creative_texts`
@@ -163,8 +163,8 @@ http://www.example.com
 {% highlight sh %}
 curl "api.pitchtarget.com/campaigns" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth 84m8uwf857nj1j6j9jrgb1oucio9f19" \
-	-F 'fb_ad_account_id=29' \
+	-H "Authorization: OAuth aqmx0y4akr913x2ksi4wgcj2h62xviu" \
+	-F 'fb_ad_account_id=71' \
 	-F 'objective=WEBSITE_CLICKS' \
 	-F 'name=foo' \
 	-F 'bid_type=ABSOLUTE_OCPM' \
@@ -172,10 +172,10 @@ curl "api.pitchtarget.com/campaigns" -X POST \
 	-F 'max_bid=100' \
 	-F 'budget_type=daily' \
 	-F 'budget_amount=100000' \
-	-F 'start_time=1397549600' \
+	-F 'start_time=1399020652' \
 	-F 'targets=[{"name":"Mobile Games fans","specs":{"age_min":18,"age_max":35,"geo_locations":{"countries":["US"]},"interests":[{"name":"Video games","id":6003940339466},{"name":"Browser games","id":6003434373937},{"name":"Casual game","id":6003102728434}]}}]' \
-	-F 'object_url=http://www.example.com' \
-	-F 'object_id=205530782989409' \
+	-F 'object_url=http://www.pitchtarget.com' \
+	-F 'object_id=265912280253259' \
 	-F 'creative_texts=[{"title":"Awesome Game!","body":"Have fun with our awesome game! Challenge your friends and beat them all!"}]' \
 	-F 'creative_images[]=@1200x864.jpg;type=text/plain'
 {% endhighlight %}
@@ -192,11 +192,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "a87681a48bd5db077ea208e1f66cf5d9"
+ETag: "803d9f51878f070a1ba25ef357451554"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 1950cefc-69ad-449c-9ede-92d15f4036f1
-X-Runtime: 0.109866
-Content-Length: 1057
+X-Request-Id: 60bc14bd-2872-43d0-b079-46ae992845b4
+X-Runtime: 0.122837
+Content-Length: 1060
 {% endhighlight %}
 
 #### Body
@@ -204,12 +204,12 @@ Content-Length: 1057
 {% highlight json %}
 {
   "campaign": {
-    "id": 4060,
+    "id": 6313,
     "budget_type": "daily",
     "budget_amount": 100000,
     "bid_type": "ABSOLUTE_OCPM",
     "max_bid": 100,
-    "start_time": "2014-04-15T08:13:20.000Z",
+    "start_time": "2014-05-02T08:50:52.000Z",
     "end_time": null,
     "objective": "WEBSITE_CLICKS",
     "status": null,
@@ -217,16 +217,16 @@ Content-Length: 1057
     "fb_app_icon": null,
     "creatives": [
       {
-        "id": 2590,
+        "id": 4031,
         "creative_images": [
           {
-            "id": 1029,
-            "image": "/uploads/ad_image/image/1655/1200x864.jpg"
+            "id": 1581,
+            "image": "/uploads/ad_image/image/2571/1200x864.jpg"
           }
         ],
         "creative_texts": [
           {
-            "id": 1030,
+            "id": 1589,
             "title": "Awesome Game!",
             "name": null,
             "body": "Have fun with our awesome game! Challenge your friends and beat them all!"
@@ -236,7 +236,7 @@ Content-Length: 1057
     ],
     "fb_targets": [
       {
-        "id": 1535,
+        "id": 2353,
         "name": "Mobile Games fans",
         "favorite": false,
         "geo_locations": {
@@ -271,10 +271,10 @@ Content-Length: 1057
       }
     ],
     "fb_ad_account": {
-      "id": 29,
+      "id": 45400,
       "name": "AD Account Bar",
       "currency": "EUR",
-      "fb_id": "29"
+      "fb_id": "71"
     },
     "fb_ad_campaigns": [
 

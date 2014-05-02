@@ -5,46 +5,42 @@ title: Users API API
 
 # Users API API
 
-## Creating a new user
+## Update the current user password
 
-### POST /sign-up
+### PUT /users
 
 
 ### Parameters
 
 Name | Description |
 -----|-------------|
-`username` (required) | Username |
-`password` (required) | Password |
-`client_id` (required) | Client app id |
+`password`  | The new password for the user |
 
 ### Request
 
 {% highlight http %}
-POST /sign-up HTTP/1.1
+PUT /users HTTP/1.1
 Accept: application/json
-Content-Type: application/json
+Authorization: OAuth 16a3ex4f0zggwhnwnh07n46orjshxww
 Host: example.org
+Content-Type: application/x-www-form-urlencoded
 Cookie: 
 
 {% endhighlight %}
 
 #### Body
 
-{% highlight json %}
-{
-  "username": "username",
-  "password": "password",
-  "client_id": "b0n3u0dhl1qq1rumq0gfh1agj9mj3tr"
-}
+{% highlight text %}
+password=secretpassword
 {% endhighlight %}
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/sign-up" -X POST \
+curl "api.pitchtarget.com/users" -X PUT \
 	-H "Accept: application/json" \
-	-H "Content-Type: application/json" -d '{"username":"username","password":"password","client_id":"b0n3u0dhl1qq1rumq0gfh1agj9mj3tr"}'
+	-H "Authorization: OAuth 16a3ex4f0zggwhnwnh07n46orjshxww" \
+	-H "Content-Type: application/x-www-form-urlencoded" -d 'password=secretpassword'
 {% endhighlight %}
 
 ### Response
@@ -59,11 +55,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "8195540da4b98fd2fb714fca544ab7b6"
+ETag: "c54458b06a96d155f38ba9b202a923d9"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a588e2aa-79b5-458c-9fee-43b99567f3b2
-X-Runtime: 0.081256
-Content-Length: 125
+X-Request-Id: dfb15229-9e7d-459a-b2ad-0222f8ab42ea
+X-Runtime: 0.075588
+Content-Length: 141
 {% endhighlight %}
 
 #### Body
@@ -71,14 +67,18 @@ Content-Length: 125
 {% highlight json %}
 {
   "user": {
-    "id": 28383,
-    "username": "username",
-    "fb_id": null,
+    "id": 28368,
+    "username": "user_27",
+    "fb_id": "28",
     "fb_ad_accounts": [
-
+      {
+        "id": 45363,
+        "name": "AD Account Bar",
+        "currency": "EUR",
+        "fb_id": "34"
+      }
     ]
-  },
-  "access_token": "2pcbv4ml4b49cw7zemkawuqnx1sio08"
+  }
 }
 {% endhighlight %}
 

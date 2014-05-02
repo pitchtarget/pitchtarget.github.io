@@ -1,22 +1,22 @@
 ---
 layout: default
-title: Audience API API
+title: Users API API
 ---
 
-# Audience API API
+# Users API API
 
-## Delete a custom audience
+## Delete a user
 
-### DELETE /custom_audiences/:id
+### DELETE /users/:id
 
 
 
 ### Request
 
 {% highlight http %}
-DELETE /custom_audiences/465257143575221 HTTP/1.1
+DELETE /users/28367 HTTP/1.1
 Accept: application/json
-Authorization: OAuth rsajfx4x9csb9kll2ki8n7mubhdtc8x
+Authorization: OAuth 2ky6pj375cooglfhq3zi69og2df3ttl
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -27,9 +27,9 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/custom_audiences/465257143575221" -X DELETE \
+curl "api.pitchtarget.com/users/28367" -X DELETE \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth rsajfx4x9csb9kll2ki8n7mubhdtc8x" \
+	-H "Authorization: OAuth 2ky6pj375cooglfhq3zi69og2df3ttl" \
 	-H "Content-Type: application/x-www-form-urlencoded" -d ''
 {% endhighlight %}
 
@@ -45,8 +45,8 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Cache-Control: no-cache
-X-Request-Id: b1424393-db97-4523-80b9-fdcb3f0dc95f
-X-Runtime: 0.027512
+X-Request-Id: dcfd12f5-e89d-4108-8a42-0ec3d2108c44
+X-Runtime: 0.015287
 {% endhighlight %}
 
 

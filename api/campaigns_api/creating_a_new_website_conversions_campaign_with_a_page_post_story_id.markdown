@@ -35,7 +35,7 @@ Name | Description |
 POST /campaigns HTTP/1.1
 Accept: application/json
 Content-Type: application/json
-Authorization: OAuth 9sy4a0udwvu4jc4z9sdtcayng9sswcq
+Authorization: OAuth s59s5isaxkwjrz83rcgc6qvv57uh5cm
 Host: example.org
 Cookie: 
 
@@ -45,7 +45,7 @@ Cookie:
 
 {% highlight json %}
 {
-  "fb_ad_account_id": "19",
+  "fb_ad_account_id": "85",
   "objective": "WEBSITE_CONVERSIONS",
   "name": "foo",
   "bid_type": "ABSOLUTE_OCPM",
@@ -53,7 +53,7 @@ Cookie:
   "max_bid": 100,
   "budget_type": "daily",
   "budget_amount": 100000,
-  "start_time": 1397549599,
+  "start_time": 1399020654,
   "targets": "[{\"name\":\"Mobile Games fans\",\"specs\":{\"age_min\":18,\"age_max\":35,\"geo_locations\":{\"countries\":[\"US\"]},\"interests\":[{\"name\":\"Video games\",\"id\":6003940339466},{\"name\":\"Browser games\",\"id\":6003434373937},{\"name\":\"Casual game\",\"id\":6003102728434}]}}]",
   "object_story_id": "238193529614918_465257143575221",
   "offsite_pixel_tag": "CHECKOUT",
@@ -67,7 +67,7 @@ Cookie:
 curl "api.pitchtarget.com/campaigns" -X POST \
 	-H "Accept: application/json" \
 	-H "Content-Type: application/json" \
-	-H "Authorization: OAuth 9sy4a0udwvu4jc4z9sdtcayng9sswcq" -d '{"fb_ad_account_id":"19","objective":"WEBSITE_CONVERSIONS","name":"foo","bid_type":"ABSOLUTE_OCPM","bid_info":"{\"ACTIONS\":100}","max_bid":100,"budget_type":"daily","budget_amount":100000,"start_time":1397549599,"targets":"[{\"name\":\"Mobile Games fans\",\"specs\":{\"age_min\":18,\"age_max\":35,\"geo_locations\":{\"countries\":[\"US\"]},\"interests\":[{\"name\":\"Video games\",\"id\":6003940339466},{\"name\":\"Browser games\",\"id\":6003434373937},{\"name\":\"Casual game\",\"id\":6003102728434}]}}]","object_story_id":"238193529614918_465257143575221","offsite_pixel_tag":"CHECKOUT","offsite_pixel_name":"my_pixel"}'
+	-H "Authorization: OAuth s59s5isaxkwjrz83rcgc6qvv57uh5cm" -d '{"fb_ad_account_id":"85","objective":"WEBSITE_CONVERSIONS","name":"foo","bid_type":"ABSOLUTE_OCPM","bid_info":"{\"ACTIONS\":100}","max_bid":100,"budget_type":"daily","budget_amount":100000,"start_time":1399020654,"targets":"[{\"name\":\"Mobile Games fans\",\"specs\":{\"age_min\":18,\"age_max\":35,\"geo_locations\":{\"countries\":[\"US\"]},\"interests\":[{\"name\":\"Video games\",\"id\":6003940339466},{\"name\":\"Browser games\",\"id\":6003434373937},{\"name\":\"Casual game\",\"id\":6003102728434}]}}]","object_story_id":"238193529614918_465257143575221","offsite_pixel_tag":"CHECKOUT","offsite_pixel_name":"my_pixel"}'
 {% endhighlight %}
 
 ### Response
@@ -82,10 +82,10 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "a2352fdb23a5f9ed757e70618ddc3718"
+ETag: "85a588ec20d9f2185da0472775697f4c"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: f7ce5b34-2358-4ac1-a155-eab232fa01cc
-X-Runtime: 0.038067
+X-Request-Id: 4fa517f8-5840-497b-b77d-a6de9fc155c0
+X-Runtime: 0.087780
 Content-Length: 872
 {% endhighlight %}
 
@@ -94,12 +94,12 @@ Content-Length: 872
 {% highlight json %}
 {
   "campaign": {
-    "id": 4055,
+    "id": 6320,
     "budget_type": "daily",
     "budget_amount": 100000,
     "bid_type": "ABSOLUTE_OCPM",
     "max_bid": 100,
-    "start_time": "2014-04-15T08:13:19.000Z",
+    "start_time": "2014-05-02T08:50:54.000Z",
     "end_time": null,
     "objective": "WEBSITE_CONVERSIONS",
     "status": null,
@@ -107,7 +107,7 @@ Content-Length: 872
     "fb_app_icon": null,
     "creatives": [
       {
-        "id": 2585,
+        "id": 4038,
         "creative_images": [
 
         ],
@@ -118,7 +118,7 @@ Content-Length: 872
     ],
     "fb_targets": [
       {
-        "id": 1530,
+        "id": 2360,
         "name": "Mobile Games fans",
         "favorite": false,
         "geo_locations": {
@@ -153,10 +153,10 @@ Content-Length: 872
       }
     ],
     "fb_ad_account": {
-      "id": 29553,
+      "id": 45414,
       "name": "AD Account Bar",
       "currency": "EUR",
-      "fb_id": "19"
+      "fb_id": "85"
     },
     "fb_ad_campaigns": [
 

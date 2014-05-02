@@ -22,7 +22,7 @@ Name | Description |
 {% highlight http %}
 POST /clients HTTP/1.1
 Accept: application/json
-Authorization: OAuth luo1m43fm6cmzqpt0eg1fwpjc622g8s
+Authorization: OAuth coy1a8jd126btls9f08n2nlm2x41b8a
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -40,7 +40,7 @@ name=My+new+client&redirect_uri=http%3A%2F%2Fmy.example.com
 {% highlight sh %}
 curl "api.pitchtarget.com/clients" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth luo1m43fm6cmzqpt0eg1fwpjc622g8s" \
+	-H "Authorization: OAuth coy1a8jd126btls9f08n2nlm2x41b8a" \
 	-H "Content-Type: application/x-www-form-urlencoded" -d 'name=My+new+client&redirect_uri=http%3A%2F%2Fmy.example.com'
 {% endhighlight %}
 
@@ -56,10 +56,10 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "3c01d7d6f129b4cf340c98343d591005"
+ETag: "460e6866c29ef6e56848620d89eecd84"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8aba1b4a-221c-426a-9ca6-8f3d519879e8
-X-Runtime: 0.138547
+X-Request-Id: 4638138e-8936-4877-b3b2-697e24f02d46
+X-Runtime: 0.136559
 Content-Length: 180
 {% endhighlight %}
 
@@ -68,11 +68,11 @@ Content-Length: 180
 {% highlight json %}
 {
   "client": {
-    "id": 4953,
+    "id": 7545,
     "name": "My new client",
     "redirect_uri": "http://my.example.com",
-    "client_id": "4jsks4tjb325v43ri1yj1kxf9b39wrj",
-    "client_secret": "1yd8jhlq83haqtmwc8muv2sjd4xfbyo"
+    "client_id": "nmwfr9oerbna5ukcya0nwihyvqvwetk",
+    "client_secret": "bue6ygtr0madn214oh8aw4e4rpg5glg"
   }
 }
 {% endhighlight %}
