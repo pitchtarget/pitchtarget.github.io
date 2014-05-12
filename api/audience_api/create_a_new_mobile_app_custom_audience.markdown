@@ -5,7 +5,7 @@ title: Audience API API
 
 # Audience API API
 
-## Create a new lookalike audience
+## Create a new mobile app custom audience
 
 ### POST /custom_audiences
 
@@ -16,9 +16,9 @@ Name | Description |
 -----|-------------|
 `subtype` (required) | The subtype for the custom audience |
 `fb_ad_account_id` (required) | Facebook ID of the Ad Account to use |
-`name` (required) | The name for the lookalike audience |
-`origin_audience_id` (required) | The ID of origin custom audience |
-`lookalike_spec` (required) | An object that specifies the lookalike audience |
+`name` (required) | The name for the website custom audience |
+`retention_days` (required) | Number of days to keep the user in this cluster (between 1 and 180 days) |
+`rule` (required) | A JSON object representing audience rules to be applied on the referrer URL |
 
 ### Request
 
@@ -36,14 +36,11 @@ Cookie:
 
 {% highlight json %}
 {
-  "subtype": "LOOKALIKE",
-  "fb_ad_account_id": "27",
-  "name": "Boys Apparel_lookalike_US_Similarity",
-  "origin_audience_id": 6006164557194,
-  "lookalike_spec": {
-    "type": "similarity",
-    "country": "US"
-  }
+  "subtype": "APP",
+  "fb_ad_account_id": "21",
+  "name": "Example mobile app custom audience",
+  "retention_days": 14,
+  "rule": "{\"_application\":\"55064006\",\"_eventName\":\"fb_mobile_purchase\"}"
 }
 {% endhighlight %}
 
@@ -53,7 +50,7 @@ Cookie:
 curl "api.pitchtarget.com/custom_audiences" -X POST \
 	-H "Accept: application/json" \
 	-H "Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1" \
-	-H "Content-Type: application/json" -d '{"subtype":"LOOKALIKE","fb_ad_account_id":"27","name":"Boys Apparel_lookalike_US_Similarity","origin_audience_id":6006164557194,"lookalike_spec":{"type":"similarity","country":"US"}}'
+	-H "Content-Type: application/json" -d '{"subtype":"APP","fb_ad_account_id":"21","name":"Example mobile app custom audience","retention_days":14,"rule":"{\"_application\":\"55064006\",\"_eventName\":\"fb_mobile_purchase\"}"}'
 {% endhighlight %}
 
 ### Response
@@ -68,11 +65,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "84e498fbf04ab98fbf725fb2bf577c70"
+ETag: "9d81f200567db0b7566cf7d8abef2c2b"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: ae77f478-bb09-4a60-9550-58e33b5028a5
-X-Runtime: 0.020018
-Content-Length: 213
+X-Request-Id: 8b0142b1-f806-4971-ba37-abc17402ef9d
+X-Runtime: 0.035266
+Content-Length: 116
 {% endhighlight %}
 
 #### Body
@@ -80,15 +77,10 @@ Content-Length: 213
 {% highlight json %}
 {
   "fb_custom_audience": {
-    "id": 89,
-    "name": "Boys Apparel_lookalike_US_Similarity",
+    "id": 84,
+    "name": "Example mobile app custom audience",
     "fb_id": "6006183285954",
-    "subtype": "LOOKALIKE",
-    "origin_audience_id": 6006164557194,
-    "lookalike_spec": {
-      "type": "similarity",
-      "country": "US"
-    }
+    "subtype": "APP"
   }
 }
 {% endhighlight %}

@@ -22,7 +22,7 @@ Name | Description |
 {% highlight http %}
 GET /fb_connection_objects HTTP/1.1
 Accept: application/json
-Authorization: OAuth sy8y6694rnskdoezhokwalmbo9w6qk3
+Authorization: OAuth my94675yyp9lzdxg38080ulwkfls9c9
 Host: example.org
 Cookie: 
 
@@ -34,7 +34,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/fb_connection_objects" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth sy8y6694rnskdoezhokwalmbo9w6qk3"
+	-H "Authorization: OAuth my94675yyp9lzdxg38080ulwkfls9c9"
 {% endhighlight %}
 
 ### Response
@@ -51,8 +51,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "285f93777e90f54f5362b169f4974fef"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: f9596ab6-7433-4f27-b95e-ea027c8ddab2
-X-Runtime: 0.037778
+X-Request-Id: 5029e6c7-ad81-47c6-8352-79c36c9f13cb
+X-Runtime: 0.090529
 Content-Length: 56
 {% endhighlight %}
 

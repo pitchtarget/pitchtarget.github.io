@@ -16,7 +16,7 @@ title: Audience API API
 {% highlight http %}
 DELETE /custom_audiences/465257143575221 HTTP/1.1
 Accept: application/json
-Authorization: OAuth rsajfx4x9csb9kll2ki8n7mubhdtc8x
+Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -29,7 +29,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/custom_audiences/465257143575221" -X DELETE \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth rsajfx4x9csb9kll2ki8n7mubhdtc8x" \
+	-H "Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1" \
 	-H "Content-Type: application/x-www-form-urlencoded" -d ''
 {% endhighlight %}
 
@@ -45,8 +45,8 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Cache-Control: no-cache
-X-Request-Id: b1424393-db97-4523-80b9-fdcb3f0dc95f
-X-Runtime: 0.027512
+X-Request-Id: c699daae-7712-4cb9-af55-fab96cbbaf75
+X-Runtime: 0.027454
 {% endhighlight %}
 
 

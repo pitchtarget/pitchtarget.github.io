@@ -14,9 +14,9 @@ title: Clients API (INTERNAL USE ONLY) API
 ### Request
 
 {% highlight http %}
-GET /clients/7546 HTTP/1.1
+GET /clients/373 HTTP/1.1
 Accept: application/json
-Authorization: OAuth o3as4zl39vgieiilabw4069ip3oigaj
+Authorization: OAuth 1c3h8zbyfn3jzp80r6ft8yz5bp5yiav
 Host: example.org
 Cookie: 
 
@@ -26,9 +26,9 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/clients/7546" -X GET \
+curl "api.pitchtarget.com/clients/373" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth o3as4zl39vgieiilabw4069ip3oigaj"
+	-H "Authorization: OAuth 1c3h8zbyfn3jzp80r6ft8yz5bp5yiav"
 {% endhighlight %}
 
 ### Response
@@ -43,11 +43,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "023e2e52cb9050bb1de439d3d2bedf17"
+ETag: "a788db1332fe606f9340c6d519d99bfc"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 9ee36eb8-bcdb-41ae-a5c1-d227131fcfbd
-X-Runtime: 0.004979
-Content-Length: 147
+X-Request-Id: 1c4ede7e-3d7b-4aff-bf1e-40ec92fb8cde
+X-Runtime: 0.005192
+Content-Length: 146
 {% endhighlight %}
 
 #### Body
@@ -55,10 +55,10 @@ Content-Length: 147
 {% highlight json %}
 {
   "client": {
-    "id": 7546,
+    "id": 373,
     "name": "first",
     "redirect_uri": "http://btask.cloudapp.net",
-    "client_id": "t3tu3xls7k6tthgkntfl3mfoneam65n",
+    "client_id": "nbufky2edcb0529c1j23u9b8vruhthh",
     "client_secret": null
   }
 }

@@ -16,7 +16,7 @@ title: Audience API API
 {% highlight http %}
 GET /custom_audiences/465257143575221 HTTP/1.1
 Accept: application/json
-Authorization: OAuth tovvo6uh22j3xo7s813la8ay5r6ytyu
+Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1
 Host: example.org
 Cookie: 
 
@@ -28,7 +28,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/custom_audiences/465257143575221" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth tovvo6uh22j3xo7s813la8ay5r6ytyu"
+	-H "Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1"
 {% endhighlight %}
 
 ### Response
@@ -43,11 +43,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "790652af8840e7d2159159231218e164"
+ETag: "2d356f074b86e038072cec19505aabb8"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a0a8daf2-c690-43b7-b9ec-d82f95a018ae
-X-Runtime: 0.010748
-Content-Length: 204
+X-Request-Id: b1db663b-639a-4c3e-94dd-ff48d303ccd1
+X-Runtime: 0.009825
+Content-Length: 202
 {% endhighlight %}
 
 #### Body
@@ -55,7 +55,7 @@ Content-Length: 204
 {% highlight json %}
 {
   "fb_custom_audience": {
-    "id": 1242,
+    "id": 91,
     "name": "Spending users",
     "fb_id": "465257143575221",
     "subtype": "CUSTOM",

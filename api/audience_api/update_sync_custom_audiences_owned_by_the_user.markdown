@@ -1,36 +1,46 @@
 ---
 layout: default
-title: Users API API
+title: Audience API API
 ---
 
-# Users API API
+# Audience API API
 
-## Delete a user
+## Update (sync) custom audiences owned by the user
 
-### DELETE /users/:id
+### PUT /custom_audiences
 
 
+### Parameters
+
+Name | Description |
+-----|-------------|
+`fb_ad_account_id` (required) | Facebook ID of the Ad Account to use |
 
 ### Request
 
 {% highlight http %}
-DELETE /users/693 HTTP/1.1
+PUT /custom_audiences HTTP/1.1
 Accept: application/json
-Authorization: OAuth 7xnlx24wgszrj4ls7ibr9dy7lx5lho7
+Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
 
 {% endhighlight %}
 
+#### Body
+
+{% highlight text %}
+fb_ad_account_id=26
+{% endhighlight %}
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/users/693" -X DELETE \
+curl "api.pitchtarget.com/custom_audiences" -X PUT \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth 7xnlx24wgszrj4ls7ibr9dy7lx5lho7" \
-	-H "Content-Type: application/x-www-form-urlencoded" -d ''
+	-H "Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1" \
+	-H "Content-Type: application/x-www-form-urlencoded" -d 'fb_ad_account_id=26'
 {% endhighlight %}
 
 ### Response
@@ -45,8 +55,8 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Cache-Control: no-cache
-X-Request-Id: 4fc64981-c430-4dcf-99a7-19d2558da8a7
-X-Runtime: 0.010058
+X-Request-Id: b7da843c-bba6-4037-9a13-4eb020fc1485
+X-Runtime: 0.013725
 {% endhighlight %}
 
 

@@ -14,9 +14,9 @@ title: Users API API
 ### Request
 
 {% highlight http %}
-GET /users/28370 HTTP/1.1
+GET /users/692 HTTP/1.1
 Accept: application/json
-Authorization: OAuth bzos0mm5mtd12nym43812vjajumwdzt
+Authorization: OAuth 7xnlx24wgszrj4ls7ibr9dy7lx5lho7
 Host: example.org
 Cookie: 
 
@@ -26,9 +26,9 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/users/28370" -X GET \
+curl "api.pitchtarget.com/users/692" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth bzos0mm5mtd12nym43812vjajumwdzt"
+	-H "Authorization: OAuth 7xnlx24wgszrj4ls7ibr9dy7lx5lho7"
 {% endhighlight %}
 
 ### Response
@@ -43,11 +43,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "dd3dfe4bc9ddee5851cde673babcf46e"
+ETag: "be450429248c059de3ccdb0186a89e05"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: d326d2b2-0cf9-4dd8-bea7-d4b209c25ee8
-X-Runtime: 0.008385
-Content-Length: 141
+X-Request-Id: a8610483-d45f-4685-b1e5-3eefd044297e
+X-Runtime: 0.008475
+Content-Length: 138
 {% endhighlight %}
 
 #### Body
@@ -55,12 +55,12 @@ Content-Length: 141
 {% highlight json %}
 {
   "user": {
-    "id": 28370,
-    "username": "user_29",
-    "fb_id": "30",
+    "id": 692,
+    "username": "user_18",
+    "fb_id": "19",
     "fb_ad_accounts": [
       {
-        "id": 45365,
+        "id": 1607,
         "name": "AD Account Bar",
         "currency": "EUR",
         "fb_id": "36"

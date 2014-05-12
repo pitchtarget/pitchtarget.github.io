@@ -14,9 +14,9 @@ title: Clients API (INTERNAL USE ONLY) API
 ### Request
 
 {% highlight http %}
-PUT /clients/7549/reset_secret HTTP/1.1
+PUT /clients/376/reset_secret HTTP/1.1
 Accept: application/json
-Authorization: OAuth ouxwwalhn2gobtj6pl9j6608nq32v1t
+Authorization: OAuth 1c3h8zbyfn3jzp80r6ft8yz5bp5yiav
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -27,9 +27,9 @@ Cookie:
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/clients/7549/reset_secret" -X PUT \
+curl "api.pitchtarget.com/clients/376/reset_secret" -X PUT \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth ouxwwalhn2gobtj6pl9j6608nq32v1t" \
+	-H "Authorization: OAuth 1c3h8zbyfn3jzp80r6ft8yz5bp5yiav" \
 	-H "Content-Type: application/x-www-form-urlencoded" -d ''
 {% endhighlight %}
 
@@ -45,11 +45,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "fcded12e67bb03ef26e1d54717a19480"
+ETag: "06feb9c401698e28376610b336f7a029"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: ae2df65f-a742-45ad-b953-def3ef77974d
-X-Runtime: 0.133953
-Content-Length: 176
+X-Request-Id: 9f382fae-0815-4e1f-b4cf-509e2efcf957
+X-Runtime: 0.144473
+Content-Length: 175
 {% endhighlight %}
 
 #### Body
@@ -57,11 +57,11 @@ Content-Length: 176
 {% highlight json %}
 {
   "client": {
-    "id": 7549,
+    "id": 376,
     "name": "first",
     "redirect_uri": "http://btask.cloudapp.net",
-    "client_id": "8wiszvsgzhzujb1bbwbdohgma8yb19a",
-    "client_secret": "acjsn07mug001mgik235604wr6e3k0r"
+    "client_id": "64z5hq2xi3zgpwts3a4208bj40grcf7",
+    "client_secret": "3g17b4ye08bk3yjcphpiv7swu6lch4v"
   }
 }
 {% endhighlight %}

@@ -19,21 +19,21 @@ Name | Description |
 ### Request
 
 {% highlight http %}
-GET /custom_audiences/remarketing_pixel?fb_ad_account_id=57 HTTP/1.1
+GET /custom_audiences/remarketing_pixel?fb_ad_account_id=30 HTTP/1.1
 Accept: application/json
-Authorization: OAuth pd8m1zkmbmgpl3ufka778gzhrk8zno0
+Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1
 Host: example.org
 Cookie: 
-fb_ad_account_id: 57
+fb_ad_account_id: 30
 {% endhighlight %}
 
 
 #### cURL
 
 {% highlight sh %}
-curl "api.pitchtarget.com/custom_audiences/remarketing_pixel?fb_ad_account_id=57" -X GET \
+curl "api.pitchtarget.com/custom_audiences/remarketing_pixel?fb_ad_account_id=30" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth pd8m1zkmbmgpl3ufka778gzhrk8zno0"
+	-H "Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1"
 {% endhighlight %}
 
 ### Response
@@ -50,8 +50,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "c5ae20609ad1b7865899799896dd1de3"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 9311883c-7d06-4533-bf49-295bb0831b00
-X-Runtime: 0.011044
+X-Request-Id: 0c854881-7ce3-4daa-b8d7-0a86a16905ec
+X-Runtime: 0.010248
 Content-Length: 36
 {% endhighlight %}
 

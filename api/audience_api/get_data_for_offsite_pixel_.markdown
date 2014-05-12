@@ -16,7 +16,7 @@ title: Audience API API
 {% highlight http %}
 GET /offsite_pixels/6014360342904 HTTP/1.1
 Accept: application/json
-Authorization: OAuth 8il8490u0otd3wsjq2rna0kyuxr0utn
+Authorization: OAuth q4zn73ss1cii2pjjc6rduftcikefwcj
 Host: example.org
 Cookie: 
 
@@ -28,7 +28,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/offsite_pixels/6014360342904" -X GET \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth 8il8490u0otd3wsjq2rna0kyuxr0utn"
+	-H "Authorization: OAuth q4zn73ss1cii2pjjc6rduftcikefwcj"
 {% endhighlight %}
 
 ### Response
@@ -45,8 +45,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "1ef1835c4c015c285b0e37468a73a8ba"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 62bd2997-732f-48f6-b159-e73267cfcc2e
-X-Runtime: 0.006732
+X-Request-Id: d4705eeb-e981-46a4-9e96-127790d05725
+X-Runtime: 0.006136
 Content-Length: 850
 {% endhighlight %}
 

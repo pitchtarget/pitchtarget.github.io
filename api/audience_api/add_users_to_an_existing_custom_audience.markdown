@@ -23,7 +23,7 @@ Name | Description |
 {% highlight http %}
 PUT /custom_audiences/465257143575221 HTTP/1.1
 Accept: application/json
-Authorization: OAuth bk1nbxxdqh8bjf5fae6l9ejo279lmvc
+Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1
 Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1
 Host: example.org
 Cookie: 
@@ -35,7 +35,7 @@ Cookie:
 ##### `fb_ad_account_id`
 
 {% highlight text %}
-49
+22
 {% endhighlight %}
 
 ##### `user_type`
@@ -50,8 +50,8 @@ email_hash
 {% highlight sh %}
 curl "api.pitchtarget.com/custom_audiences/465257143575221" -X PUT \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth bk1nbxxdqh8bjf5fae6l9ejo279lmvc" \
-	-F 'fb_ad_account_id=49' \
+	-H "Authorization: OAuth hnojm1bmyoidsp82a86cv8as9d1i0b1" \
+	-F 'fb_ad_account_id=22' \
 	-F 'user_type=email_hash' \
 	-F 'file=@spending_users.csv;type=text/plain'
 {% endhighlight %}
@@ -68,11 +68,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "6b3786b87a04d92d7b27a07be5f789c1"
+ETag: "f921fca86c860042f75b8f1611a0e900"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 6b7d15f5-d60a-45e9-b6cb-cb43b222bc59
-X-Runtime: 0.042403
-Content-Length: 204
+X-Request-Id: 539cb160-fa40-4f04-b559-9b82942bbf2c
+X-Runtime: 0.045939
+Content-Length: 202
 {% endhighlight %}
 
 #### Body
@@ -80,7 +80,7 @@ Content-Length: 204
 {% highlight json %}
 {
   "fb_custom_audience": {
-    "id": 1241,
+    "id": 85,
     "name": "Spending users",
     "fb_id": "465257143575221",
     "subtype": "CUSTOM",

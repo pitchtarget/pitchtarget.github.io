@@ -8,9 +8,9 @@ title: API Documentation
 ## Audience API
 
 * [Add users to an existing custom audience](audience_api/add_users_to_an_existing_custom_audience.html)
-* [Add users to an existing custom audience](audience_api/add_users_to_an_existing_custom_audience.html)
 * [Create a new custom audience](audience_api/create_a_new_custom_audience.html)
 * [Create a new lookalike audience](audience_api/create_a_new_lookalike_audience.html)
+* [Create a new mobile app custom audience](audience_api/create_a_new_mobile_app_custom_audience.html)
 * [Create a new offsite pixel for tracking actions on your website](audience_api/create_a_new_offsite_pixel_for_tracking_actions_on_your_website.html)
 * [Create a new website custom audience](audience_api/create_a_new_website_custom_audience.html)
 * [Delete a custom audience](audience_api/delete_a_custom_audience.html)
@@ -19,6 +19,7 @@ title: API Documentation
 * [Get the remarketing pixel code](audience_api/get_the_remarketing_pixel_code.html)
 * [List all offsite pixels](audience_api/list_all_offsite_pixels.html)
 * [List custom audiences](audience_api/list_custom_audiences.html)
+* [Update (sync) custom audiences owned by the user](audience_api/update_sync_custom_audiences_owned_by_the_user.html)
 
 ## Campaigns API
 
@@ -40,6 +41,7 @@ title: API Documentation
 * [Creating a new WEBSITE_CONVERSIONS campaign with a page post URL and an offsite pixel id](campaigns_api/creating_a_new_website_conversions_campaign_with_a_page_post_url_and_an_offsite_pixel_id.html)
 * [Creating a new WEBSITE_CONVERSIONS campaign with a page post story ID](campaigns_api/creating_a_new_website_conversions_campaign_with_a_page_post_story_id.html)
 * [Creating a new WEBSITE_CONVERSIONS campaign with a site URL](campaigns_api/creating_a_new_website_conversions_campaign_with_a_site_url.html)
+* [Get report stats for a given Facebook Campaign. See https://developers.facebook.com/docs/reference/ads-api/adreportstats for a complete list of valid parameters.](campaigns_api/get_report_stats_for_a_given_facebook_campaign_see_httpsdevelopersfacebookcomdocsreferenceadsapiadreportstats_for_a_complete_list_of_valid_parameters.html)
 * [Get the list of promotable posts](campaigns_api/get_the_list_of_promotable_posts.html)
 * [Search for &#39;ita&#39; in countries](campaigns_api/search_for_ita_in_countries.html)
 

@@ -23,7 +23,7 @@ Name | Description |
 {% highlight http %}
 POST /offsite_pixels HTTP/1.1
 Accept: application/json
-Authorization: OAuth ihfpxwn6gb2gywtcjtewiy40pb27190
+Authorization: OAuth q4zn73ss1cii2pjjc6rduftcikefwcj
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -33,7 +33,7 @@ Cookie:
 #### Body
 
 {% highlight text %}
-fb_ad_account_id=10&name=Shoes+purchase&tag=CHECKOUT
+fb_ad_account_id=17&name=Shoes+purchase&tag=CHECKOUT
 {% endhighlight %}
 
 #### cURL
@@ -41,8 +41,8 @@ fb_ad_account_id=10&name=Shoes+purchase&tag=CHECKOUT
 {% highlight sh %}
 curl "api.pitchtarget.com/offsite_pixels" -X POST \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth ihfpxwn6gb2gywtcjtewiy40pb27190" \
-	-H "Content-Type: application/x-www-form-urlencoded" -d 'fb_ad_account_id=10&name=Shoes+purchase&tag=CHECKOUT'
+	-H "Authorization: OAuth q4zn73ss1cii2pjjc6rduftcikefwcj" \
+	-H "Content-Type: application/x-www-form-urlencoded" -d 'fb_ad_account_id=17&name=Shoes+purchase&tag=CHECKOUT'
 {% endhighlight %}
 
 ### Response
@@ -59,8 +59,8 @@ Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Au
 Content-Type: application/json; charset=utf-8
 ETag: "4a6f58b6c7b13fc4413ac76a7451b604"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 3ab060c2-206c-4c4a-a5e0-078d43a47ff0
-X-Runtime: 0.011196
+X-Request-Id: 4a8d78c8-384f-418d-a10b-958d193eb1d0
+X-Runtime: 0.073097
 Content-Length: 29
 {% endhighlight %}
 

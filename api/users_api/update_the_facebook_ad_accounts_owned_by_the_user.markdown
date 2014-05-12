@@ -16,7 +16,7 @@ title: Users API API
 {% highlight http %}
 PUT /fb_ad_accounts HTTP/1.1
 Accept: application/json
-Authorization: OAuth e0yfhcn450fn4fynhlp2tzrurewwwuw
+Authorization: OAuth 99coivr2cg5lhoarpgldvubgm5b7acl
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: 
@@ -29,7 +29,7 @@ Cookie:
 {% highlight sh %}
 curl "api.pitchtarget.com/fb_ad_accounts" -X PUT \
 	-H "Accept: application/json" \
-	-H "Authorization: OAuth e0yfhcn450fn4fynhlp2tzrurewwwuw" \
+	-H "Authorization: OAuth 99coivr2cg5lhoarpgldvubgm5b7acl" \
 	-H "Content-Type: application/x-www-form-urlencoded" -d ''
 {% endhighlight %}
 
@@ -45,11 +45,11 @@ Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Disposition
 Content-Type: application/json; charset=utf-8
-ETag: "b2829984a07ddaecd68244c6bf153d2e"
+ETag: "e174fedabf2275b3c648b0e93ed28b7e"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 151d1f8e-f807-411c-9656-39e6fa046548
-X-Runtime: 0.025283
-Content-Length: 164
+X-Request-Id: ad3b7f3a-b215-41f7-ba01-12a395a646d4
+X-Runtime: 0.022730
+Content-Length: 162
 {% endhighlight %}
 
 #### Body
@@ -58,13 +58,13 @@ Content-Length: 164
 {
   "fb_ad_accounts": [
     {
-      "id": 45344,
+      "id": 1603,
       "name": "AD Account Bar",
       "currency": "EUR",
-      "fb_id": "16"
+      "fb_id": "33"
     },
     {
-      "id": 45345,
+      "id": 1605,
       "name": "My new account",
       "currency": "EUR",
       "fb_id": "638109674309"
