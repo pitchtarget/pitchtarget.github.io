@@ -13,7 +13,7 @@
 <meta property="og:title" content="Pitchtarget"/>
 <meta property="og:type" content="company"/>
 <meta property="og:site_name" content="Pitchtarget"/>
-<meta property="og:description" content="The first marketing platform designed for peace of mind." />
+<meta property="og:description" content="Introducting the growth machine." />
 <meta property="og:url" content="http://pitchtarget.com" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta property="og:image" content="http://pitchtarget.com/imgs/logo.png"/>
@@ -62,13 +62,12 @@
   <noscript><img height="1" width="1" border="0" alt="" style="display:none" src="https://www.facebook.com/tr?id=698778510153243&amp;ev=NoScript" /></noscript>
 </head>
 <body>
-  <img src="https://addictive-inventory.herokuapp.com/53047a3fca88ff051c0ac34b/event.gif?event_token=view_landing" width="1" height="1" />
   <div id="content" class="LR-content"><!-- LR-sharing-page LR-stats LR-lx -->
   {% include header.html %}
 <div class="landing-hero-container">
   <div class="background"></div>
   <div class="clearfix"></div>
-  <h2 id="heading" class="LR-site-tagline montserrat">The first marketing platform designed for peace of mind.</h2>
+  <h2 id="heading" class="LR-site-tagline montserrat">Introducing the growth machine designed for peace of mind.</h2>
 </div>
 
 </div>
@@ -77,7 +76,7 @@
       <div class="LR-box">
         <div class="LR-box-container">
       <div class="payoffs">
-        <h3 class="payoff">Pitchtarget means performance marketing without the need to build tools or infrastructures.</h3>
+        <h3 class="payoff">Pitchtarget means performance marketing on Facebook without the need to study books.</h3>
       </div>
           <div class="hero-container">
             <div class="text">
@@ -85,7 +84,7 @@
               <div class="icon">
                 
               </div>
-              <p>We wrap Facebook Ads API into a set of clever features that you can put into your existing tools. Building on top of our platform is so easy you don't even need a SDK.</p>
+              <p>Can you increase your ROI using Facebook? Yes, but it's complicated. That's why we built a platform with an interface that guides you with a set of strategies. No need to worry if your are doing right – Just tell Pitchtarget what your goal is and it will deliver for you.</p>
               <div class="clearfix"></div>
             </div>
           </div>
@@ -113,50 +112,43 @@
           <a id="contact" name="contact"></a>
             <h3>Interested? Let’s talk.</h3>
             <p>Fill the form below and we will contact you. We’ll be quick. Time is money.</p>
-            <form method="post" action="http://melonpielabs.com/contact/">
-              <label for="name">Your name</label>
-              <input type="text" name="name" id="name" />
-              <label for="company">Your company</label>
-              <input type="text" name="company" id="company" />
-              <label for="email">Your email</label>
-              <input type="email" name="email" id="email" />
-              <label for="phone">Your phone</label>
-              <input type="tel" name="phone" id="phone" />
-              <button type="submit" id="submit">Submit</button>
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+            <div id="mc_embed_signup">
+            <form action="//pitchtarget.us8.list-manage.com/subscribe/post?u=a97d536054cf77f2822e070bc&amp;id=29fffc1502" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+            </label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-FNAME">First Name </label>
+              <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-LNAME">Last Name </label>
+              <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-COMPANY">Company </label>
+              <input type="text" value="" name="COMPANY" class="" id="mce-COMPANY">
+            </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_a97d536054cf77f2822e070bc_29fffc1502" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
             </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='COMPANY';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
           </div>
     </div><!-- .box-wrapper -->
   </div><!-- #content -->
   <div class="footer">
     {% include footer.html %}
   </div>
-<script>
-$('form').ajaxForm({
-  beforeSubmit: function() {
-    if (!($('#email').val() || $('#phone').val())) {
-      return false;
-    }
-
-    if ($('#submit').attr('disabled')) {
-      return false;
-    }
-
-    $('#submit').attr('disabled', 1).text('Working…');
-  },
-  complete: function() {
-    $('#submit').text('Thank you!');
-    window._fbq.push(['track', 'formSubmit', {}]);
-    var params = {};
-    var keys = ['#email', '#phone'];
-    for (var i in keys) {
-      var val = $(keys[i]);
-      if (val) {
-        params[keys[i]] = val;
-      }
-    }
-
-    $('body').append('<img height="1" width="1" alt="" style="display:none" src="https://addictive-inventory.herokuapp.com/53047a3fca88ff051c0ac34b/event.gif?event_token=form_submit&params=' + encodeURIComponent(JSON.stringify(params)) + '"');
-  }
-});
-</script>
 </body>
