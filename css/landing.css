@@ -4,7 +4,7 @@ h1, h2, h3, h4, #heading, .LR-content {
 
 body {margin:0;background: #f1f3f8; font-family: 'freightsans_promedium'}
 
-body a {text-decoration: none}
+body a {text-decoration: none; color:#df5226}
 body a:hover {text-decoration: underline}
 .clearfix {clear:both;}
 
@@ -123,7 +123,7 @@ form button:active {
   border: 1px solid #852512;
 }
 
-.footer {text-align: center; color: #888;}
+.footer {text-align: center; color: #888;margin: 30px auto;}
 .footer span {color: #53616c}
 .footer a, .footer a:visited {color:#53616c;}
 

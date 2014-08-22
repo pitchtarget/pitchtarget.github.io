@@ -50,21 +50,22 @@
   <img src="https://addictive-inventory.herokuapp.com/53047a3fca88ff051c0ac34b/event.gif?event_token=view_careers" width="1" height="1" />
   <div id="content" class="LR-content"><!-- LR-sharing-page LR-stats LR-lx -->
   {% include header.html %}
-<div class="careers-hero-container">
-  <div class="work-background">
-</div>
-  <div class="clearfix"></div>
-  <h2 id="heading" class="LR-site-tagline montserrat">Careers at Pitchtarget</h2>
-</div>
       <div class="LR-box-wrapper">
-      <div class="LR-box">
-        <div class="LR-box-container">
-      <div class="payoffs">
-        <h3 class="payoff">Thank you!</h3>
-      </div>
+        <div class="LR-box">
+          <div class="LR-box-container">
+            <div class="payoffs">
+              <h3 class="payoff">{{ page.title }}</h3>
+            </div>
           <div class="hero-container">
             <div class="text">
-              <p style="text-align: center">We will review your application and contact you if your profile matches our open positions.</p>
+              <p style="text-align: center">{{ content }}</p>
             </div>
-          </div></div></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      {% include footer.html %}
+    </div>
+  </div>
 </body>
