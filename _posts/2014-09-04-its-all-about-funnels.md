@@ -18,13 +18,23 @@ strictly related – the more people enter into your website, the more chances y
 have to obtain a purchase from them. What actions can you take to get more
 conversions from your users?
 
-### Think funnel
+### Enter funnel
+As you already know, **only few or your visitors will complete a purchase**, and
+that's why it is important to work our the maths to know how many people you
+will need in order to get ROAS positive.
+
+![Work out the maths](/imgs/news/funnel_bottleneck.jpg)
+
+Suppose you have an audience of one million people. If 1.5% will click on your
+ads, it will mean that you will have only 15 thousand people landing on your
+website. If you have an optimistic 1% conversion rate, it will mean that you
+will get only 150 conversions out of 1 million potential people interested in
+your products.
+
 From your standpoint, the user journey from visit to purchase is quite a bumpy
 road. There are a few but important bottlenecks that prevent your visitors to
 buy what you are selling: **Traffic and Audience, Click-Through Rate and
 Conversion Rate**.
-
-![Another funnel](/imgs/news/funnel_edit.jpg)
 
 #### 1. Traffic and Audience
 The first bottleneck is your website traffic. Are your traffic volumes high
@@ -67,8 +77,6 @@ Marketers usually look at retargeting options such as real time bidding to
 improve their conversion rates, but this strategy is limited to desktop only and
 cannot take into account your users' visits into your website.
 
-We can overcome that ![Contact us now](/#contact) and we will be more than happy
-to talk to you about all this.
-
-### Work out the maths
-![Work out the maths](/imgs/news/funnel_bottleneck.jpg)
+We have many solutions that will allow you to retarget people cross-device.
+[Contact us](/#contact) and we will be more than happy to talk to you about
+all this.
