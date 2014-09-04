@@ -15,7 +15,7 @@ item your are auctioning for is a batch of one thousand **impressions** – in
 other words, an advertising space on Facebook (either on News Feed, Right Hand
 Side or the Facebook Ad Network). This auction is quite peculiar – you can bid
 as much as you want but usually you will get charged less than your original
-bid**. This ensures a fairer auction by allow everybody in the auction to bid
+bid. This ensures a fairer auction by allow everybody in the auction to bid
 for their real objectives.
 
 Here's a real-life example. Advertiser A and Advertiser B are two retailers and
