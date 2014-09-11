@@ -8,7 +8,7 @@
   background: #f1efe7;
   border-bottom: 1px solid #e7e2ce;
   overflow: hidden;
-  font-family: 'freightsans_prosemibold';
+  font-family: 'Lato';font-weight:700;
 }
 
 .LR-header .logo {
@@ -22,7 +22,7 @@ a.logo:hover {text-decoration: none}
   /* height: 40px; */
   vertical-align: top;
   line-height: 55px;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #2c343b;
   height: 55px;
   display: inline-block;
@@ -54,6 +54,7 @@ a.logo:hover {text-decoration: none}
   font-size: 1.3em;
   display: inline-block;
   margin-top: -30px;
+  font-family: 'freightsans_prosemibold';
 }
 
 .logo-name .lightgray {

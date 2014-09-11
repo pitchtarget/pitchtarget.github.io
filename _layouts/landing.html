@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
 <link href='/assets/stylesheets/freightsans.css' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 <link href='/assets/stylesheets/glyphs.css' rel='stylesheet' type='text/css'>
 <script src="/js/jquery-2.1.0.min.js"></script>
 <script src="/js/jquery.form.js"></script>
@@ -13,7 +14,7 @@
 <meta property="og:title" content="Pitchtarget"/>
 <meta property="og:type" content="company"/>
 <meta property="og:site_name" content="Pitchtarget"/>
-<meta property="og:description" content="Introducting the growth machine." />
+<meta property="og:description" content="The first performance marketing platform designed for storytelling." />
 <meta property="og:url" content="http://pitchtarget.com" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta property="og:image" content="http://pitchtarget.com/imgs/logo.png"/>
@@ -67,7 +68,7 @@
 <div class="landing-hero-container">
   <div class="background"></div>
   <div class="clearfix"></div>
-  <h2 id="heading" class="LR-site-tagline montserrat">Introducing the growth machine designed for peace of mind.</h2>
+  <h2 id="heading" class="LR-site-tagline montserrat">Stories worth telling.</h2>
 </div>
 
 </div>
@@ -76,37 +77,40 @@
       <div class="LR-box">
         <div class="LR-box-container">
       <div class="payoffs">
-        <h3 class="payoff">Pitchtarget means performance marketing on Facebook without the need to study books.</h3>
+        <h3 class="payoff">Introducing Pitchtarget, the first performance marketing platform designed for storytelling.</h3>
       </div>
-          <div class="hero-container">
-            <div class="text">
-              <h3>We handle complexity. You enjoy ROI.</h3>
-              <div class="icon">
-                
-              </div>
-              <p>Can you increase your ROI using Facebook? Yes, but it's complicated. That's why we built a platform with an interface that guides you with a set of strategies. No need to worry if your are doing right – Just tell Pitchtarget what your goal is and it will deliver for you.</p>
-              <div class="clearfix"></div>
+          <div class="hero-container landing-1">
+            <div class="text float-right">
+              <h3>Tell and sell.</h3>
+              <p>
+              Drive stronger sales by planning sequenced CTA campaigns.
+              Finally you can reach the right people at the right time with the right message.
+              </p>
             </div>
+            <div class="clearfix"></div>
           </div>
           <div class="hero-container">
             <div class="text">
-              <h3>Get results, not code.</h3>
-              <div class="icon">
-                
-              </div>
-              <p>Pitchtarget allows your team to focus more on enabling your clients to achieve great results and less in dealing with the technical hurdle of creating a new platform. If your clients are pushing you to get results on Facebook, it’s time to count on us.</p>
-              <div class="clearfix"></div>
+              <h3>Plan your strategy and enjoy the rest of the week.</h3>
+              <p>Create your campaigns as steps. Pitchtarget will start the next step only if they met your KPIs.
+              Our Filter Rules enables you to select the right clusters from your Core Audiences.</p>
             </div>
+            <div class="clearfix"></div>
           </div>
           <div class="hero-container">
-            <div class="text">
-              <h3>You ask. We do.</h3>
-              <div class="icon">
-                
-              </div>
+            <div class="text float-right">
+              <h3>Neat results. Neat interface.</h3>
+              <p>A refined interface shows you results that you can understand without going crazy.
+              We show your KPIs that matter for your objectives. Nothing more, nothing less.</p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="hero-container">
+            <div class="text float">
+              <h3>Automation that matters to you.</h3>
               <p>As Walt Disney used to say, “If you can dream it, you can do it”. We think creatively and strategically in both product and code to design custom solutions that suit your needs. If you need something that isn’t there yet, we’ll build it for you.</p>
-              <div class="clearfix"></div>
             </div>
+            <div class="clearfix"></div>
           </div>
           <div class="hero-container">
           <a id="contact" name="contact"></a>
@@ -130,6 +134,7 @@
   </div><!-- #content -->
   <div class="footer">
     {% include footer.html %}
+    {% include tag_manager.html %}
   </div>
   <script>
   $('form').ajaxForm({
