@@ -28,6 +28,9 @@ body a:hover {text-decoration: underline}
   text-shadow: 0 3px 4px #F1F3F8, 0 0 0 #000, 0 4px 0 #f1f3f8;
 }
 
+.news .post {  margin: 0 100px;}
+.news .post .text p {font-size:1em;}
+
 .payoffs { margin: 40px 0 60px 0;}
 
 #heading, .payoff {

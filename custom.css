@@ -1,5 +1,5 @@
 h1, h2, h3, h4, #heading, .LR-content {
-  font-family: 'freightsans_prosemibold';
+  font-family: 'Lato';
 }
 
 body {margin:0;background: #f1f3f8}
@@ -37,7 +37,7 @@ body a:hover {text-decoration: underline}
 }
 
 p, input {
-  font-family: 'freightsans_promedium';
+  font-family: 'Lato';
   font-size: 1.5em;
 }
 
@@ -121,7 +121,7 @@ input[type="submit"].LR-sign-up-submit {
 
 .application .browse-positions span.img {font-family: 'icomoon';font-size:76px;line-height:90px;display:block;float:left;height: 100px;}
 .application .browse-positions {
-  display:block;margin: 0 auto; max-width: 300px;font-family: 'freightsans_promedium'; font-size: 2em;line-height:96px;
+  display:block;margin: 0 auto; max-width: 300px;font-family: 'Lato'; font-size: 2em;line-height:96px;
   color: #51606b;text-decoration: none;
 }
 
@@ -135,7 +135,7 @@ input[type="submit"].LR-sign-up-submit {
 .application .positions li a {
   color: #51606b;
   font-size: 1.1em;
-  font-family: 'freightsans_promedium';
+  font-family: 'Lato';
 }
 
 .application .positions li a.active {
@@ -150,7 +150,7 @@ input[type="submit"].LR-sign-up-submit {
 .application .spec h2 {font-size: 2em}
 .application .spec h3 {font-size: 1.5em;color: #7d96ab;}
 .application .spec h4 {font-size: 1.2em;}
-.application .spec p, .application .spec ul li {font-family: 'freightsans_probook';font-size: 1.1em;letter-spacing: 0;line-height: 1.5em}
+.application .spec p, .application .spec ul li {font-family: 'Lato';font-weight:300;font-size: 1.1em;letter-spacing: 0;line-height: 1.5em}
 .application .spec ul {color:#51606b;}
 
 .application .listings {width: 300px;}
@@ -181,7 +181,7 @@ form button, a.go-for-it {
   color: #fff;
   background: #df5226;
   border: 1px solid #b73218;
-  font-family: 'freightsans_prosemibold';
+  font-family: 'Lato';
   text-shadow: 0 0 15px rgba(0, 0, 0, .3), 0 -1px 0 rgba(0, 0, 0, .3);
   width: 80%;
   margin: 10px auto;
@@ -196,6 +196,8 @@ form button:active {
   background: #b73218;
   border: 1px solid #852512;
 }
+
+p.strong {font-weight:700;text-align:center;}
 
 /* Insert CSS overrides here */
 @media only screen and (min-width : 320px) and (max-device-width : 768px) {

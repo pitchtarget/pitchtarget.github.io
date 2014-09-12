@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <head>
 <link href='/assets/stylesheets/freightsans.css' rel='stylesheet' type='text/css'>
-<link href='/assets/stylesheets/glyphs.css' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
 <script src="/js/jquery-2.1.0.min.js"></script>
 <script src="/js/jquery.form.js"></script>
 <script src="/js/header.js"></script>
@@ -9,12 +10,12 @@
 <title>Pitchtarget</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="title" content="Pitchtarget" />
-<meta name="keywords" content="" />
-<meta property="og:title" content="Pitchtarget"/>
-<meta property="og:type" content="company"/>
+<meta property="og:title" content="{{ page.title }} — Pitchtarget News"/>
+<meta property="og:type" content="article"/>
 <meta property="og:site_name" content="Pitchtarget"/>
-<meta property="og:description" content="Introducting the growth machine." />
-<meta property="og:url" content="http://pitchtarget.com" />
+<meta property="og:description" content="{{ page.excerpt | replace:'<p>', '' | replace:'</p>', '' | replace: '', ''}}" />
+<meta property="author" content="Pitchtarget News" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta property="og:image" content="http://pitchtarget.com/imgs/logo.png"/>
 <link rel="shortcut icon" href="/imgs/icons/favicon.ico">
@@ -43,26 +44,9 @@
   <link href="/css/landing.css" rel="stylesheet" />
   <link href="/assets/stylesheets/header.css" rel="stylesheet" />
   <style>
-    body.news div.post img {display:block;margin: 10px auto;width:500px;max-width:500px;}
+    body.news div.post, body.news .payoff {margin: 0 50px;}
+    body.news div.post img {display:block;margin: 10px auto;max-width:700px;}
   </style>
-
-  <!-- REMOVE -->
-  <script>(function() {
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-      var fbds = document.createElement('script');
-      fbds.async = true;
-      fbds.src = '//connect.facebook.net/en_US/fbds.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(fbds, s);
-      _fbq.loaded = true;
-    }
-    _fbq.push(['addPixelId', "698778510153243"]);
-  })();
-  window._fbq = window._fbq || [];
-  window._fbq.push(["track", "PixelInitialized", {}]);
-  </script>
-  <noscript><img height="1" width="1" border="0" alt="" style="display:none" src="https://www.facebook.com/tr?id=698778510153243&amp;ev=NoScript" /></noscript>
 </head>
 <body class="news">
   <div id="content" class="LR-content"><!-- LR-sharing-page LR-stats LR-lx -->
@@ -73,9 +57,9 @@
       <div class="LR-box">
         <div class="LR-box-container post">
       <div class="payoffs">
-        <h3 class="payoff" style="text-align: left">Pitchtarget News</h3>
+        <h3 class="payoff" style="text-align: left"><a href="/news">Pitchtarget News</a></h3>
       </div>
-          <div class="hero-container">
+          <div class="post">
             <div class="text">
               <h3 style="text-align: left;margin-bottom: 0"><a href="{{ post.url }}" style="color:#df5226">{{ page.title }}</a></h3>
               <p style="font-size:0.99em;margin:0">Edited by {{ page.author }}, {{ page.date | date_to_string }}</p>
@@ -87,5 +71,6 @@
   </div><!-- #content -->
   <div class="footer">
     {% include footer.html %}
+    {% include tag_manager.html %}
   </div>
 </body>
