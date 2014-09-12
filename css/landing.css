@@ -73,6 +73,9 @@ input[type="number"].LR-sign-up-input {
 
 .hero-container div.text.float-right {float:right;}
 .hero-container.landing-1 {background-image: url(/imgs/landing_1.jpg)}
+.hero-container.landing-2 {background-image: url(/imgs/landing_2.jpg)}
+.hero-container.landing-3 {background-image: url(/imgs/landing_3.jpg)}
+.hero-container.landing-4 {background-image: url(/imgs/landing_4.jpg)}
 
 
 .hero-container .icon {
