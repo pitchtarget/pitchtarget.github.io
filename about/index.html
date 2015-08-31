@@ -9,7 +9,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>About Pitchtarget</title>
     <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/all.js" type="text/javascript"></script>
+    <script src="/javascripts/cookie-policy.js" type="text/javascript"></script>
+    <script src="/javascripts/all.js" type="text/plain" class="_iub_cs_activate"></script>
     <!-- Google Tag Manager -->
     <noscript><iframe class="_iub_cs_activate" src="//cdn.iubenda.com/cookie_solution/empty.html" suppressedsrc="//www.googletagmanager.com/ns.html?id=GTM-KKHK9X" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script class="_iub_cs_activate-inline" type="text/plain">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KKHK9X');</script>
@@ -17,91 +18,93 @@
     
   </head>
   <body class='about about_index'>
-    <header>
-      <nav class='navbar navbar-default'>
+    <div class='wrapAll'>
+      <header>
+        <nav class='navbar navbar-default'>
+          <div class='container'>
+            <div class='navbar-header'>
+              <button class='navbar-toggle collapsed' data-target='#pitchtarget-menu' data-toggle='collapse' type='button'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+              </button>
+              <a class='navbar-brand' href='/'>
+                <img class="img-responsive" src="/images/logo-pitchtarget-beta.svg" />
+              </a>
+            </div>
+            <div class='collapse navbar-collapse' id='pitchtarget-menu'>
+              <ul class='nav navbar-nav'>
+                <li><a href="/">Home</a></li>
+                <li><a href="/service">Service</a></li>
+                <!-- %li= link_to("Product","/product") -->
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/blog">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id='main' role='main'>
         <div class='container'>
-          <div class='navbar-header'>
-            <button class='navbar-toggle collapsed' data-target='#pitchtarget-menu' data-toggle='collapse' type='button'>
-              <span class='sr-only'>Toggle navigation</span>
-              <span class='icon-bar'></span>
-              <span class='icon-bar'></span>
-              <span class='icon-bar'></span>
-            </button>
-            <a class='navbar-brand' href='/'>
-              <img class="img-responsive" src="/images/logo-pitchtarget-beta.svg" />
-            </a>
-          </div>
-          <div class='collapse navbar-collapse' id='pitchtarget-menu'>
-            <ul class='nav navbar-nav'>
-              <li><a href="/">Home</a></li>
-              <li><a href="/service">Service</a></li>
-              <!-- %li= link_to("Product","/product") -->
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/blog">Blog</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div id='main' role='main'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col-sm-12'>
-            <div class='spacer-extra spacer-top'>
-              <h2 class='title title-section'>About us</h2>
-              <p class='article article-blog'>Pitchtarget is proudly brought to you by Addictive, an Italian start-up born in 2014. The most part of the team were part of gaming start-up and felt the need of learning more about Facebook Ads and automating the repetitive tasks involved in setting up campaigns and building user audiences. Our journey started there: during an hackathon we hacked with the Facebook Marketing API and in the next days come up with a first prototype of what would be evolved into Pitchtarget. In March, 2014, we have been selected, together with other 9 European start-ups, to be part of the first PMD Facebook Accelarate Program.</p>
-              <p class='article article-blog'>In October, 2014, Addictive has been selected as one of the 9 winners of OpenAxel, a competition that finds the best entrepreneurial talent in Europe and awards it with world class acceleration services.</p>
-              <p class='article article-blog'>Addictive team has a deep knowledge of the Facebook Marketing API and is constantly updated on the latest news on the Facebook platform.</p>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class='row spacer-extra spacer-bottom'>
-          <div class='col-sm-12'>
-            <div class='spacer spacer-to'>
-              <span class='title title-section'>Team</span>
-            </div>
-            <div class='col-md-3 col-sm-4 col-xs-6 team'>
-              <div class='spacer center'>
-                <img class="image-box image-small img-responsive" src="/images/nb-team.png" />
-                <div class='title title-team spacer spacer-top'>
-                  Nicola Brisotto
-                </div>
-                <div class='subtitle'>
-                  CEO
-                </div>
+          <div class='row'>
+            <div class='col-sm-12'>
+              <div class='spacer-extra spacer-top'>
+                <h2 class='title title-section'>About us</h2>
+                <p class='article article-blog'>Pitchtarget is proudly brought to you by Addictive, an Italian start-up born in 2014. The most part of the team were part of gaming start-up and felt the need of learning more about Facebook Ads and automating the repetitive tasks involved in setting up campaigns and building user audiences. Our journey started there: during an hackathon we hacked with the Facebook Marketing API and in the next days come up with a first prototype of what would be evolved into Pitchtarget. In March, 2014, we have been selected, together with other 9 European start-ups, to be part of the first PMD Facebook Accelarate Program.</p>
+                <p class='article article-blog'>In October, 2014, Addictive has been selected as one of the 9 winners of OpenAxel, a competition that finds the best entrepreneurial talent in Europe and awards it with world class acceleration services.</p>
+                <p class='article article-blog'>Addictive team has a deep knowledge of the Facebook Marketing API and is constantly updated on the latest news on the Facebook platform.</p>
               </div>
             </div>
-            <div class='col-md-3 col-sm-4 col-xs-6 team'>
-              <div class='spacer center'>
-                <img class="image-box image-small img-responsive" src="/images/mcb-team.png" />
-                <div class='title title-team spacer spacer-top'>
-                  Matteo Centenaro
-                </div>
-                <div class='subtitle'>
-                  CTO
+          </div>
+          <hr>
+          <div class='row spacer-extra spacer-bottom'>
+            <div class='col-sm-12'>
+              <div class='spacer spacer-to'>
+                <span class='title title-section'>Team</span>
+              </div>
+              <div class='col-md-3 col-sm-4 col-xs-6 team'>
+                <div class='spacer center'>
+                  <img class="image-box image-small img-responsive" src="/images/nb-team.png" />
+                  <div class='title title-team spacer spacer-top'>
+                    Nicola Brisotto
+                  </div>
+                  <div class='subtitle'>
+                    CEO
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class='col-md-3 col-sm-4 col-xs-6 team'>
-              <div class='spacer center'>
-                <img class="image-box image-small img-responsive" src="/images/wb-team.png" />
-                <div class='title title-team spacer spacer-top'>
-                  William Bergamo
-                </div>
-                <div class='subtitle'>
-                  Developer
+              <div class='col-md-3 col-sm-4 col-xs-6 team'>
+                <div class='spacer center'>
+                  <img class="image-box image-small img-responsive" src="/images/mcb-team.png" />
+                  <div class='title title-team spacer spacer-top'>
+                    Matteo Centenaro
+                  </div>
+                  <div class='subtitle'>
+                    CTO
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class='col-md-3 col-sm-4 col-xs-6 team'>
-              <div class='spacer center'>
-                <img class="image-box image-small img-responsive" src="/images/mc-team.png" />
-                <div class='title title-team spacer spacer-top'>
-                  Mirco Cotugno
+              <div class='col-md-3 col-sm-4 col-xs-6 team'>
+                <div class='spacer center'>
+                  <img class="image-box image-small img-responsive" src="/images/wb-team.png" />
+                  <div class='title title-team spacer spacer-top'>
+                    William Bergamo
+                  </div>
+                  <div class='subtitle'>
+                    Developer
+                  </div>
                 </div>
-                <div class='subtitle'>
-                  UI/UX Designer
+              </div>
+              <div class='col-md-3 col-sm-4 col-xs-6 team'>
+                <div class='spacer center'>
+                  <img class="image-box image-small img-responsive" src="/images/mc-team.png" />
+                  <div class='title title-team spacer spacer-top'>
+                    Mirco Cotugno
+                  </div>
+                  <div class='subtitle'>
+                    UI/UX Designer
+                  </div>
                 </div>
               </div>
             </div>
@@ -109,49 +112,51 @@
         </div>
       </div>
     </div>
-    <footer class='footer'>
-      <div class='container'>
-        <div class='row spacer spacer-vertical sitemap'>
-          <div class='col-sm-3 col-xs-6'>
-            <ul><a href="/about">About us</a></ul>
-            <ul><a href="/press">Press</a></ul>
-            <ul><a href="http://www.iubenda.com/privacy-policy/950075">Privacy policy</a></ul>
-          </div>
-          <div class='col-sm-3 col-xs-6'>
-            <ul><a href="/service">Service</a></ul>
-            <ul><a href="/blog">Blog</a></ul>
-            <ul><a href="/contact">Contact</a></ul>
-          </div>
-          <!-- .col-sm-3.col-xs-6 -->
-          <!-- %ul= link_to("FAQ","/") -->
-          <!-- %ul= link_to("Giudes","/") -->
-          <div class='col-sm-3 col-xs-12'>
-            <hr class='footer-line'>
-            <ul>
-              <p class='margin-none'>
-                <strong>Addictive s.r.l.</strong>
-                <span class='pt-icon-Logo'></span>
-              </p>
-              <p class='margin-none'>via Sile 41, 31056 Roncade, Italy</p>
-              <p class='margin-none'>
-                <strong>tel.</strong>
-                041 57 35 783
-              </p>
-              <p class='margin-none'>
-                <strong>vat.</strong>
-                IT04636600266
-              </p>
-            </ul>
+    <div class='site-footer'>
+      <footer class='footer'>
+        <div class='container'>
+          <div class='row spacer spacer-vertical sitemap'>
+            <div class='col-sm-3 col-xs-6'>
+              <ul><a href="/about">About us</a></ul>
+              <ul><a href="/press">Press</a></ul>
+              <ul><a href="http://www.iubenda.com/privacy-policy/950075">Privacy policy</a></ul>
+            </div>
+            <div class='col-sm-3 col-xs-6'>
+              <ul><a href="/service">Service</a></ul>
+              <ul><a href="/blog">Blog</a></ul>
+              <ul><a href="/contact">Contact</a></ul>
+            </div>
+            <!-- .col-sm-3.col-xs-6 -->
+            <!-- %ul= link_to("FAQ","/") -->
+            <!-- %ul= link_to("Giudes","/") -->
+            <div class='col-sm-3 col-xs-12'>
+              <hr class='footer-line'>
+              <ul>
+                <p class='margin-none'>
+                  <strong>Addictive s.r.l.</strong>
+                  <span class='pt-icon-Logo'></span>
+                </p>
+                <p class='margin-none'>via Sile 41, 31056 Roncade, Italy</p>
+                <p class='margin-none'>
+                  <strong>tel.</strong>
+                  041 57 35 783
+                </p>
+                <p class='margin-none'>
+                  <strong>vat.</strong>
+                  IT04636600266
+                </p>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <footer class='copyright'>
-      <div class='container'>
-        <div class='row spacer-small'>
-          <h6 class='spacer-small spacer-vertical margin-none'>© Pitchtarget</h6>
+      </footer>
+      <footer class='copyright'>
+        <div class='container'>
+          <div class='row spacer-small'>
+            <h6 class='spacer-small spacer-vertical margin-none'>© Pitchtarget</h6>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
