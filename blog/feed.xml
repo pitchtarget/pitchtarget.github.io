@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Pitchtarget Blog</title>
+  <subtitle>Latest news from Pitchtarget</subtitle>
+  <id>http://www.pitchtarget.com/blog</id>
+  <link href="http://www.pitchtarget.com/blog"/>
+  <link href="http://www.pitchtarget.com/blog/feed.xml" rel="self"/>
+  <updated>2015-09-29T02:00:00+02:00</updated>
+  <author>
+    <name>Pitchtarget</name>
+  </author>
+  <entry>
+    <title>2 Major changes in the new Facebook Adverts: How to deal with them</title>
+    <link rel="alternate" href="http://www.pitchtarget.com/blog/2015/09/29/2-major-changes-in-the-new-facebook-adverts/"/>
+    <id>http://www.pitchtarget.com/blog/2015/09/29/2-major-changes-in-the-new-facebook-adverts/</id>
+    <published>2015-09-29T02:00:00+02:00</published>
+    <updated>2015-10-16T11:56:17+02:00</updated>
+    <author>
+      <name>Pitchtarget</name>
+    </author>
+    <content type="html">&lt;p&gt;The arrival of Facebook’s new v2.4 Marketing API brought with it big changes in the billing and bidding methods of our well-beloved Facebook Adverts. In this post we quickly illustrate to you what these changes consist of, what they imply and how you can benefit from them.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Say goodbye to the old bidding practices: starting from October the old CPM, CPC and oCPM will be no more.
+In their place, Facebook introduced the new “&lt;strong&gt;Optimization Goal&lt;/strong&gt;” and “&lt;strong&gt;Billing Event&lt;/strong&gt;” in the Ad Set settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Optimization goal&lt;/strong&gt; defines what actions you want the Ad Set to optimize towards. Basically, Facebook will decide which are the most suited persons among your target to see your ads  according to the optimization goal you specified for that Ad Set. You will be able to choose among a set of optimization goals pertaining to the objective of your Campaign. If you do not specify an optimization goal, the default one will be the most tightly associated with the Campaign’s objective.&lt;/p&gt;
+
+&lt;p&gt;For example, if you selected “&lt;em&gt;Get installs of your App&lt;/em&gt;” as objective, the default optimization goal will be “&lt;em&gt;App installs&lt;/em&gt;”, and Facebook will show your ads to the users who are more likely to install your app. However, you will still be able to select a different optimization goal.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Billing Event&lt;/strong&gt; option lets you choose the way you want to pay for your Ads. For instance, you will be able to decide whether you want to be charged on the basis of the number of installs of your App or on the amount of page likes obtained through your Ads. 
+The available choices for the optimization goals will be limited according to the type of campaign you are creating. The chosen optimization goal will in turn constrain the eligible options of billing events. In general, you would be able to choose among &lt;em&gt;impressions&lt;/em&gt; or a specific action-related event pertinent to the selected optimization goal (e.g., if the optimization goal is &lt;em&gt;Video Views&lt;/em&gt;, you can select &lt;em&gt;impressions&lt;/em&gt; or &lt;em&gt;video views&lt;/em&gt; as billing event).
+To give you a better idea of how billing events work, we report here a more articulated example (&lt;a href="https://developers.facebook.com/docs/marketing-api/billingevent"&gt;credits to Facebook&lt;/a&gt;):&lt;/p&gt;
+
+&lt;p&gt;Consider a Mobile App Install campaign with an optimization goal of &lt;em&gt;App Installs&lt;/em&gt; and bid amount as $10.00. In this case, it will be possible to choose either &lt;em&gt;Impressions&lt;/em&gt; or &lt;em&gt;App Installs&lt;/em&gt; as the billing event.
+The results from the two billing event options would be different because of the user action prediction calculated by Facebook and the budget pacing, but for the sake of simplicity we assume to be in an ideal world, where Facebook can estimate the chance of a user to install an app 100% accurately, and the results of the two billing event options are the same. For example, if Facebook system thinks that there is 1% of the chance of install, and your Ad is shown to 1,000 users, your Ad would result in 10 installs, and cost you $100.00 or less. If the billing event is Impressions, each impression costs $0.10 (bid amount * optimization goal probability) or less. If the billing event is App Installs, each installation costs $10.00 or less.&lt;/p&gt;
+
+&lt;p&gt;Below here you will find the list of the available choices for optimization goals and billing events:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clicks&lt;/li&gt;
+  &lt;li&gt;Impressions&lt;/li&gt;
+  &lt;li&gt;App installs&lt;/li&gt;
+  &lt;li&gt;Page likes&lt;/li&gt;
+  &lt;li&gt;Offer claims&lt;/li&gt;
+  &lt;li&gt;Link clicks&lt;/li&gt;
+  &lt;li&gt;Post engagement&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hence, there are basically &lt;strong&gt;2 types of billing events&lt;/strong&gt;: &lt;strong&gt;impressions&lt;/strong&gt; and &lt;strong&gt;action-related events&lt;/strong&gt; (link clicks, app installs, page likes, etc.).&lt;/p&gt;
+
+&lt;h3 id="when-is-it-better-to-use-one-type-or-the-other"&gt;When is it better to use one type or the other?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Impressions&lt;/strong&gt; as billing event works better when you have a budget-constrained campaign, and you want to have the campaign delivered smoothly, with all budget spent at the end of the running period.&lt;/p&gt;
+
+&lt;p&gt;Use &lt;strong&gt;action-related billing events&lt;/strong&gt; like &lt;em&gt;App Installs&lt;/em&gt; when you have a bid-constrained campaign and your main priority is to keep the cost per action no higher than the bid amount. In these cases your average cost per action will be less than or equal to the bid amount.&lt;/p&gt;
+
+&lt;h3 id="what-are-the-benefits-for-pitchtargets-users"&gt;What are the benefits for Pitchtarget’s users?&lt;/h3&gt;
+
+&lt;p&gt;In terms of &lt;strong&gt;graphical user experience&lt;/strong&gt;, in the Budget and Schedule section of the campaign creation process you will simply find the old “Bid type” option substituted with the new “Optimize for” and “Billing event”.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This is the old Bid type section:&lt;/em&gt;
+&lt;img alt="Old View" src="/blog/feed.xmlold_view.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This is the new Optimize for and Billing event section:&lt;/em&gt;
+&lt;img alt="New View" src="/blog/feed.xmlnew_view.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;In terms of usage, you will be able to create in an easier way Campaigns optimized ad-hoc to your objectives and &lt;strong&gt;pay only for the results you achieve!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We are always updated on the latest news about the Facebook platform, and we constantly work to improve the product and services we offer you.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://app.pitchtarget.com/#/landing"&gt;Request your free trial here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="we-handle-complexity-you-enjoy-roi"&gt;We handle complexity, you enjoy ROI!&lt;/h3&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Automatic Boost Posts: Set, Save Time, Increase Gains</title>
+    <link rel="alternate" href="http://www.pitchtarget.com/blog/2015/09/04/automatic-boost-posts/"/>
+    <id>http://www.pitchtarget.com/blog/2015/09/04/automatic-boost-posts/</id>
+    <published>2015-09-04T02:00:00+02:00</published>
+    <updated>2015-10-30T18:27:45+01:00</updated>
+    <author>
+      <name>Pitchtarget</name>
+    </author>
+    <content type="html">&lt;p&gt;In this article we introduce Pitchtarget’s innovative &lt;strong&gt;Automatic Boost Posts&lt;/strong&gt; feature, that allows to efficiently take advantage of Facebook’s Boost Post. Automatic Boost Posts automates the tedious and repetitive tasks involved in using on large scale the native Boost Post feature. In this way, our users can save a lot of precious time that can be spent in other value creating activities, while increasing the return on their advertising investments.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;On Facebook, a regular Ad account can have up to 5,000 ads that aren't deleted (&lt;a href="https://www.facebook.com/business/help/652738434773716"&gt;10,000 for large-enabled ad accounts&lt;/a&gt;).
+These are quite large numbers, especially if we think that useful functions such as the &lt;strong&gt;Boost Post need to be performed singularly on each Page post&lt;/strong&gt;. After having identified the posts to be boosted, one would eventually have also to set the criteria of a Boost Post campaign for each single post, criteria which often might also be identical, ending up &lt;strong&gt;repeating the same tedious and time-consuming tasks&lt;/strong&gt; again and again.
+In this way, the cost of performing Boost Post actions manually on even just a couple of hundreds of posts would significantly reduce the benefits of the feature!&lt;/p&gt;
+
+&lt;p&gt;The alternatives thus would become either to limit the number of boosted posts or to manually perform the boosts for the desired number of posts, bearing the costs due to the inefficient use of the most valuable of resources: &lt;strong&gt;time&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;At &lt;a href="http://www.pitchtarget.com"&gt;Pitchtarget&lt;/a&gt;, being ourselves a young start-up operating in the field of Ad Technology, we are well aware that time efficiency can make the difference between a successful and an unsuccessful business.
+Our mission is to find solutions that allow our users to optimize at best their performance on Facebook, fully exploiting the invested resources.&lt;/p&gt;
+
+&lt;p&gt;We identified inefficiencies in the large scale usage of the Boost Post function and so we crafted a solution that enables to take advantage of its benefits (described in &lt;a href="http://www.pitchtarget.com/blog/2015/09/02/boost-post-pro-and-con/"&gt;our previous article&lt;/a&gt;) saving a significant amount of time that could be better employed for other value-creating activities!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Automatic Boost Posts&lt;/strong&gt; does exactly what it is suggested by its name, automating the repetitive tasks of time-consuming manual creation and management of boosted posts.
+Thanks to the ability to operate on numerous elements simultaneously, &lt;strong&gt;each post can be boosted at the same time&lt;/strong&gt; without having to click through each one of them.
+In this way, our users can activate and monitor Boost Post campaigns efficiently.&lt;/p&gt;
+
+&lt;h3 id="how-does-automatic-boost-posts-work-exactly"&gt;How does &lt;strong&gt;Automatic Boost Posts&lt;/strong&gt; work exactly?&lt;/h3&gt;
+
+&lt;p&gt;All users have to do is just set once the rules of an Automatic Boost Posts campaign and then it will automatically operate according to the specified criteria, activating the boosts only when appropriate.&lt;/p&gt;
+
+&lt;p&gt;To create the automation, as first step the user has to specify the name of the new &lt;strong&gt;Automatic Boost Posts rule&lt;/strong&gt;, the post watching time (the number of hours for which the automation will check for each post metric performance), the age of the posts to be included in the campaign and whether to boost all of them simultaneously or only the latest that match the “Trigger”.&lt;/p&gt;
+
+&lt;p&gt;The next step would be to actually define the “Trigger”, which is the set containing the rules that determine whether a post is eligible to be boosted. Triggers are organized in rule blocks, which share the same operator (“and” or “or”) between the rules contained in them. Rules can be created according to a wide set of parameters (also including the actual text of the posts!) and operators. &lt;strong&gt;An example of rule&lt;/strong&gt; might be: &lt;em&gt;“If the metric 'likes' is greater than 100 then boost the post”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once the Trigger has been defined, the process becomes almost identical to creating a new campaign: the Target and the Budget have to be set up, and then the automation is ready to go! It is also possible to reuse previously created Targets to further speed up the work flow.
+Each brand new set of Automatic Boost Posts rules is created “in pause”, so that the user has the &lt;strong&gt;total control&lt;/strong&gt; of this powerful feature and can decide to launch the automation whenever she likes. Each time a new post will be boosted actively, the user will be notified via e-mail.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Efficiency&lt;/strong&gt; plays a key role in the process of obtaining &lt;strong&gt;high returns on investments&lt;/strong&gt;, and we created this feature because it provides our users with another way of improving the allocation of their time!&lt;/p&gt;
+
+&lt;h3 id="try-out-for-free-automatic-boost-posts-herehttpapppitchtargetcomlanding"&gt;&lt;a href="http://app.pitchtarget.com/#/landing"&gt;Try out for free &lt;strong&gt;Automatic Boost Posts&lt;/strong&gt; here&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;We are constantly working to improve our users experience, and we are very fascinated by the world of efficiency-enhancing automations, so be prepared for new exciting updates! Stay tuned!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Boost Post: Pro and Con</title>
+    <link rel="alternate" href="http://www.pitchtarget.com/blog/2015/09/02/boost-post-pro-and-con/"/>
+    <id>http://www.pitchtarget.com/blog/2015/09/02/boost-post-pro-and-con/</id>
+    <published>2015-09-02T02:00:00+02:00</published>
+    <updated>2015-10-16T10:36:05+02:00</updated>
+    <author>
+      <name>Pitchtarget</name>
+    </author>
+    <content type="html">&lt;p&gt;Facebook gives its users the possibility to promote their posts through the Boost Post feature. Being a kind of ads, boosted posts have &lt;strong&gt;more visibility than normal posts&lt;/strong&gt;. We find this feature to be very useful to improve the performance of businesses on Facebook, because it allows to enhance the effectiveness of the best posts, highlighting the most attractive contents of a Page. While being definitely valuable, Boost Post has some limitations.
+In this article we review them together with its strengths, while we explain how it works.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Those familiar with Facebook Pages should already know that it is possible to highlight posts by clicking on the “&lt;strong&gt;Boost Post&lt;/strong&gt;” button located in the lower-right corner of each status update, photo, video and offer published.
+Boosting a post allows to increase the chances of appearing on &lt;a href="https://www.facebook.com/business/help/547448218658012"&gt;the News Feed of the targeted audience&lt;/a&gt;. In other words, a boosted post is basically an Ad which uses the post itself as creative.&lt;/p&gt;
+
+&lt;p&gt;For those who don’t know yet instead, here is how it works:&lt;/p&gt;
+
+&lt;p&gt;First of all, a post can be boosted only through a Facebook Page. Those who are not admins, advertisers, moderators or editors of a Page cannot do it.&lt;/p&gt;
+
+&lt;p&gt;Once clicked on the “Boost Post” button, the user has to set a bunch of parameters including the audience and the budget, based on the desired amount of people to reach and the duration of the boost (up to a maximum of 7 days).&lt;/p&gt;
+
+&lt;p&gt;It is possible to boost posts for &lt;strong&gt;the existing Fan base&lt;/strong&gt; to reach more of the people already liking the Page (and their friends), or to &lt;strong&gt;target a new audience&lt;/strong&gt; by choosing for their location, gender, age and interests. Finally, after a short review process, the post can be boosted.&lt;/p&gt;
+
+&lt;p&gt;After the boost post is launched, its performance can be monitored in several ways.
+The total number of unique people who have seen the boosted post will be shown at the bottom of the post itself, and by clicking on it it will be possible to break the number down into Organic Reach (people who would have seen the post anyway) and Paid Reach (people who saw the Sponsored post).
+A more detailed analysis including the demographics of the viewers and the actions they took can be obtained by clicking “See Results” at the bottom of the post, by going into the Posts section of the Page Insights or by using an Ads management tool.&lt;/p&gt;
+
+&lt;p&gt;If there is the need to stop boosting the post before expected, it is possible to &lt;em&gt;pause the boost&lt;/em&gt; (and eventually resuming it later) or remove it definitely. It is sufficient to go to the post, click on the button on the bottom right corner displaying the budget and choose to pause it, or to delete it from the options.
+The Boost Post feature is &lt;strong&gt;not pre-paid&lt;/strong&gt;, so there is &lt;strong&gt;no waste of money&lt;/strong&gt; if the post is deleted or paused before its scheduled expiration. It is charged only for the portion of the budget that was already spent while the boost was active.&lt;/p&gt;
+
+&lt;p&gt;Boosted posts appear higher in News Feed, so there's a better chance the targeted audience will see them. They are labeled as “Sponsored” and don't appear in the right column of Facebook. Promoting the most performing posts with the Boost Post feature could thus help improve the success of a Page by increasing the likelihood of attracting new user or engaging more Fans to participate in the conversion thanks to the (supposed) high quality of the contents promoted (see our &lt;a href="http://www.pitchtarget.com/blog/2015/08/27/quality-vs-quantity/"&gt;previous article&lt;/a&gt; on quality contents).&lt;/p&gt;
+
+&lt;p&gt;Checking the performance and setting the parameters for a few posts does not require a large investment in terms of time.
+However, one would probably be tempted to take advantage of this useful function as much as possible, but &lt;strong&gt;doing it frequently could involve a huge waste of time&lt;/strong&gt;.
+Indeed, while monitoring and setting a boost post is not a difficult or time-expensive task per se, as the number of boosted posts increases so does the cost of investing time in their creation. A relatively simple and quick task then becomes an exhausting set of repetitive and tedious tasks.&lt;/p&gt;
+
+&lt;p&gt;Therefore, &lt;strong&gt;the Pro Con list for the Boost Post feature&lt;/strong&gt; thus looks like this in this in our opinion:&lt;/p&gt;
+
+&lt;table class="table table-bordered"&gt;
+    &lt;tr class="active"&gt;
+        &lt;td&gt;&lt;b&gt;Pro&lt;/b&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;b&gt;Con&lt;/b&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt; Increases the effectiveness of the best contents &lt;/td&gt;
+        &lt;td&gt; Inefficiently time-consuming to use in large scale &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Easy to use&lt;/td&gt;
+        &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Not pre-paid (no waste of money)&lt;/td&gt;
+        &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;To overcome to &lt;strong&gt;the scalability issue&lt;/strong&gt;, at Pitchtarget we created the &lt;a href="http://www.pitchtarget.com/blog/2015/09/04/automatic-boost-posts"&gt;&lt;strong&gt;Automatic Boost Posts&lt;/strong&gt;&lt;/a&gt; function, that allows to fully exploit the benefit of boosted posts &lt;strong&gt;without inefficiencies&lt;/strong&gt; and waste of resources.
+Want to know more? In the &lt;a href="http://www.pitchtarget.com/blog/2015/09/04/automatic-boost-posts"&gt;next article&lt;/a&gt; we will describe more in details the functioning and the features of &lt;a href="http://www.pitchtarget.com/blog/2015/09/04/automatic-boost-posts"&gt;&lt;strong&gt;Automatic Boost Posts&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Quality vs. Quantity: the recipe to make the most of a Facebook Page</title>
+    <link rel="alternate" href="http://www.pitchtarget.com/blog/2015/08/27/quality-vs-quantity/"/>
+    <id>http://www.pitchtarget.com/blog/2015/08/27/quality-vs-quantity/</id>
+    <published>2015-08-27T02:00:00+02:00</published>
+    <updated>2015-10-16T10:36:05+02:00</updated>
+    <author>
+      <name>Pitchtarget</name>
+    </author>
+    <content type="html">&lt;p&gt;Facebook is a very powerful communication channel. With its 1.5 billion users it represents a huge opportunity for marketers. A Page can be easily created and gives a business the chance to be present actively on Facebook. While creating a Page is a simple process though, managing it appropriately may not be that straightforward. 
+In this article we offer some helpful tips to take advantage of Facebook commercial possibilities in the best way.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Facebook’s user base can now count almost &lt;strong&gt;1.5 billion users&lt;/strong&gt; online every month, with more than 900 million people checking it every day (according to the &lt;a href="https://www.facebook.com/zuck/posts/10102273332210821"&gt;latest report&lt;/a&gt;), and the numbers are expected to grow further as Facebook keeps investing to improve its services and getting more people online. This titanic amount of users translates into a colossal opportunity for marketers, that are provided with an unprecedented communication channel.&lt;/p&gt;
+
+&lt;p&gt;The free tools that allow businesses to have voices and presence on Facebook are the Pages. They allow to promote a brand, to find new customers and to build relationships with them. &lt;strong&gt;Pages are very powerful tools but, like all the tools, they need to be properly used in order to be effective.
+It is critical to understand that they are more than simple billboards or TV spots, since they give businesses the possibility to create interactive connections with their customers.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Exactly for this reason, creating Facebook Pages is not enough to fully exploit their communicating potential. They are dynamic tools, and thus they need to be managed.&lt;/p&gt;
+
+&lt;p&gt;At this point the question arises spontaneously:&lt;/p&gt;
+
+&lt;h3 id="how-can-i-make-the-best-out-of-my-facebook-page"&gt;&lt;em&gt;How can I make the best out of my Facebook Page?&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The answer is shockingly simple, and can be summed up with the mantra “&lt;strong&gt;quality is better than quantity&lt;/strong&gt;”.
+While this may not always be true, it definitely is in this case, and now we will see why.&lt;/p&gt;
+
+&lt;p&gt;It’s easy to be dazzled by Facebook’s massive amount of users and the ease with which is possible to reach them through a Page can be misleading. Often Facebook advertisers (not only beginners) make the mistake of focusing their efforts in reaching as many people as possible, without considering the value of the contents they are delivering. They focus on quantity rather than on quality, hence failing to properly exploit the potential of their Pages. Facebook itself has recently took &lt;a href="https://www.facebook.com/business/news/update-to-facebook-news-feed"&gt;clear provisions&lt;/a&gt; to increase the quality level of posts contents.&lt;/p&gt;
+
+&lt;h3 id="and-what-does-quality-mean-in-facebook-terms"&gt;&lt;em&gt;And what does quality mean in Facebook terms?&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;According to &lt;a href="https://www.facebook.com/business/news/News-Feed-FYI-A-Window-Into-News-Feed"&gt;its own estimates&lt;/a&gt; the typical user could see around 1,500 stories in a given day, but Facebook shows in the News Feed only the 300 stories they believe the user will be most likely to care about&lt;sup id="fnref:footnote"&gt;&lt;a href="#fn:footnote" class="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, according to their ranking algorithm. 
+This is because “&lt;em&gt;the goal of News Feed is to deliver the right content to the right people at the right time so they don’t miss the stories that are important to them.&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;From this statement it is possible to deduce that &lt;strong&gt;for Facebook high quality content means one that is tailored according to the interests of the people it has been created for&lt;/strong&gt;.
+Even though this may sound trivial, it is not at all: in order to gain a place in a user’s News Feed, a business post has to compete not only against other businesses, but also against the stories of the people connected to that user.&lt;/p&gt;
+
+&lt;p&gt;This means that a post created for commercial purpose has to be relevant enough in user’s opinion to compete against, for instance, the photos of a best friend’s wedding or the check-in in a restaurant of someone interesting.&lt;/p&gt;
+
+&lt;p&gt;Therefore to deliver high quality content, it is necessary to understand what is interesting for a user. But to be able to do this, it is crucial to identify which kind of user is being addressed.
+It is for this reason that the approach “reaching as many people as possible” does not work effectively: in order for a business Page to be successful, it has to address the interests of some specific people, not everyone, but someone who can be interested in what that business has to offer and thus will be more willing to interact with the Page. In other words, it has to focus on its customers.&lt;/p&gt;
+
+&lt;h3 id="but-how-it-is-possible-to-identify-customers-on-the-wide-wild-facebook"&gt;&lt;em&gt;But how it is possible to identify customers on the wide wild Facebook?&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Luckily, Facebook itself provides an excellent solution to this problem: sponsored contents.
+&lt;strong&gt;Through Facebook Ads it is possible to target people whose interests coincide with what a business has to offer, people that will build up a relevant Fan base which will become the core audience of the business Page&lt;/strong&gt;.
+Using targeted Ads has a cost, and of course one would want to limit costs as much as possible.&lt;/p&gt;
+
+&lt;p&gt;However, it is important to remember that quality should not be sacrificed in this process: here the aim is not to get as many Fans as possible at the lowest cost, but to &lt;a href="http://www.jonloomer.com/2013/09/04/facebook-sales-funnel/"&gt;get the right Fans spending the least amount of money&lt;/a&gt;. 
+The right Fans would be people whose interests genuinely match with the business offer, and that thus will more likely engage actively with the Page.&lt;/p&gt;
+
+&lt;p&gt;To be clear, being able to reach a large number of people is not a bad thing per se, provided that there is having a precise target in mind. 
+Even though acquiring this type of Fan base may be more expensive, it would definitely pay off in the long term,  providing a better return on investment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Grow Page" src="/blog/feed.xmlgrow_qq.jpg" /&gt;&lt;/p&gt;
+
+&lt;h3 id="hence-page-content-must-be-relevant-but-what-does-this-mean"&gt;&lt;em&gt;Hence, Page content must be relevant. But what does this mean?&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;A Page is what links a business website to Facebook. A business should invest in its website in order for it to provide a great user experience and relevant content. Relevant content must provide value to targeted customers. This implies that &lt;strong&gt;a business Page should not deliver only promotional content&lt;/strong&gt;, describing how good its products or services are and for example, redirecting customers to the website’s add-to-cart landing page, &lt;strong&gt;but it should also provide content of educational or entertaining nature, suited to the needs of its audience&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example, a business selling gardening tools could provide content about how to properly take care of plants, or a business selling sports articles could post stories about dieting or how to design a training workout.
+At the beginning it might be helpful to deliver content with a relatively high frequency to increase engagement, but in the long term it is not necessary to flood followers with posts, because they could be annoyed, especially with promotional content.&lt;/p&gt;
+
+&lt;p&gt;Moreover, the Page gives the chance to establish a personal connection between the users and the business. It is a place where a business can enhance the experience it offers to its customer through direct interaction, and thus needs to be carefully and actively managed.&lt;/p&gt;
+
+&lt;p&gt;So, to quickly summarize the main points of our recipe for a performing Facebook Page:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Invest in the website&lt;/strong&gt;: build well designed and captivating landing pages."&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Build an high quality Fan base&lt;/strong&gt;: the aim is not to reach as many people as possible, but to reach the right people.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Provide high quality, relevant content&lt;/strong&gt;: not just promotional, but also educational and engaging.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Provide an high quality user experience&lt;/strong&gt;: manage actively the Page, supporting the users.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="focusing-on-quality-is-the-key-in-order-to-take-advantage-of-a-facebook-business-page"&gt;&lt;strong&gt;Focusing on quality is the key in order to take advantage of a Facebook business Page!&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt="Page Recipe" src="/blog/feed.xmlrecipe_qq.jpg" /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;div class="footnotes"&gt;
+  &lt;ol&gt;
+    &lt;li id="fn:footnote"&gt;
+      &lt;p&gt;This applies to organic content (free) only, not ads (paid). &lt;a href="#fnref:footnote" class="reversefootnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Facebook loves mobile. Mobile loves Facebook</title>
+    <link rel="alternate" href="http://www.pitchtarget.com/blog/2015/04/27/facebook-loves-mobile-mobile-loves-facebook/"/>
+    <id>http://www.pitchtarget.com/blog/2015/04/27/facebook-loves-mobile-mobile-loves-facebook/</id>
+    <published>2015-04-27T10:55:00+02:00</published>
+    <updated>2015-06-16T17:49:07+02:00</updated>
+    <author>
+      <name>Pitchtarget</name>
+    </author>
+    <content type="html">&lt;p&gt;Day after day we hear of success stories from mobile advertisers that use Facebook to drive more installs and conversions with brilliant results. It's not all about the ads: Facebook Platform comes to help in order to drive more users and better user trust.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id="mobile-app-install"&gt;Mobile App Install&lt;/h2&gt;
+
+&lt;p&gt;Mobile App Install Ads appear in the Mobile News Feed just like normal Page Posts do. You have a similar real estate, but practically every tap leads to the App Store or Google Play. Even the Call To Action, "Install Now", leaves no interpretation. It is a great way for users to discover new app – and to install them without leaving Facebook.&lt;/p&gt;
+
+&lt;p&gt;Here's why we think it's a great solution:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Having more clickable surface means maximising clicks while optimising for installs.&lt;/li&gt;
+  &lt;li&gt;Combine Mobile App Install Ads with oCPM for the best results. Some advertisers may even be able to specify their target CPI.&lt;/li&gt;
+  &lt;li&gt;You can use images or even videos to promote your app, which is particularly useful when you are promoting new apps.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="targeting-and-mobile-custom-audiences"&gt;Targeting and Mobile Custom Audiences&lt;/h2&gt;
+
+&lt;p&gt;Apart from the obvious targeting options (such as the ability to specify device platform and operating system), there are some interesting behaviors that you can use in order to maximise efficiency:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Device connection.&lt;/strong&gt; You can deliver ads only to people who are browsing from a Wi-Fi connection, or to people browsing from their 3G/LTE connections. Use this option if your app size may clash with your users' data caps, and you should be able to improve your Click-to-Convert rate.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Technology early adopters.&lt;/strong&gt; This behavior is a set of people who logs into Facebook from brand new devices.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mobile Custom Audiences.&lt;/strong&gt; By using Mobile Custom Audience, you will be able to further segment you app users and to retarget them based on actions they made (or did not make). For instance, you can target people who played your first three levels of a game but did not use the app afterwards.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="facebook-login-and-open-graph"&gt;Facebook Login and Open Graph&lt;/h2&gt;
+
+&lt;p&gt;Remember, there is still free distribution on Facebook and both your apps and your users can benefit from it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Facebook Login&lt;/strong&gt; allows people to signup to your app by using their Facebook identity. This means that users will not need to type and verify emails, and they will not need to create or remember a password. And then you reduce friction during the signup process, you will naturally see a decrease in your churn rate.&lt;/p&gt;
+
+&lt;p&gt;You should also encourage people to share content from you app back to Facebook. This does not require Facebook Login: the Facebook SDK gives you plenty of options and most of them are straightforward to implement into your app. When your users share content from you app, their friends will see those posts. People on mobile will be prompted to install the app, which means that even more installs may come to your app!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>5 small things that will make all the difference</title>
+    <link rel="alternate" href="http://www.pitchtarget.com/blog/2015/04/20/5-small-things-that-will-make-all-the-difference/"/>
+    <id>http://www.pitchtarget.com/blog/2015/04/20/5-small-things-that-will-make-all-the-difference/</id>
+    <published>2015-04-20T10:53:00+02:00</published>
+    <updated>2015-06-16T17:49:07+02:00</updated>
+    <author>
+      <name>Pitchtarget</name>
+    </author>
+    <content type="html">&lt;h2 id="creative-matters-a-lot"&gt;1  Creative matters a lot&lt;/h2&gt;
+
+&lt;p&gt;A recent study conducted by Facebook highlights that Facebook an ad can be up to 8X more susceptible to a change of its creative (copy, images and format). Sometimes you wonder why changing that full stop into an exclamation mark made all the difference. Facebook gives you plenty of real estate to show images and videos, and this gives you a lot of flexibility to test it. Run different creatives in the same ad set and inspect the results, but do not change bids or targets.
+Because people on Facebook are looking for high quality content, you must make sure that your ad not only looks good, but it will also be interesting to the people who are going to see it.&lt;/p&gt;
+
+&lt;h2 id="nobody-keeps-track-of-incremental-reach-you-should"&gt;2  Nobody keeps track of incremental reach. You should&lt;/h2&gt;
+&lt;p&gt;oCPM campaigns leverage Facebook's algorithms to increase reach and optimise the cost for your objective. It works well – So well that sometimes you end up extending that campaign. Sometimes, when you do this you notice that your campaign does not deliver as well as you'd expect – even worse, it does not deliver at all.&lt;/p&gt;
+
+&lt;p&gt;Why? You simply reached saturation for your bid and budget. oCPM cannot deliver anymore at a convenient cost.&lt;/p&gt;
+
+&lt;p&gt;You can prevent this by looking at incremental reach, that is, the pace at which your reach is increasing. This value should be constant over time. Check regularly (every day, or every 8 hours) the delta in reach. If you see a sharp decline, it's time to stop your campaign and try different creatives and targets.&lt;/p&gt;
+
+&lt;h2 id="fans-matter"&gt;3  Fans matter&lt;/h2&gt;
+&lt;p&gt;Fans can see your posts up to 4X more than non-fans. This means that people who closely engage with your brand really are your best customers. Many ecommerces do not build brand voice, and this leaves plenty of opportunities for those who do.&lt;/p&gt;
+
+&lt;h2 id="call-to-actions-learn-more-vs-others"&gt;4  Call to actions: Learn more vs others&lt;/h2&gt;
+&lt;p&gt;A research from AdRoll found that "Learn more" is the best performing call to action. It is less prescriptive, yet prompts the users to take action and visit your site.&lt;/p&gt;
+
+&lt;h2 id="retarget-everything"&gt;5  Retarget everything&lt;/h2&gt;
+&lt;p&gt;Custom Audience helps you think creatively about your targeting. You can achieve cross-platform retargeting by using a combination of Website Custom Audience and Mobile Custom Audience.&lt;/p&gt;
+
+&lt;p&gt;For instance, you can target people who added to cart an item using your mobile app and serve them an ad to complete that purchase on desktop. Here's how it works.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You will need to integrate the Facebook SDK inside your native mobile app.&lt;/li&gt;
+  &lt;li&gt;When a user adds an item to the cart, send an AddToCart event to Facebook.&lt;/li&gt;
+  &lt;li&gt;Prepare a Custom Audience from a Mobile app made of people who generated the AddToCart event in the past 24 hours.&lt;/li&gt;
+  &lt;li&gt;Create a new campaign using the Mobile Custom Audience you created in the previous step&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+</feed>
