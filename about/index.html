@@ -18,7 +18,7 @@
     <meta content='http://www.pitchtarget.com/images/pt-cover.png' property='og:image'>
     <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
     <script src="/javascripts/cookie-policy.js" type="text/javascript"></script>
-    <script src="/javascripts/all.js" type="text/plain" class="_iub_cs_activate"></script>
+    <script src="/javascripts/all.js" type="text/javascript"></script>
     <!-- Google Tag Manager -->
     <noscript><iframe class="_iub_cs_activate" src="//cdn.iubenda.com/cookie_solution/empty.html" suppressedsrc="//www.googletagmanager.com/ns.html?id=GTM-KKHK9X" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script class="_iub_cs_activate-inline" type="text/plain">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KKHK9X');</script>
@@ -27,7 +27,7 @@
   </head>
   <body class='about about_index'>
     <div class='wrapAll'>
-      <header>
+      <header class='top-header'>
         <nav class='navbar navbar-default'>
           <div class='container'>
             <div class='navbar-header'>
@@ -42,77 +42,95 @@
               </a>
             </div>
             <div class='collapse navbar-collapse' id='pitchtarget-menu'>
-              <ul class='nav navbar-nav'>
-                <li><a href="/">Home</a></li>
+              <ul class='nav navbar-nav navPT'>
                 <li><a href="/product">Product</a></li>
                 <li><a href="/service">Service</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/pricing">Pricing</a></li>
                 <li><a href="/blog">Blog</a></li>
+                <li><a href="/guide">Docs</a></li>
+                <li>
+                  <a class='btn btn-primary' href='http://app.pitchtarget.com/#/landing' target='_blank'>Sign Up</a>
+                </li>
+                <li>
+                  <a href='http://app.pitchtarget.com/#/landing' target='_blank'>
+                    Login
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
         </nav>
       </header>
       <div id='main' role='main'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-sm-12'>
-              <div class='spacer-extra spacer-top'>
-                <h2 class='title title-section'>About us</h2>
-                <p class='article article-blog'>Pitchtarget is proudly brought to you by Addictive, an Italian start-up born in 2014. Most part of the team was part of a gaming start-up and felt the need of learning more about Facebook Ads and automating the repetitive tasks involved in setting up campaigns and building user audiences. Our journey started there: during an hackathon we hacked with the Facebook Marketing API and in the next days came up with a first prototype of what later would have evolved into Pitchtarget. In March 2014 we have been selected, together with other 9 European start-ups, to be part of the first PMD Facebook Accelarate Program.</p>
-                <p class='article article-blog'>In October, 2014, Addictive has been selected as one of the 9 winners of OpenAxel, a competition that finds the best entrepreneurial talents in Europe and awards them with world class acceleration services.</p>
-                <p class='article article-blog'>Addictive's team has a deep knowledge of the Facebook Marketing API and is constantly updated on the latest news about the Facebook platform.</p>
+        <div class='spacer spacer-vertical spacer-big'>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-sm-12'>
+                <div class='spacer-extra spacer-top'>
+                  <h2 class='title title-section'>About us</h2>
+                  <p class='article article-blog'>Pitchtarget is proudly brought to you by Addictive, an Italian start-up born in 2014. Most part of the team was part of a gaming start-up and felt the need of learning more about Facebook Ads and automating the repetitive tasks involved in setting up campaigns and building user audiences. Our journey started there: during an hackathon we hacked with the Facebook Marketing API and in the next days came up with a first prototype of what later would have evolved into Pitchtarget. In March 2014 we have been selected, together with other 9 European start-ups, to be part of the first PMD Facebook Accelarate Program.</p>
+                  <p class='article article-blog'>In October, 2014, Addictive has been selected as one of the 9 winners of OpenAxel, a competition that finds the best entrepreneurial talents in Europe and awards them with world class acceleration services.</p>
+                  <p class='article article-blog'>Addictive's team has a deep knowledge of the Facebook Marketing API and is constantly updated on the latest news about the Facebook platform.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <hr>
-          <div class='row spacer-extra spacer-bottom'>
-            <div class='col-sm-12'>
-              <div class='spacer spacer-to'>
-                <span class='title title-section'>Team</span>
-              </div>
-              <div class='col-md-3 col-sm-4 col-xs-6 team'>
-                <div class='spacer center'>
-                  <img class="image-box image-small img-responsive" src="/images/nb-team.png" />
-                  <div class='title title-team spacer spacer-top'>
-                    Nicola Brisotto
-                  </div>
-                  <div class='subtitle'>
-                    CEO
-                  </div>
+            <hr>
+            <div class='row spacer-extra spacer-bottom'>
+              <div class='col-sm-12'>
+                <div class='spacer spacer-to'>
+                  <span class='title title-section'>Team</span>
                 </div>
-              </div>
-              <div class='col-md-3 col-sm-4 col-xs-6 team'>
-                <div class='spacer center'>
-                  <img class="image-box image-small img-responsive" src="/images/mcb-team.png" />
-                  <div class='title title-team spacer spacer-top'>
-                    Matteo Centenaro
-                  </div>
-                  <div class='subtitle'>
-                    CTO
-                  </div>
+                <div class='col-md-3 col-sm-4 col-xs-6 team'>
+                  <a class='pointer' href='https://twitter.com/breezeight'>
+                    <div class='spacer center'>
+                      <img class="image-box image-small img-responsive" src="/images/nb-team.png" />
+                      <div class='title title-team spacer spacer-top'>
+                        Nicola Brisotto
+                      </div>
+                      <div class='subtitle'>
+                        CEO
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </div>
-              <div class='col-md-3 col-sm-4 col-xs-6 team'>
-                <div class='spacer center'>
-                  <img class="image-box image-small img-responsive" src="/images/wb-team.png" />
-                  <div class='title title-team spacer spacer-top'>
-                    William Bergamo
-                  </div>
-                  <div class='subtitle'>
-                    Developer
-                  </div>
+                <div class='col-md-3 col-sm-4 col-xs-6 team'>
+                  <a class='pointer' href='https://twitter.com/bugant'>
+                    <div class='spacer center'>
+                      <img class="image-box image-small img-responsive" src="/images/mcb-team.png" />
+                      <div class='title title-team spacer spacer-top'>
+                        Matteo Centenaro
+                      </div>
+                      <div class='subtitle'>
+                        CTO
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </div>
-              <div class='col-md-3 col-sm-4 col-xs-6 team'>
-                <div class='spacer center'>
-                  <img class="image-box image-small img-responsive" src="/images/mc-team.png" />
-                  <div class='title title-team spacer spacer-top'>
-                    Mirco Cotugno
-                  </div>
-                  <div class='subtitle'>
-                    UI/UX Designer
-                  </div>
+                <div class='col-md-3 col-sm-4 col-xs-6 team'>
+                  <a class='pointer' href='https://twitter.com/bugduino'>
+                    <div class='spacer center'>
+                      <img class="image-box image-small img-responsive" src="/images/wb-team.png" />
+                      <div class='title title-team spacer spacer-top'>
+                        William Bergamo
+                      </div>
+                      <div class='subtitle'>
+                        Developer
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class='col-md-3 col-sm-4 col-xs-6 team'>
+                  <a class='pointer' href='https://twitter.com/spidertoto'>
+                    <div class='spacer center'>
+                      <img class="image-box image-small img-responsive" src="/images/mc-team.png" />
+                      <div class='title title-team spacer spacer-top'>
+                        Mirco Cotugno
+                      </div>
+                      <div class='subtitle'>
+                        UI/UX Designer
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
