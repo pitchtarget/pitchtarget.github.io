@@ -5,10 +5,36 @@
   <id>http://www.pitchtarget.com/blog</id>
   <link href="http://www.pitchtarget.com/blog"/>
   <link href="http://www.pitchtarget.com/blog/feed.xml" rel="self"/>
-  <updated>2015-09-29T02:00:00+02:00</updated>
+  <updated>2015-12-16T01:00:00+01:00</updated>
   <author>
     <name>Pitchtarget</name>
   </author>
+  <entry>
+    <title>Pitchtarget is Open to everyone</title>
+    <link rel="alternate" href="http://www.pitchtarget.com/blog/2015/12/16/Pitchtarget-is-out/"/>
+    <id>http://www.pitchtarget.com/blog/2015/12/16/Pitchtarget-is-out/</id>
+    <published>2015-12-16T01:00:00+01:00</published>
+    <updated>2016-01-25T10:51:47+01:00</updated>
+    <author>
+      <name>Pitchtarget</name>
+    </author>
+    <content type="html">&lt;p&gt;Pitchtarget is no longer in Beta!&lt;/p&gt;
+
+&lt;p&gt;We are happy to announce that starting from today Pitchtarget is available to everyone.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;It all started back in late 2013 during an hackathon, and after almost two years of hard working and a lot of trial and error our SaaS tool for managing and automating Facebook adv campaigns has finally come to life.&lt;/p&gt;
+
+&lt;p&gt;Automating the management of Facebook campaigns has never been easier.
+We are continuously looking to further improve our product and services,
+so if you have any feedback or suggestions don't hesitate to contact us!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://app.pitchtarget.com/#/landing"&gt;Start your free trial NOW!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="we-handle-complexity-you-enjoy-roi"&gt;We handle complexity, you enjoy ROI!&lt;/h3&gt;
+</content>
+  </entry>
   <entry>
     <title>2 Major changes in the new Facebook Adverts: How to deal with them</title>
     <link rel="alternate" href="http://www.pitchtarget.com/blog/2015/09/29/2-major-changes-in-the-new-facebook-adverts/"/>
@@ -332,46 +358,6 @@ At the beginning it might be helpful to deliver content with a relatively high f
 &lt;p&gt;&lt;strong&gt;Facebook Login&lt;/strong&gt; allows people to signup to your app by using their Facebook identity. This means that users will not need to type and verify emails, and they will not need to create or remember a password. And then you reduce friction during the signup process, you will naturally see a decrease in your churn rate.&lt;/p&gt;
 
 &lt;p&gt;You should also encourage people to share content from you app back to Facebook. This does not require Facebook Login: the Facebook SDK gives you plenty of options and most of them are straightforward to implement into your app. When your users share content from you app, their friends will see those posts. People on mobile will be prompted to install the app, which means that even more installs may come to your app!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>5 small things that will make all the difference</title>
-    <link rel="alternate" href="http://www.pitchtarget.com/blog/2015/04/20/5-small-things-that-will-make-all-the-difference/"/>
-    <id>http://www.pitchtarget.com/blog/2015/04/20/5-small-things-that-will-make-all-the-difference/</id>
-    <published>2015-04-20T10:53:00+02:00</published>
-    <updated>2015-06-16T17:49:07+02:00</updated>
-    <author>
-      <name>Pitchtarget</name>
-    </author>
-    <content type="html">&lt;h2 id="creative-matters-a-lot"&gt;1  Creative matters a lot&lt;/h2&gt;
-
-&lt;p&gt;A recent study conducted by Facebook highlights that Facebook an ad can be up to 8X more susceptible to a change of its creative (copy, images and format). Sometimes you wonder why changing that full stop into an exclamation mark made all the difference. Facebook gives you plenty of real estate to show images and videos, and this gives you a lot of flexibility to test it. Run different creatives in the same ad set and inspect the results, but do not change bids or targets.
-Because people on Facebook are looking for high quality content, you must make sure that your ad not only looks good, but it will also be interesting to the people who are going to see it.&lt;/p&gt;
-
-&lt;h2 id="nobody-keeps-track-of-incremental-reach-you-should"&gt;2  Nobody keeps track of incremental reach. You should&lt;/h2&gt;
-&lt;p&gt;oCPM campaigns leverage Facebook's algorithms to increase reach and optimise the cost for your objective. It works well – So well that sometimes you end up extending that campaign. Sometimes, when you do this you notice that your campaign does not deliver as well as you'd expect – even worse, it does not deliver at all.&lt;/p&gt;
-
-&lt;p&gt;Why? You simply reached saturation for your bid and budget. oCPM cannot deliver anymore at a convenient cost.&lt;/p&gt;
-
-&lt;p&gt;You can prevent this by looking at incremental reach, that is, the pace at which your reach is increasing. This value should be constant over time. Check regularly (every day, or every 8 hours) the delta in reach. If you see a sharp decline, it's time to stop your campaign and try different creatives and targets.&lt;/p&gt;
-
-&lt;h2 id="fans-matter"&gt;3  Fans matter&lt;/h2&gt;
-&lt;p&gt;Fans can see your posts up to 4X more than non-fans. This means that people who closely engage with your brand really are your best customers. Many ecommerces do not build brand voice, and this leaves plenty of opportunities for those who do.&lt;/p&gt;
-
-&lt;h2 id="call-to-actions-learn-more-vs-others"&gt;4  Call to actions: Learn more vs others&lt;/h2&gt;
-&lt;p&gt;A research from AdRoll found that "Learn more" is the best performing call to action. It is less prescriptive, yet prompts the users to take action and visit your site.&lt;/p&gt;
-
-&lt;h2 id="retarget-everything"&gt;5  Retarget everything&lt;/h2&gt;
-&lt;p&gt;Custom Audience helps you think creatively about your targeting. You can achieve cross-platform retargeting by using a combination of Website Custom Audience and Mobile Custom Audience.&lt;/p&gt;
-
-&lt;p&gt;For instance, you can target people who added to cart an item using your mobile app and serve them an ad to complete that purchase on desktop. Here's how it works.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You will need to integrate the Facebook SDK inside your native mobile app.&lt;/li&gt;
-  &lt;li&gt;When a user adds an item to the cart, send an AddToCart event to Facebook.&lt;/li&gt;
-  &lt;li&gt;Prepare a Custom Audience from a Mobile app made of people who generated the AddToCart event in the past 24 hours.&lt;/li&gt;
-  &lt;li&gt;Create a new campaign using the Mobile Custom Audience you created in the previous step&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
